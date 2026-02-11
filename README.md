@@ -5,6 +5,9 @@
 2. Edit the file path in cell 3, line 4 of the ./final_model/bbb_exc_score.ipynb script
 3. Run the script to output your results. 
 
+###### Google Colab: 
+Alternatively you can use this google colab to input smiles or sdf files. Note that the smiles conversion to 3D structure in this notebook is different from the method used in the paper: https://colab.research.google.com/drive/1N4-yIpFGIP0el0BTXN_yNZLnhOMGqvQd?usp=sharing
+
 ##### Scripts used to generate the data presented in the paper:
 1. Dataset cleaning: ./scripts/dataset_cleaning.ipynb
 2. Dataset labelling: ./scripts/dataset_labelling.ipynb
