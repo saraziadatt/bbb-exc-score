@@ -60,7 +60,7 @@ def extract_logbb_value(driver, smiles):
 
     time.sleep(1)  # wait for editor update
 
-    # Click Calculate
+    # Click calculate
     calculate_button = WebDriverWait(driver, 10).until(
         EC.element_to_be_clickable((By.XPATH, "/html/body/table[1]/tbody/tr[2]/td[1]/button"))
     )
@@ -79,7 +79,7 @@ def extract_logbb_value(driver, smiles):
         parts = result_param[0].split('|')
         if len(parts) >= 2:
             try:
-                return float(parts[1])  # The logBB value
+                return float(parts[1]) 
             except ValueError:
                 return None
     return None

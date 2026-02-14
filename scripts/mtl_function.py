@@ -11,12 +11,10 @@ def sigmoid_grad(x):
     s = sigmoid(x)
     return s * (1 - s)
 
-def custom_multi_loss(y_train_class, y_reg_w_nans,  alpha, beta, k, margin=-1, margin_buffer = 0.1):
-    """Custom objective function combining regression and consistency loss.
-    
+def custom_multi_loss(y_train_class, y_reg_w_nans,  alpha, beta, margin=-1, margin_buffer = 0.1):
+    """
     alpha: weight for regression loss (MSE)
     beta: weight for classification loss (BCE)
-    k: steepness of sigmoid function (for approximating class boundary)
     """
 
     def objective(preds, train_data):
@@ -25,7 +23,7 @@ def custom_multi_loss(y_train_class, y_reg_w_nans,  alpha, beta, k, margin=-1, m
         y_true = train_data.get_label()
         y_class = y_train_class
 
-        # --- Regression Loss (MSE), only where label is available ---
+        # Regression loss (MSE)
         is_reg_available = ~np.isnan(y_reg_w_nans)
         grad_reg = np.zeros_like(y_pred)
         hess_reg = np.zeros_like(y_pred)
@@ -33,13 +31,11 @@ def custom_multi_loss(y_train_class, y_reg_w_nans,  alpha, beta, k, margin=-1, m
         grad_reg[is_reg_available] = alpha * (y_pred[is_reg_available] - y_reg_w_nans[is_reg_available])
         hess_reg[is_reg_available] = alpha
 
-        # --- Classification Loss (Margin-Aware Squared Penalty) ---
-        # Class 1: we want y_pred < margin - margin_buffer
-        # Class 0: we want y_pred ≥ margin + margin_buffer
+        # Classification loss
         grad_class = np.zeros_like(y_pred)
         hess_class = np.zeros_like(y_pred)
 
-        buffer = margin_buffer  # softens the margin — helps generalize
+        buffer = margin_buffer 
         lower_bound = margin + buffer
         upper_bound = margin - buffer
 
@@ -48,20 +44,20 @@ def custom_multi_loss(y_train_class, y_reg_w_nans,  alpha, beta, k, margin=-1, m
         w0 = 1.0 / n_0 if n_0 > 0 else 0.0
         w1 = 1.0 / n_1 if n_1 > 0 else 0.0
 
-        # Penalize class 1 if prediction is too high
+        # Penalize class 1 
         idx_wrong_1 = (y_class == 1) & (y_pred > upper_bound)
         diff_1 = y_pred[idx_wrong_1] - upper_bound
         grad_class[idx_wrong_1] = beta * w1 * 2 * diff_1
         hess_class[idx_wrong_1] = beta * w1 * 2
 
-        # Penalize class 0 if prediction is too low
+        # Penalize class 0
         idx_wrong_0 = (y_class == 0) & (y_pred < lower_bound)
         diff_0 = y_pred[idx_wrong_0] - lower_bound
         grad_class[idx_wrong_0] = beta * w0 * 2 * diff_0
         hess_class[idx_wrong_0] = beta * w0 * 2
 
         
-        # --- Combine both ---
+        # Combine
         grad = grad_reg + grad_class
         hess = hess_reg + hess_class
 
