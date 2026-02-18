@@ -2,11 +2,12 @@
 
 ##### To make predictions: 
 1. Generate an sdf (with 3D structures) of your desired compounds
-2. Edit the file path in cell 3, line 4 of the [bbb_exc_score script](./final_model/bbb_exc_score.ipynb), Make sure you are using python 3.9-3.11
+2. Edit the file path in cell 3, line 4 of the [bbb_exc_score script](./final_model/bbb_exc_score.ipynb). Make sure you are using python 3.9-3.11. 
 3. Run the script to output your results. 
 
-###### Google Colab: 
-Alternatively you can use this [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com) to input smiles or an sdf file. Note that the smiles conversion to 3D structure in this notebook is different from the method used in the paper: 
+##### Google Colab: 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com)
+Alternatively you can use this colab notebook to input smiles or an sdf file. Note that the smiles conversion to 3D structure in this notebook is different from the method used in the paper. 
 
 ##### Scripts used to generate the data presented in the paper:
 1. [Dataset cleaning](./scripts/dataset_cleaning.ipynb)
