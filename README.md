@@ -2,7 +2,7 @@
 
 ##### To make predictions: 
 1. Generate an sdf (with 3D structures) of your desired compounds
-2. Edit the file path in cell 3, line 4 of the [bbb_exc_score script](./final_model/bbb_exc_score.ipynb)
+2. Edit the file path in cell 3, line 4 of the [bbb_exc_score script](./final_model/bbb_exc_score.ipynb), Make sure you are using python 3.9-3.11
 3. Run the script to output your results. 
 
 ###### Google Colab: 
