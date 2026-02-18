@@ -6,7 +6,7 @@
 3. Run the script to output your results. 
 
 ##### Google Colab: 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/saraziadatt/bbb-exc-score/blob/main/colab_notebooks/bbb_exc_score_colab_V0_3.ipynb)
 Alternatively you can use this colab notebook to input smiles or an sdf file. Note that the smiles conversion to 3D structure in this notebook is different from the method used in the paper. 
 
 ##### Scripts used to generate the data presented in the paper:
