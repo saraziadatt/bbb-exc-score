@@ -18,3 +18,5 @@ dependencies:
   - scipy=1.15.2
   - seaborn=0.13.2
   - selenium=4.40.0
+  - mordred=1.2.0
+  - ipykernel
