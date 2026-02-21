@@ -8,7 +8,7 @@ The BBBX model predicts blood–brain barrier exclusion properties from molecula
 
 ---
 
-### Making Predictions with BBBX
+### Making Predictions
 
 #### 1. Prepare Input
 
@@ -37,11 +37,7 @@ pip install -r requirements.txt
 
 #### 3. Run the Prediction Notebook
 
-Open:
-
-```
-final_model/bbb_exc_score.ipynb
-```
+Open: [final_model/bbb_exc_score.ipynb](./final_model/bbb_exc_score.ipynb)
 
 Edit the file path in Cell 3 to point to your `.sdf` file, then run the notebook to generate predictions.
 
@@ -49,6 +45,7 @@ Edit the file path in Cell 3 to point to your `.sdf` file, then run the notebook
 
 ### Google Colab Version
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/saraziadatt/bbb-exc-score/blob/main/colab_notebooks/bbb_exc_score_colab_V0_3.ipynb)
+<br>
 Alternatively you can use this colab notebook to input smiles or an sdf file. Note that the smiles conversion to 3D structure in this notebook is different from the method used in the paper. 
 
 ---
@@ -71,9 +68,9 @@ Alternatively you can use this colab notebook to input smiles or an sdf file. No
 
 ### Repository Structure
 - [`datasets/`](./datasets) — Datasets used in the study  
-- `model_results/` — Training and hyperparameter optimization outputs  
-- `model_evaluation/` — Performance evaluation results  
-- `final_model/` — Final trained model and prediction notebook  
+- [`model_results/`](./model_results) — Training and hyperparameter optimization outputs  
+- [`model_evaluation/`](./model_evaluation)  — Performance evaluation results  
+- [`final_model/`](./final_model) — Final trained model and prediction notebook  
 
 ---
 
