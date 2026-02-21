@@ -10,25 +10,24 @@ The BBBX model predicts blood–brain barrier exclusion properties from molecula
 
 ### Making Predictions with BBBX
 
-#### Step 1 — Prepare Input
+#### 1. Prepare Input
 
 Generate an `.sdf` file containing 3D molecular structures of the compounds you wish to evaluate.
 
 ---
 
-#### Step 2 — Set Up the Environment
+#### 2. Set Up the Environment
 
-Python 3.9–3.11 is required.  
-Python 3.12+ is not currently supported due to scientific dependency constraints.
+Python 3.9–3.11 is required. Python 3.12+ is not currently
 
-##### Option A — Conda (Recommended)
+##### Conda (recommended)
 
 ```bash
 conda env create -f environment.yml
 conda activate bbb_env
 ```
 
-##### Option B — pip
+##### pip
 
 ```bash
 pip install -r requirements.txt
@@ -36,7 +35,7 @@ pip install -r requirements.txt
 
 ---
 
-#### Step 3 — Run the Prediction Notebook
+#### 3. Run the Prediction Notebook
 
 Open:
 
@@ -49,16 +48,8 @@ Edit the file path in Cell 3 to point to your `.sdf` file, then run the notebook
 ---
 
 ### Google Colab Version
-
-You may also run the model using Google Colab:
-
-https://colab.research.google.com/github/saraziadatt/bbb-exc-score/blob/main/colab_notebooks/bbb_exc_score_colab_V0_3.ipynb
-
-This notebook allows:
-- SMILES input
-- SDF input
-
-Note: The SMILES-to-3D conversion method used in the Colab notebook differs from the method described in the manuscript.
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/saraziadatt/bbb-exc-score/blob/main/colab_notebooks/bbb_exc_score_colab_V0_3.ipynb)
+Alternatively you can use this colab notebook to input smiles or an sdf file. Note that the smiles conversion to 3D structure in this notebook is different from the method used in the paper. 
 
 ---
 
@@ -79,7 +70,7 @@ Note: The SMILES-to-3D conversion method used in the Colab notebook differs from
 ---
 
 ### Repository Structure
-- `datasets/` — Datasets used in the study  
+- [`datasets/`](./datasets) — Datasets used in the study  
 - `model_results/` — Training and hyperparameter optimization outputs  
 - `model_evaluation/` — Performance evaluation results  
 - `final_model/` — Final trained model and prediction notebook  
