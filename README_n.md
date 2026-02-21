@@ -24,7 +24,7 @@ Python 3.9–3.11 is required. Python 3.12+ is not currently
 
 ```bash
 conda env create -f environment.yml
-conda activate bbb_env
+conda activate bbbx_env
 ```
 
 ##### pip
