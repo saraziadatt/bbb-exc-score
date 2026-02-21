@@ -1,0 +1,20 @@
+name: bbbx_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - lightgbm=4.6.0
+  - matplotlib=3.7.1
+  - networkx=2.8.8
+  - numpy>=1.24,<2.0
+  - optuna=4.6.0
+  - pandas=2.3.3
+  - plotly=6.4.0
+  - pygam=0.11.0
+  - rdkit
+  - requests=2.32.5
+  - scikit-learn=1.7.2
+  - shap=0.48.0
+  - scipy=1.15.2
+  - seaborn=0.13.2
+  - selenium=4.40.0
