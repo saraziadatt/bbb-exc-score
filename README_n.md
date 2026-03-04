@@ -2,8 +2,6 @@
 
 This repository contains the trained Blood Brain Barrier Exclusion Score (BBBX) model and all scripts used to generate the data and analyses presented in the associated manuscript.
 
-The BBBX model predicts blood–brain barrier exclusion properties from molecular structure.
-
 ---
 
 #### Making Predictions
