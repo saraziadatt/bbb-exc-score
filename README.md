@@ -65,6 +65,5 @@ Alternatively you can use this colab notebook to input smiles or an sdf file. No
 
 #### Citation
 
-If you use this model, please cite the associated manuscript.
-
-Citation information will be added upon publication.
+If you use this model, please cite the associated manuscript:
+Ziadat, S., Noden, M., Yu, L., Weaver, D. F. & Reed, M. A. Blood-Brain Barrier Exclusion (BBBX) Score: Designing Drugs Not to Enter the Brain. ChemRxiv. 2026. 
