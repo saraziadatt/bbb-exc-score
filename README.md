@@ -12,7 +12,7 @@ Generate an `.sdf` file containing 3D molecular structures of the compounds you 
 
 ##### 2. Set Up the Environment
 
-Python 3.9–3.11 is required. Python 3.12+ is not currently supported
+Python 3.9–3.11 is required. Python 3.12+ is not currently supported.
 
 ###### Conda (recommended)
 
