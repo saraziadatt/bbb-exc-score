@@ -1,0 +1,6 @@
+dataset,model_a,model_b,task,n_paired,n_penetrant,n_nonpenetrant,metric,model_a_value,model_b_value,difference_a_minus_b,better_direction,effect_in_favor_of_a,permutation_p_two_sided,n_valid_permutations,n_permutations_requested,permutation_p_two_sided_holm
+all_nonoverlapping,custom_mtl_original,lightgbm_mse_regression,regression,160,135,25,mae,0.4760058215979077,0.4603426153059398,0.015663206291967935,lower,-0.015663206291967935,0.20617938206179381,10000,10000,0.8247175282471753
+all_nonoverlapping,custom_mtl_original,lightgbm_mse_regression,regression,160,135,25,mse,0.36556197310110755,0.3580131502329912,0.007548822868116367,lower,-0.007548822868116367,0.5864413558644136,10000,10000,1.0
+all_nonoverlapping,custom_mtl_original,lightgbm_mse_regression,regression,160,135,25,pearson_r,0.677414496547375,0.671337080808807,0.006077415738567904,higher,0.006077415738567904,0.6754324567543246,10000,10000,1.0
+all_nonoverlapping,custom_mtl_original,lightgbm_mse_regression,regression,160,135,25,r2,0.437518419856492,0.4491336154389579,-0.011615195582465931,higher,-0.011615195582465931,0.5864413558644136,10000,10000,1.0
+all_nonoverlapping,custom_mtl_original,lightgbm_mse_regression,regression,160,135,25,mae_nonpenetrant,0.7444806987326335,0.8881548515967782,-0.14367415286414476,lower,0.14367415286414476,9.999000099990002e-05,10000,10000,0.0004999500049995

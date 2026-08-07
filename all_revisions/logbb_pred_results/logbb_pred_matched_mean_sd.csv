@@ -1,0 +1,23 @@
+index,model,evaluation_task,metric,count,mean,std,mean_sd
+0,logbb_pred_matched_retraining,classification,accuracy,5,0.7408097454312023,0.017622090511214095,0.740810 ± 0.017622
+1,logbb_pred_matched_retraining,classification,balanced_accuracy,5,0.5901793468532267,0.026053435197525808,0.590179 ± 0.026053
+2,logbb_pred_matched_retraining,classification,cohen_kappa,5,0.22695840512873366,0.06274740035566832,0.226958 ± 0.062747
+3,logbb_pred_matched_retraining,classification,mcc,5,0.30440409989187595,0.06889895933426199,0.304404 ± 0.068899
+4,logbb_pred_matched_retraining,classification,n_evaluable,5,631.2,0.4472135954999691,631.200000 ± 0.447214
+5,logbb_pred_matched_retraining,classification,np_f1,5,0.32333681534758896,0.06676024782753838,0.323337 ± 0.066760
+6,logbb_pred_matched_retraining,classification,np_precision,5,0.779065934065934,0.07568025085175052,0.779066 ± 0.075680
+7,logbb_pred_matched_retraining,classification,np_recall,5,0.2049600604490501,0.04844725284917876,0.204960 ± 0.048447
+8,logbb_pred_matched_retraining,classification,penetrant_specificity,5,0.9753986332574032,0.007956377766092431,0.975399 ± 0.007956
+9,logbb_pred_matched_retraining,classification,pr_auc_nonpenetrant,5,0.6015652857835794,0.05239688433418472,0.601565 ± 0.052397
+10,logbb_pred_matched_retraining,classification,roc_auc,5,0.7553264086418733,0.023348361819384246,0.755326 ± 0.023348
+11,logbb_pred_matched_retraining,classification,wrong_side_count,5,163.6,11.10405331399305,163.600000 ± 11.104053
+12,logbb_pred_matched_retraining,classification,wrong_side_rate,5,0.25919025456879774,0.017622090511214095,0.259190 ± 0.017622
+13,logbb_pred_matched_retraining,regression,mae,5,0.36501545636960053,0.02307428148695103,0.365015 ± 0.023074
+14,logbb_pred_matched_retraining,regression,median_absolute_error,5,0.26269797519601523,0.01959084449218564,0.262698 ± 0.019591
+15,logbb_pred_matched_retraining,regression,mse,5,0.24904890224393936,0.026416094229484387,0.249049 ± 0.026416
+16,logbb_pred_matched_retraining,regression,n_evaluable,5,153.0,0.0,153.000000 ± 0.000000
+17,logbb_pred_matched_retraining,regression,np_mae,5,0.6818871141360687,0.086986296289198,0.681887 ± 0.086986
+18,logbb_pred_matched_retraining,regression,pearson_r,5,0.7398873010774738,0.026125058804125804,0.739887 ± 0.026125
+19,logbb_pred_matched_retraining,regression,penetrant_mae,5,0.32436386325114663,0.023090887701856883,0.324364 ± 0.023091
+20,logbb_pred_matched_retraining,regression,r2,5,0.5427464191932891,0.0396846640341215,0.542746 ± 0.039685
+21,logbb_pred_matched_retraining,regression,rmse,5,0.4984787530746838,0.026641954157112232,0.498479 ± 0.026642

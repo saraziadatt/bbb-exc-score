@@ -1,0 +1,20 @@
+{
+  "external": "../datasets/not_druglike_b3db_labelled.csv",
+  "prediction_files": [
+    "external_test_set/all_selected_models.csv"
+  ],
+  "n_external": 860,
+  "n_penetrant": 318,
+  "n_nonpenetrant": 542,
+  "models": [
+    "custom_mtl_original",
+    "dummy_mean_regression",
+    "dummy_prior_classification",
+    "lightgbm_mse_regression",
+    "logbb_pred_shaker_retrained"
+  ],
+  "primary_model": null,
+  "n_bootstrap": 500,
+  "seed": 20260728,
+  "score_direction": "larger score_np = more likely non-penetrant"
+}

@@ -1,0 +1,25 @@
+dataset,model_a,model_b,task,n_paired,n_penetrant,n_nonpenetrant,metric,model_a_value,model_b_value,difference_a_minus_b,better_direction,effect_in_favor_of_a,permutation_p_two_sided,n_valid_permutations,n_permutations_requested,permutation_p_two_sided_holm,,
+all_nonoverlapping,custom_mtl_original,lightgbm_mse_regression,classification,860,318,542,balanced_accuracy,0.622363016,0.578227622,0.044135394,higher,0.044135394,1.00E-04,10000,10000,0.00079992,,
+all_nonoverlapping,custom_mtl_original,lightgbm_mse_regression,classification,860,318,542,np_recall,0.357933579,0.228782288,0.129151292,higher,0.129151292,1.00E-04,10000,10000,0.00079992,,
+all_nonoverlapping,custom_mtl_original,lightgbm_mse_regression,classification,860,318,542,np_precision,0.843478261,0.843537415,-5.92E-05,higher,-5.92E-05,1,10000,10000,1,,
+all_nonoverlapping,custom_mtl_original,lightgbm_mse_regression,classification,860,318,542,np_f1,0.502590674,0.359941945,0.142648729,higher,0.142648729,1.00E-04,10000,10000,0.00079992,,
+all_nonoverlapping,custom_mtl_original,lightgbm_mse_regression,classification,860,318,542,roc_auc,0.743147903,0.732362088,0.010785815,higher,0.010785815,0.060293971,10000,10000,0.141585841,,
+all_nonoverlapping,custom_mtl_original,lightgbm_mse_regression,classification,860,318,542,pr_auc,0.81165697,0.794303277,0.017353693,higher,0.017353693,0.04719528,10000,10000,0.141585841,,
+all_nonoverlapping,custom_mtl_original,lightgbm_mse_regression,classification,860,318,542,mcc,0.266906518,0.200631858,0.06627466,higher,0.06627466,0.00379962,10000,10000,0.01519848,,
+all_nonoverlapping,custom_mtl_original,lightgbm_mse_regression,classification,860,318,542,np_wrong_side_count,348,418,-70,lower,70,1.00E-04,10000,10000,0.00079992,,
+all_nonoverlapping,custom_mtl_original,lightgbm_mse_regression,regression,160,135,25,mae,0.476005822,0.460342615,0.015663206,lower,-0.015663206,0.206179382,10000,10000,0.824717528,,
+all_nonoverlapping,custom_mtl_original,lightgbm_mse_regression,regression,160,135,25,mse,0.365561973,0.35801315,0.007548823,lower,-0.007548823,0.586441356,10000,10000,1,,
+all_nonoverlapping,custom_mtl_original,lightgbm_mse_regression,regression,160,135,25,pearson_r,0.677414497,0.671337081,0.006077416,higher,0.006077416,0.675432457,10000,10000,1,,
+all_nonoverlapping,custom_mtl_original,lightgbm_mse_regression,regression,160,135,25,r2,0.43751842,0.449133615,-0.011615196,higher,-0.011615196,0.586441356,10000,10000,1,,
+all_nonoverlapping,custom_mtl_original,lightgbm_mse_regression,regression,160,135,25,mae_nonpenetrant,0.744480699,0.888154852,-0.143674153,lower,0.143674153,1.00E-04,10000,10000,0.00049995,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,metric,balanced_accuracy,np_recall,np_precision,np_f1,roc_auc,pr_auc,mcc,np_wrong_side_count,mae,mse,pearson_r,r2,mae_nonpenetrant
+,,,,,model_a_value,0.622363016,0.357933579,0.843478261,0.502590674,0.743147903,0.81165697,0.266906518,348,0.476005822,0.365561973,0.677414497,0.43751842,0.744480699
+,,,,,model_b_value,0.578227622,0.228782288,0.843537415,0.359941945,0.732362088,0.794303277,0.200631858,418,0.460342615,0.35801315,0.671337081,0.449133615,0.888154852
+,,,,,permutation_p_two_sided_holm,0.00079992,0.00079992,1,0.00079992,0.141585841,0.141585841,0.01519848,0.00079992,0.824717528,1,1,1,0.00049995
+,,,,,,0.578 [ p=0.001],0.229 [ p=0.001],0.844 [ p=1],0.36 [ p=0.001],0.732 [ p=0.142],0.794 [ p=0.142],0.201 [ p=0.015],418 [ p=0.001],0.46 [ p=0.825],0.358 [ p=1],0.671 [ p=1],0.449 [ p=1],0.888 [ p=0]

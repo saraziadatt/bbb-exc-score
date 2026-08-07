@@ -1,0 +1,2 @@
+model,outer_fold,best_inner_score,parameters_json,training_location
+dummy_mean_regression,0,,"{""strategy"": ""mean""}",this_script

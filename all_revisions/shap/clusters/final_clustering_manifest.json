@@ -1,0 +1,21 @@
+{
+  "absolute_correlation_threshold": 0.8,
+  "cluster_dir": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/cluster_medoid_lightgbm_results/clusters",
+  "correlation_method": "spearman",
+  "distance": "1 - absolute feature correlation",
+  "input": "/Users/sziadat/Documents/bbbx/bbb-exc-score/datasets/not_druglike_b3db_labelled.csv",
+  "input_sha256": "e39960d6461c258ffa4ea9f7a5c5d6531de5c9975c74f03def7bd79f0864cac0",
+  "linkage_method": "complete",
+  "min_nonmissing": 20,
+  "n_candidate_features": 3787,
+  "n_clusters": 2477,
+  "n_compounds": 860,
+  "n_included_features": 3586,
+  "n_singleton_clusters": 2141,
+  "numpy": "1.26.4",
+  "output_dir": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/cluster_medoid_lightgbm_results",
+  "pandas": "2.3.3",
+  "python": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:28:47) [Clang 19.1.7 ]",
+  "representative_method": "cluster_medoid",
+  "uses_target_or_class_labels": false
+}

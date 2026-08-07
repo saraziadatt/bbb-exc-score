@@ -1,0 +1,21 @@
+{
+  "input": "/Users/sziadat/Documents/bbbx/bbb-exc-score/datasets/druglike_b3db_labelled_outerfolds.csv",
+  "full_results_dir": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models",
+  "cluster_results_dir": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/shap",
+  "output_dir": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/shap/grouped_cluster_eval",
+  "models": [
+    "lightgbm_mse_regression",
+    "custom_mtl_original"
+  ],
+  "top_n": 10,
+  "multiple_testing": "bh",
+  "save_local_npz": true,
+  "save_local_top_n": 10,
+  "grouped_shap_definition": "For each held-out compound, signed native LightGBM TreeSHAP values were summed across all model-used members of each target-independent descriptor cluster. Global group importance was the mean absolute value of this summed cluster contribution.",
+  "normalization_definition": "Within each model and outer fold, each group's mean absolute grouped SHAP value was divided by the sum across all groups.",
+  "important_caveat": "This is cluster-aggregated TreeSHAP. It is not guaranteed to be identical to formal group Shapley or Owen values recomputed with clusters as the original players.",
+  "individual_model_inference": "No p-values are calculated or shown for individual-model group importance rankings.",
+  "between_model_inference": "Raw and normalized MTL-minus-MSE group-importance differences were tested with two-sided Nadeau-Bengio corrected paired t-tests across matched outer folds. The test/train ratio used the complete outer-fold partition because grouped SHAP was evaluated over all held-out compounds.",
+  "python": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:28:47) [Clang 19.1.7 ]",
+  "lightgbm": "4.6.0"
+}

@@ -1,0 +1,25 @@
+dataset,model_a,model_b,task,n_paired,n_penetrant,n_nonpenetrant,metric,model_a_value,model_b_value,difference_a_minus_b,better_direction,effect_in_favor_of_a,permutation_p_two_sided,n_valid_permutations,n_permutations_requested,permutation_p_two_sided_holm,,
+all_nonoverlapping,custom_mtl_original,logbb_pred_shaker_retrained,classification,860,318,542,balanced_accuracy,0.622363016,0.59862726,0.023735756,higher,0.023735756,0.02439756,10000,10000,0.121987801,,
+all_nonoverlapping,custom_mtl_original,logbb_pred_shaker_retrained,classification,860,318,542,np_recall,0.357933579,0.260147601,0.097785978,higher,0.097785978,1.00E-04,10000,10000,0.00079992,,
+all_nonoverlapping,custom_mtl_original,logbb_pred_shaker_retrained,classification,860,318,542,np_precision,0.843478261,0.875776398,-0.032298137,higher,-0.032298137,0.119488051,10000,10000,0.477952205,,
+all_nonoverlapping,custom_mtl_original,logbb_pred_shaker_retrained,classification,860,318,542,np_f1,0.502590674,0.40113798,0.101452693,higher,0.101452693,1.00E-04,10000,10000,0.00079992,,
+all_nonoverlapping,custom_mtl_original,logbb_pred_shaker_retrained,classification,860,318,542,roc_auc,0.743147903,0.737937757,0.005210146,higher,0.005210146,0.362963704,10000,10000,1,,
+all_nonoverlapping,custom_mtl_original,logbb_pred_shaker_retrained,classification,860,318,542,pr_auc,0.81165697,0.813294167,-0.001637197,higher,-0.001637197,0.870412959,10000,10000,1,,
+all_nonoverlapping,custom_mtl_original,logbb_pred_shaker_retrained,classification,860,318,542,mcc,0.266906518,0.244111725,0.022794792,higher,0.022794792,0.339966003,10000,10000,1,,
+all_nonoverlapping,custom_mtl_original,logbb_pred_shaker_retrained,classification,860,318,542,np_wrong_side_count,348,401,-53,lower,53,1.00E-04,10000,10000,0.00079992,,
+all_nonoverlapping,custom_mtl_original,logbb_pred_shaker_retrained,regression,160,135,25,mae,0.476005822,0.467609074,0.008396747,lower,-0.008396747,0.506549345,10000,10000,1,,
+all_nonoverlapping,custom_mtl_original,logbb_pred_shaker_retrained,regression,160,135,25,mse,0.365561973,0.377931792,-0.012369818,lower,0.012369818,0.494850515,10000,10000,1,,
+all_nonoverlapping,custom_mtl_original,logbb_pred_shaker_retrained,regression,160,135,25,pearson_r,0.677414497,0.650017005,0.027397492,higher,0.027397492,0.156084392,10000,10000,0.624337566,,
+all_nonoverlapping,custom_mtl_original,logbb_pred_shaker_retrained,regression,160,135,25,r2,0.43751842,0.418485272,0.019033148,higher,0.019033148,0.494850515,10000,10000,1,,
+all_nonoverlapping,custom_mtl_original,logbb_pred_shaker_retrained,regression,160,135,25,mae_nonpenetrant,0.744480699,0.908453955,-0.163973256,lower,0.163973256,0.00019998,10000,10000,0.0009999,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,metric,balanced_accuracy,np_recall,np_precision,np_f1,roc_auc,pr_auc,mcc,np_wrong_side_count,mae,mse,pearson_r,r2,mae_nonpenetrant
+,,,,,model_a_value,0.622363016,0.357933579,0.843478261,0.502590674,0.743147903,0.81165697,0.266906518,348,0.476005822,0.365561973,0.677414497,0.43751842,0.744480699
+,,,,,model_b_value,0.599,0.260,0.876,0.401,0.738,0.813,0.244,401.000,0.468,0.378,0.650,0.418,0.908
+,,,,,permutation_p_two_sided_holm,0.121987801,0.00079992,0.477952205,0.00079992,1,1,1,0.00079992,1,1,0.624337566,1,0.0009999
+,,,,,,,,,,,,,,,,,,
+,,,,,,0.622 [ p=0.122],0.358 [ p=0.001],0.843 [ p=0.478],0.503 [ p=0.001],0.743 [ p=1],0.812 [ p=1],0.267 [ p=1],348 [ p=0.001],0.476 [ p=1],0.366 [ p=1],0.677 [ p=0.624],0.438 [ p=1],0.744 [ p=0.001]

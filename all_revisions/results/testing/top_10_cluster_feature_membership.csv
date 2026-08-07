@@ -1,0 +1,14 @@
+model,raw_importance_rank_within_model,cluster_key,cluster_id,cluster_label,selected_representative,feature,feature_position_within_cluster,is_selected_representative
+custom_mtl_original,1,cluster_2338,2338,Cluster 2338: TopoPSA (n=4),TopoPSA,TopoPSA,1,True
+custom_mtl_original,1,cluster_2338,2338,Cluster 2338: TopoPSA (n=4),TopoPSA,TopoPSA(NO),2,False
+custom_mtl_original,1,cluster_2338,2338,Cluster 2338: TopoPSA (n=4),TopoPSA,nHetero,3,False
+custom_mtl_original,1,cluster_2338,2338,Cluster 2338: TopoPSA (n=4),TopoPSA,nHBAcc,4,False
+custom_mtl_original,2,cluster_2314,2314,Cluster 2314: RPSA (n=3),RPSA,RPSA,1,True
+custom_mtl_original,2,cluster_2314,2314,Cluster 2314: RPSA (n=3),RPSA,RASA,2,False
+custom_mtl_original,2,cluster_2314,2314,Cluster 2314: RPSA (n=3),RPSA,TPSA,3,False
+custom_mtl_original,3,cluster_2149,2149,Cluster 2149: WNSA4 (n=4),WNSA4,WNSA4,1,True
+custom_mtl_original,3,cluster_2149,2149,Cluster 2149: WNSA4 (n=4),WNSA4,FNSA2,2,False
+custom_mtl_original,3,cluster_2149,2149,Cluster 2149: WNSA4 (n=4),WNSA4,PNSA4,3,False
+custom_mtl_original,3,cluster_2149,2149,Cluster 2149: WNSA4 (n=4),WNSA4,PNSA1,4,False
+custom_mtl_original,4,cluster_2379,2379,Cluster 2379: nAcid (n=1),nAcid,nAcid,1,True
+custom_mtl_original,5,cluster_2308,2308,Cluster 2308: PEOE_VSA6 (n=1),PEOE_VSA6,PEOE_VSA6,1,True
