@@ -1,0 +1,16 @@
+model,raw_importance_rank_within_model,cluster_key,cluster_id,cluster_label,selected_representative,feature,feature_position_within_cluster,is_selected_representative
+custom_mtl_original,1,cluster_125,125.0,Cluster 125: ATSC0c (n=12),ATSC0c,ATSC0c,1,True
+custom_mtl_original,1,cluster_125,125.0,Cluster 125: ATSC0c (n=12),ATSC0c,TopoPSA(NO),2,False
+custom_mtl_original,1,cluster_125,125.0,Cluster 125: ATSC0c (n=12),ATSC0c,nO,3,False
+custom_mtl_original,1,cluster_125,125.0,Cluster 125: ATSC0c (n=12),ATSC0c,ATSC1c,4,False
+custom_mtl_original,1,cluster_125,125.0,Cluster 125: ATSC0c (n=12),ATSC0c,MID_O,5,False
+custom_mtl_original,1,cluster_125,125.0,Cluster 125: ATSC0c (n=12),ATSC0c,nHBAcc,6,False
+custom_mtl_original,1,cluster_125,125.0,Cluster 125: ATSC0c (n=12),ATSC0c,DPSA5,7,False
+custom_mtl_original,1,cluster_125,125.0,Cluster 125: ATSC0c (n=12),ATSC0c,DPSA4,8,False
+custom_mtl_original,1,cluster_125,125.0,Cluster 125: ATSC0c (n=12),ATSC0c,TopoPSA,9,False
+custom_mtl_original,1,cluster_125,125.0,Cluster 125: ATSC0c (n=12),ATSC0c,SMR_VSA1,10,False
+custom_mtl_original,1,cluster_125,125.0,Cluster 125: ATSC0c (n=12),ATSC0c,PEOE_VSA1,11,False
+custom_mtl_original,1,cluster_125,125.0,Cluster 125: ATSC0c (n=12),ATSC0c,SlogP_VSA2,12,False
+custom_mtl_original,2,cluster_164,164.0,Cluster 164: PNSA3 (n=3),PNSA3,PNSA3,1,True
+custom_mtl_original,2,cluster_164,164.0,Cluster 164: PNSA3 (n=3),PNSA3,DPSA3,2,False
+custom_mtl_original,2,cluster_164,164.0,Cluster 164: PNSA3 (n=3),PNSA3,TPSA,3,False

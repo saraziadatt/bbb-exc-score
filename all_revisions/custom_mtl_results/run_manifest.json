@@ -1,0 +1,38 @@
+{
+  "input_file": "/Users/sziadat/Documents/bbbx/bbb-exc-score/datasets/druglike_b3db_labelled_outerfolds.csv",
+  "input_sha256": "f3b16db3d7879bb079579aac1a1457341a47103247ca1b90454f5934f5b6bf01",
+  "output_directory": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/custom_mtl_results",
+  "n_samples": 3156,
+  "n_measured_logbb": 765,
+  "n_classification_only": 2391,
+  "n_features_loaded": 2926,
+  "outer_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "model": "custom_mtl_original",
+  "class_encoding": {
+    "0": "BBB penetrant",
+    "1": "BBB non-penetrant"
+  },
+  "logbb_threshold": -1.0,
+  "seed": 15,
+  "inner_folds": 5,
+  "mtl_trials": 30,
+  "mtl_boost_rounds": 1000,
+  "mtl_inner_beta": 2.5,
+  "mtl_final_beta": 2.5,
+  "versions": {
+    "python": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:28:47) [Clang 19.1.7 ]",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.7.2",
+    "lightgbm": "4.6.0",
+    "optuna": "4.6.0",
+    "joblib": "1.5.3"
+  }
+}

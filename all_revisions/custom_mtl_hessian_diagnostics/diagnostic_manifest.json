@@ -1,0 +1,76 @@
+{
+  "master_csv": "/Users/sziadat/Documents/bbbx/bbb-exc-score/datasets/druglike_b3db_labelled_outerfolds.csv",
+  "master_csv_sha256": "f3b16db3d7879bb079579aac1a1457341a47103247ca1b90454f5934f5b6bf01",
+  "model_dir": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/custom_mtl_results/fitted_models",
+  "output_dir": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/custom_mtl_hessian_diagnostics",
+  "loss_mode": "original",
+  "model_prefix": "custom_mtl_original",
+  "model_glob": "custom_mtl_original_outer_*.txt",
+  "requested_tree_numbers": [
+    1,
+    10,
+    25,
+    50,
+    100,
+    250,
+    500,
+    750,
+    1000
+  ],
+  "sample_level_scope": "Selected pre-tree stages plus one after-final-tree stage; not every boosting iteration unless explicitly requested.",
+  "stored_leaf_scope": "Every fitted tree and every leaf for which LightGBM stores leaf_weight.",
+  "initial_score_assumed": 0.0,
+  "initial_score_verified_from_saved_training_data": false,
+  "zero_tolerance": 1e-12,
+  "outer_folds_checked": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "reconstruction_assumption": "The master CSV, row order, fold assignments, preprocessing, loss parameters, and initial score match training.",
+  "models": [
+    {
+      "outer_fold": 0,
+      "model_path": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/custom_mtl_results/fitted_models/custom_mtl_original_outer_0.txt",
+      "model_sha256": "88773cfafc506c802b8064c93790225968e1cb29de3cf00e9a91e453629a4704",
+      "preprocessor_path": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/custom_mtl_results/fitted_models/custom_mtl_original_outer_0_preprocessor.joblib",
+      "preprocessor_sha256": "19504fe6d412aa5f636b676a27ea61a301331407e47220291c92a35219019000"
+    },
+    {
+      "outer_fold": 1,
+      "model_path": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/custom_mtl_results/fitted_models/custom_mtl_original_outer_1.txt",
+      "model_sha256": "5c966ab6b7e441e477cc5a041bb5fb64fab2d9c7e0161e4011b341c1a977686b",
+      "preprocessor_path": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/custom_mtl_results/fitted_models/custom_mtl_original_outer_1_preprocessor.joblib",
+      "preprocessor_sha256": "6cdc8fc38e2fa4c0b0b2de587bd14ade8edee64a83699416f9fe0bf53ce076fa"
+    },
+    {
+      "outer_fold": 2,
+      "model_path": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/custom_mtl_results/fitted_models/custom_mtl_original_outer_2.txt",
+      "model_sha256": "232a675ce49deeef76f6a2a63382e21e6878a5e40d70f8414247ee9eaa70af91",
+      "preprocessor_path": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/custom_mtl_results/fitted_models/custom_mtl_original_outer_2_preprocessor.joblib",
+      "preprocessor_sha256": "64dd7b99734e71efb97c6c746e9047dbbebfb906b1cc6968e33681a14065ec4c"
+    },
+    {
+      "outer_fold": 3,
+      "model_path": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/custom_mtl_results/fitted_models/custom_mtl_original_outer_3.txt",
+      "model_sha256": "b4ef01584fe50cf5b3bc9b4685fa8b78c40aee400003575ba1a7ec6dd820c9dd",
+      "preprocessor_path": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/custom_mtl_results/fitted_models/custom_mtl_original_outer_3_preprocessor.joblib",
+      "preprocessor_sha256": "8fa3884525231760b72b8141e16431e48d9a84a9a4c0680fd12d7c2062fccf3f"
+    },
+    {
+      "outer_fold": 4,
+      "model_path": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/custom_mtl_results/fitted_models/custom_mtl_original_outer_4.txt",
+      "model_sha256": "4fdffecc7d6d047b45ece5203ee59df53153ccb0ab849ac60fa7d904b229459b",
+      "preprocessor_path": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/custom_mtl_results/fitted_models/custom_mtl_original_outer_4_preprocessor.joblib",
+      "preprocessor_sha256": "29b61705c16b49d472549f42348ad34a78375c9b2077210d0f8f0fd4ba83e4e2"
+    }
+  ],
+  "versions": {
+    "lightgbm": "4.6.0",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "joblib": "1.5.3"
+  }
+}

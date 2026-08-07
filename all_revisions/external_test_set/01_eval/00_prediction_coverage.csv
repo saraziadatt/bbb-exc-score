@@ -1,0 +1,6 @@
+model,n_external,n_predictions,n_matching_external,n_missing,n_extra,complete_coverage
+custom_mtl_original,860,860,860,0,0,True
+dummy_mean_regression,860,860,860,0,0,True
+dummy_prior_classification,860,860,860,0,0,True
+lightgbm_mse_regression,860,860,860,0,0,True
+logbb_pred_shaker_retrained,860,860,860,0,0,True

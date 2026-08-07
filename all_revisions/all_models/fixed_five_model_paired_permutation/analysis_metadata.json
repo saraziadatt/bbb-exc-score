@@ -1,0 +1,20 @@
+{
+  "prediction_source_files": [
+    "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/all_models_predictions.csv"
+  ],
+  "models": [
+    "dummy_mean_regression",
+    "dummy_prior_classification",
+    "lightgbm_mse_regression",
+    "custom_mtl_original",
+    "logbb_pred_shaker_retrained"
+  ],
+  "permutation_test": "paired two-sided within-compound prediction-label swap",
+  "permutation_replicates": 10000,
+  "bootstrap_replicates": 10000,
+  "bootstrap_purpose": "percentile confidence intervals only",
+  "bootstrap_stratification": "original outer fold \u00d7 BBB class",
+  "holm_family": "the 5 selected regression metrics or 8 selected classification metrics within each unique model pair and evaluation dataset",
+  "confidence": 0.95,
+  "seed": 20260730
+}

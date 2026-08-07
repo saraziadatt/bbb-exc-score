@@ -1,0 +1,121 @@
+{
+  "external_csv": "/Users/sziadat/Documents/bbbx/bbb-exc-score/datasets/not_druglike_b3db_labelled.csv",
+  "model_dir": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models",
+  "output_dir": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/external_test_set",
+  "n_external_compounds": 860,
+  "requested_models": [
+    "custom_mtl_original",
+    "lightgbm_mse_regression",
+    "dummy_mean_regression",
+    "dummy_prior_classification",
+    "logbb_pred_shaker_retrained"
+  ],
+  "successful_models": [
+    "custom_mtl_original",
+    "lightgbm_mse_regression",
+    "dummy_mean_regression",
+    "dummy_prior_classification",
+    "logbb_pred_shaker_retrained"
+  ],
+  "failed_models": {},
+  "models": {
+    "custom_mtl_original": {
+      "task": "regression",
+      "n_fold_models": 5,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources": [
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/custom_mtl_original_outer_0.txt; /Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/custom_mtl_original_outer_0_preprocessor.joblib",
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/custom_mtl_original_outer_1.txt; /Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/custom_mtl_original_outer_1_preprocessor.joblib",
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/custom_mtl_original_outer_2.txt; /Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/custom_mtl_original_outer_2_preprocessor.joblib",
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/custom_mtl_original_outer_3.txt; /Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/custom_mtl_original_outer_3_preprocessor.joblib",
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/custom_mtl_original_outer_4.txt; /Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/custom_mtl_original_outer_4_preprocessor.joblib"
+      ],
+      "ensemble_threshold": -1.0
+    },
+    "lightgbm_mse_regression": {
+      "task": "regression",
+      "n_fold_models": 5,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources": [
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/lightgbm_mse_regression_outer_0.joblib",
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/lightgbm_mse_regression_outer_1.joblib",
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/lightgbm_mse_regression_outer_2.joblib",
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/lightgbm_mse_regression_outer_3.joblib",
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/lightgbm_mse_regression_outer_4.joblib"
+      ],
+      "ensemble_threshold": -1.0
+    },
+    "dummy_mean_regression": {
+      "task": "regression",
+      "n_fold_models": 5,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources": [
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/dummy_mean_regression_outer_0.joblib",
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/dummy_mean_regression_outer_1.joblib",
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/dummy_mean_regression_outer_2.joblib",
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/dummy_mean_regression_outer_3.joblib",
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/dummy_mean_regression_outer_4.joblib"
+      ],
+      "ensemble_threshold": -1.0
+    },
+    "dummy_prior_classification": {
+      "task": "classification",
+      "n_fold_models": 5,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources": [
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/dummy_prior_classification_outer_0.joblib",
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/dummy_prior_classification_outer_1.joblib",
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/dummy_prior_classification_outer_2.joblib",
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/dummy_prior_classification_outer_3.joblib",
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/dummy_prior_classification_outer_4.joblib"
+      ],
+      "ensemble_threshold": 0.5
+    },
+    "logbb_pred_shaker_retrained": {
+      "task": "regression",
+      "n_fold_models": 5,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources": [
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/logbb_pred_matched_outer_0.joblib",
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/logbb_pred_matched_outer_1.joblib",
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/logbb_pred_matched_outer_2.joblib",
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/logbb_pred_matched_outer_3.joblib",
+        "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions/all_models/fitted_models/logbb_pred_matched_outer_4.joblib"
+      ],
+      "ensemble_threshold": -1.0
+    }
+  },
+  "regression_threshold": -1.0,
+  "classifier_threshold": 0.5,
+  "label_column_present": false
+}

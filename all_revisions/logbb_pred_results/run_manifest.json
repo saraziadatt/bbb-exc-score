@@ -1,0 +1,4315 @@
+{
+  "model_name": "logbb_pred_matched_retraining",
+  "interpretation": "Matched, fold-safe retraining of the published LogBB_Pred modelling strategy on the supplied dataset and fixed folds.",
+  "input": "/Users/sziadat/Documents/bbbx/bbb-exc-score/datasets/druglike_b3db_labelled_outerfolds.csv",
+  "input_sha256": "f3b16db3d7879bb079579aac1a1457341a47103247ca1b90454f5934f5b6bf01",
+  "n_rows": 3156,
+  "n_measured_logbb": 765,
+  "n_descriptors": 724,
+  "outer_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "correlation_threshold": 0.8,
+  "missing_descriptor_policy": "drop descriptors with any missing values among measured compounds in each training fit; no imputation",
+  "feature_pair_policy": "for |feature-feature Pearson r| above threshold, drop the feature with lower absolute Pearson correlation with training logBB",
+  "scaling": "none",
+  "tuning": "GridSearchCV scored by negative mean squared error; default candidates lie within Supplementary Table S1 bounds and include the published optimum",
+  "tuning_mode": "published_ranges",
+  "n_search_candidates_requested": 250,
+  "grid_json": null,
+  "published_parameter_bounds": {
+    "n_estimators": [
+      50,
+      700
+    ],
+    "num_leaves": [
+      5,
+      30
+    ],
+    "max_depth": [
+      5,
+      25
+    ],
+    "min_data_in_leaf": [
+      10,
+      15
+    ],
+    "bagging_fraction": [
+      0.2,
+      0.8
+    ]
+  },
+  "published_optimum": {
+    "model__n_estimators": 100,
+    "model__num_leaves": 15,
+    "model__max_depth": 10,
+    "model__min_child_samples": 15,
+    "model__subsample": 0.6
+  },
+  "parameter_grid": [
+    {
+      "model__n_estimators": [
+        100
+      ],
+      "model__num_leaves": [
+        15
+      ],
+      "model__max_depth": [
+        10
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.6
+      ]
+    },
+    {
+      "model__n_estimators": [
+        656
+      ],
+      "model__num_leaves": [
+        23
+      ],
+      "model__max_depth": [
+        19
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.407
+      ]
+    },
+    {
+      "model__n_estimators": [
+        181
+      ],
+      "model__num_leaves": [
+        6
+      ],
+      "model__max_depth": [
+        14
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.288
+      ]
+    },
+    {
+      "model__n_estimators": [
+        688
+      ],
+      "model__num_leaves": [
+        23
+      ],
+      "model__max_depth": [
+        14
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.474
+      ]
+    },
+    {
+      "model__n_estimators": [
+        224
+      ],
+      "model__num_leaves": [
+        30
+      ],
+      "model__max_depth": [
+        9
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.706
+      ]
+    },
+    {
+      "model__n_estimators": [
+        141
+      ],
+      "model__num_leaves": [
+        19
+      ],
+      "model__max_depth": [
+        15
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.211
+      ]
+    },
+    {
+      "model__n_estimators": [
+        658
+      ],
+      "model__num_leaves": [
+        28
+      ],
+      "model__max_depth": [
+        11
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.339
+      ]
+    },
+    {
+      "model__n_estimators": [
+        196
+      ],
+      "model__num_leaves": [
+        18
+      ],
+      "model__max_depth": [
+        18
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.399
+      ]
+    },
+    {
+      "model__n_estimators": [
+        198
+      ],
+      "model__num_leaves": [
+        28
+      ],
+      "model__max_depth": [
+        7
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.78
+      ]
+    },
+    {
+      "model__n_estimators": [
+        323
+      ],
+      "model__num_leaves": [
+        24
+      ],
+      "model__max_depth": [
+        24
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.417
+      ]
+    },
+    {
+      "model__n_estimators": [
+        667
+      ],
+      "model__num_leaves": [
+        20
+      ],
+      "model__max_depth": [
+        14
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.68
+      ]
+    },
+    {
+      "model__n_estimators": [
+        102
+      ],
+      "model__num_leaves": [
+        11
+      ],
+      "model__max_depth": [
+        7
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.245
+      ]
+    },
+    {
+      "model__n_estimators": [
+        216
+      ],
+      "model__num_leaves": [
+        11
+      ],
+      "model__max_depth": [
+        21
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.303
+      ]
+    },
+    {
+      "model__n_estimators": [
+        176
+      ],
+      "model__num_leaves": [
+        11
+      ],
+      "model__max_depth": [
+        5
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.224
+      ]
+    },
+    {
+      "model__n_estimators": [
+        477
+      ],
+      "model__num_leaves": [
+        13
+      ],
+      "model__max_depth": [
+        6
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.45
+      ]
+    },
+    {
+      "model__n_estimators": [
+        599
+      ],
+      "model__num_leaves": [
+        28
+      ],
+      "model__max_depth": [
+        12
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.574
+      ]
+    },
+    {
+      "model__n_estimators": [
+        452
+      ],
+      "model__num_leaves": [
+        14
+      ],
+      "model__max_depth": [
+        16
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.664
+      ]
+    },
+    {
+      "model__n_estimators": [
+        659
+      ],
+      "model__num_leaves": [
+        15
+      ],
+      "model__max_depth": [
+        6
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.665
+      ]
+    },
+    {
+      "model__n_estimators": [
+        154
+      ],
+      "model__num_leaves": [
+        27
+      ],
+      "model__max_depth": [
+        16
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.404
+      ]
+    },
+    {
+      "model__n_estimators": [
+        366
+      ],
+      "model__num_leaves": [
+        27
+      ],
+      "model__max_depth": [
+        7
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.723
+      ]
+    },
+    {
+      "model__n_estimators": [
+        436
+      ],
+      "model__num_leaves": [
+        28
+      ],
+      "model__max_depth": [
+        24
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.635
+      ]
+    },
+    {
+      "model__n_estimators": [
+        521
+      ],
+      "model__num_leaves": [
+        26
+      ],
+      "model__max_depth": [
+        7
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.474
+      ]
+    },
+    {
+      "model__n_estimators": [
+        264
+      ],
+      "model__num_leaves": [
+        10
+      ],
+      "model__max_depth": [
+        19
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.429
+      ]
+    },
+    {
+      "model__n_estimators": [
+        346
+      ],
+      "model__num_leaves": [
+        6
+      ],
+      "model__max_depth": [
+        6
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.234
+      ]
+    },
+    {
+      "model__n_estimators": [
+        641
+      ],
+      "model__num_leaves": [
+        17
+      ],
+      "model__max_depth": [
+        20
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.442
+      ]
+    },
+    {
+      "model__n_estimators": [
+        84
+      ],
+      "model__num_leaves": [
+        10
+      ],
+      "model__max_depth": [
+        15
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.357
+      ]
+    },
+    {
+      "model__n_estimators": [
+        387
+      ],
+      "model__num_leaves": [
+        10
+      ],
+      "model__max_depth": [
+        11
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.384
+      ]
+    },
+    {
+      "model__n_estimators": [
+        170
+      ],
+      "model__num_leaves": [
+        16
+      ],
+      "model__max_depth": [
+        15
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.583
+      ]
+    },
+    {
+      "model__n_estimators": [
+        337
+      ],
+      "model__num_leaves": [
+        27
+      ],
+      "model__max_depth": [
+        23
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.479
+      ]
+    },
+    {
+      "model__n_estimators": [
+        137
+      ],
+      "model__num_leaves": [
+        21
+      ],
+      "model__max_depth": [
+        22
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.597
+      ]
+    },
+    {
+      "model__n_estimators": [
+        265
+      ],
+      "model__num_leaves": [
+        10
+      ],
+      "model__max_depth": [
+        20
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.798
+      ]
+    },
+    {
+      "model__n_estimators": [
+        502
+      ],
+      "model__num_leaves": [
+        26
+      ],
+      "model__max_depth": [
+        17
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.7
+      ]
+    },
+    {
+      "model__n_estimators": [
+        447
+      ],
+      "model__num_leaves": [
+        22
+      ],
+      "model__max_depth": [
+        8
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.499
+      ]
+    },
+    {
+      "model__n_estimators": [
+        509
+      ],
+      "model__num_leaves": [
+        12
+      ],
+      "model__max_depth": [
+        22
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.497
+      ]
+    },
+    {
+      "model__n_estimators": [
+        667
+      ],
+      "model__num_leaves": [
+        10
+      ],
+      "model__max_depth": [
+        5
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.638
+      ]
+    },
+    {
+      "model__n_estimators": [
+        149
+      ],
+      "model__num_leaves": [
+        11
+      ],
+      "model__max_depth": [
+        19
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.549
+      ]
+    },
+    {
+      "model__n_estimators": [
+        411
+      ],
+      "model__num_leaves": [
+        16
+      ],
+      "model__max_depth": [
+        8
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.646
+      ]
+    },
+    {
+      "model__n_estimators": [
+        612
+      ],
+      "model__num_leaves": [
+        5
+      ],
+      "model__max_depth": [
+        18
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.72
+      ]
+    },
+    {
+      "model__n_estimators": [
+        389
+      ],
+      "model__num_leaves": [
+        22
+      ],
+      "model__max_depth": [
+        25
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.647
+      ]
+    },
+    {
+      "model__n_estimators": [
+        117
+      ],
+      "model__num_leaves": [
+        20
+      ],
+      "model__max_depth": [
+        7
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.371
+      ]
+    },
+    {
+      "model__n_estimators": [
+        607
+      ],
+      "model__num_leaves": [
+        21
+      ],
+      "model__max_depth": [
+        5
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.751
+      ]
+    },
+    {
+      "model__n_estimators": [
+        127
+      ],
+      "model__num_leaves": [
+        21
+      ],
+      "model__max_depth": [
+        12
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.21
+      ]
+    },
+    {
+      "model__n_estimators": [
+        202
+      ],
+      "model__num_leaves": [
+        22
+      ],
+      "model__max_depth": [
+        14
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.584
+      ]
+    },
+    {
+      "model__n_estimators": [
+        631
+      ],
+      "model__num_leaves": [
+        18
+      ],
+      "model__max_depth": [
+        17
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.796
+      ]
+    },
+    {
+      "model__n_estimators": [
+        669
+      ],
+      "model__num_leaves": [
+        12
+      ],
+      "model__max_depth": [
+        25
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.497
+      ]
+    },
+    {
+      "model__n_estimators": [
+        498
+      ],
+      "model__num_leaves": [
+        19
+      ],
+      "model__max_depth": [
+        12
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.683
+      ]
+    },
+    {
+      "model__n_estimators": [
+        224
+      ],
+      "model__num_leaves": [
+        16
+      ],
+      "model__max_depth": [
+        17
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.774
+      ]
+    },
+    {
+      "model__n_estimators": [
+        574
+      ],
+      "model__num_leaves": [
+        28
+      ],
+      "model__max_depth": [
+        25
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.306
+      ]
+    },
+    {
+      "model__n_estimators": [
+        461
+      ],
+      "model__num_leaves": [
+        10
+      ],
+      "model__max_depth": [
+        8
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.305
+      ]
+    },
+    {
+      "model__n_estimators": [
+        577
+      ],
+      "model__num_leaves": [
+        29
+      ],
+      "model__max_depth": [
+        7
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.624
+      ]
+    },
+    {
+      "model__n_estimators": [
+        460
+      ],
+      "model__num_leaves": [
+        9
+      ],
+      "model__max_depth": [
+        23
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.257
+      ]
+    },
+    {
+      "model__n_estimators": [
+        135
+      ],
+      "model__num_leaves": [
+        11
+      ],
+      "model__max_depth": [
+        21
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.459
+      ]
+    },
+    {
+      "model__n_estimators": [
+        612
+      ],
+      "model__num_leaves": [
+        26
+      ],
+      "model__max_depth": [
+        14
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.499
+      ]
+    },
+    {
+      "model__n_estimators": [
+        289
+      ],
+      "model__num_leaves": [
+        16
+      ],
+      "model__max_depth": [
+        7
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.524
+      ]
+    },
+    {
+      "model__n_estimators": [
+        256
+      ],
+      "model__num_leaves": [
+        12
+      ],
+      "model__max_depth": [
+        14
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.344
+      ]
+    },
+    {
+      "model__n_estimators": [
+        463
+      ],
+      "model__num_leaves": [
+        23
+      ],
+      "model__max_depth": [
+        17
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.527
+      ]
+    },
+    {
+      "model__n_estimators": [
+        162
+      ],
+      "model__num_leaves": [
+        8
+      ],
+      "model__max_depth": [
+        12
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.4
+      ]
+    },
+    {
+      "model__n_estimators": [
+        507
+      ],
+      "model__num_leaves": [
+        29
+      ],
+      "model__max_depth": [
+        17
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.394
+      ]
+    },
+    {
+      "model__n_estimators": [
+        63
+      ],
+      "model__num_leaves": [
+        21
+      ],
+      "model__max_depth": [
+        25
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.714
+      ]
+    },
+    {
+      "model__n_estimators": [
+        460
+      ],
+      "model__num_leaves": [
+        6
+      ],
+      "model__max_depth": [
+        7
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.527
+      ]
+    },
+    {
+      "model__n_estimators": [
+        435
+      ],
+      "model__num_leaves": [
+        18
+      ],
+      "model__max_depth": [
+        18
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.438
+      ]
+    },
+    {
+      "model__n_estimators": [
+        678
+      ],
+      "model__num_leaves": [
+        30
+      ],
+      "model__max_depth": [
+        11
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.389
+      ]
+    },
+    {
+      "model__n_estimators": [
+        622
+      ],
+      "model__num_leaves": [
+        16
+      ],
+      "model__max_depth": [
+        9
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.35
+      ]
+    },
+    {
+      "model__n_estimators": [
+        302
+      ],
+      "model__num_leaves": [
+        10
+      ],
+      "model__max_depth": [
+        22
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.518
+      ]
+    },
+    {
+      "model__n_estimators": [
+        261
+      ],
+      "model__num_leaves": [
+        17
+      ],
+      "model__max_depth": [
+        12
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.673
+      ]
+    },
+    {
+      "model__n_estimators": [
+        152
+      ],
+      "model__num_leaves": [
+        25
+      ],
+      "model__max_depth": [
+        14
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.422
+      ]
+    },
+    {
+      "model__n_estimators": [
+        563
+      ],
+      "model__num_leaves": [
+        22
+      ],
+      "model__max_depth": [
+        10
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.33
+      ]
+    },
+    {
+      "model__n_estimators": [
+        659
+      ],
+      "model__num_leaves": [
+        18
+      ],
+      "model__max_depth": [
+        11
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.784
+      ]
+    },
+    {
+      "model__n_estimators": [
+        567
+      ],
+      "model__num_leaves": [
+        20
+      ],
+      "model__max_depth": [
+        25
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.475
+      ]
+    },
+    {
+      "model__n_estimators": [
+        445
+      ],
+      "model__num_leaves": [
+        26
+      ],
+      "model__max_depth": [
+        22
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.292
+      ]
+    },
+    {
+      "model__n_estimators": [
+        106
+      ],
+      "model__num_leaves": [
+        20
+      ],
+      "model__max_depth": [
+        25
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.519
+      ]
+    },
+    {
+      "model__n_estimators": [
+        559
+      ],
+      "model__num_leaves": [
+        27
+      ],
+      "model__max_depth": [
+        10
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.721
+      ]
+    },
+    {
+      "model__n_estimators": [
+        111
+      ],
+      "model__num_leaves": [
+        25
+      ],
+      "model__max_depth": [
+        11
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.319
+      ]
+    },
+    {
+      "model__n_estimators": [
+        304
+      ],
+      "model__num_leaves": [
+        13
+      ],
+      "model__max_depth": [
+        21
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.771
+      ]
+    },
+    {
+      "model__n_estimators": [
+        643
+      ],
+      "model__num_leaves": [
+        27
+      ],
+      "model__max_depth": [
+        15
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.768
+      ]
+    },
+    {
+      "model__n_estimators": [
+        151
+      ],
+      "model__num_leaves": [
+        21
+      ],
+      "model__max_depth": [
+        10
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.409
+      ]
+    },
+    {
+      "model__n_estimators": [
+        247
+      ],
+      "model__num_leaves": [
+        10
+      ],
+      "model__max_depth": [
+        23
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.733
+      ]
+    },
+    {
+      "model__n_estimators": [
+        345
+      ],
+      "model__num_leaves": [
+        17
+      ],
+      "model__max_depth": [
+        6
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.237
+      ]
+    },
+    {
+      "model__n_estimators": [
+        509
+      ],
+      "model__num_leaves": [
+        14
+      ],
+      "model__max_depth": [
+        10
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.479
+      ]
+    },
+    {
+      "model__n_estimators": [
+        209
+      ],
+      "model__num_leaves": [
+        19
+      ],
+      "model__max_depth": [
+        21
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.693
+      ]
+    },
+    {
+      "model__n_estimators": [
+        590
+      ],
+      "model__num_leaves": [
+        8
+      ],
+      "model__max_depth": [
+        9
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.28
+      ]
+    },
+    {
+      "model__n_estimators": [
+        355
+      ],
+      "model__num_leaves": [
+        23
+      ],
+      "model__max_depth": [
+        10
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.457
+      ]
+    },
+    {
+      "model__n_estimators": [
+        693
+      ],
+      "model__num_leaves": [
+        27
+      ],
+      "model__max_depth": [
+        17
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.49
+      ]
+    },
+    {
+      "model__n_estimators": [
+        308
+      ],
+      "model__num_leaves": [
+        22
+      ],
+      "model__max_depth": [
+        22
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.629
+      ]
+    },
+    {
+      "model__n_estimators": [
+        545
+      ],
+      "model__num_leaves": [
+        13
+      ],
+      "model__max_depth": [
+        10
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.312
+      ]
+    },
+    {
+      "model__n_estimators": [
+        318
+      ],
+      "model__num_leaves": [
+        14
+      ],
+      "model__max_depth": [
+        19
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.422
+      ]
+    },
+    {
+      "model__n_estimators": [
+        458
+      ],
+      "model__num_leaves": [
+        25
+      ],
+      "model__max_depth": [
+        12
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.476
+      ]
+    },
+    {
+      "model__n_estimators": [
+        280
+      ],
+      "model__num_leaves": [
+        26
+      ],
+      "model__max_depth": [
+        16
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.448
+      ]
+    },
+    {
+      "model__n_estimators": [
+        234
+      ],
+      "model__num_leaves": [
+        24
+      ],
+      "model__max_depth": [
+        23
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.403
+      ]
+    },
+    {
+      "model__n_estimators": [
+        159
+      ],
+      "model__num_leaves": [
+        20
+      ],
+      "model__max_depth": [
+        12
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.573
+      ]
+    },
+    {
+      "model__n_estimators": [
+        224
+      ],
+      "model__num_leaves": [
+        21
+      ],
+      "model__max_depth": [
+        25
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.616
+      ]
+    },
+    {
+      "model__n_estimators": [
+        61
+      ],
+      "model__num_leaves": [
+        20
+      ],
+      "model__max_depth": [
+        17
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.442
+      ]
+    },
+    {
+      "model__n_estimators": [
+        307
+      ],
+      "model__num_leaves": [
+        9
+      ],
+      "model__max_depth": [
+        11
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.772
+      ]
+    },
+    {
+      "model__n_estimators": [
+        533
+      ],
+      "model__num_leaves": [
+        5
+      ],
+      "model__max_depth": [
+        18
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.455
+      ]
+    },
+    {
+      "model__n_estimators": [
+        510
+      ],
+      "model__num_leaves": [
+        29
+      ],
+      "model__max_depth": [
+        18
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.377
+      ]
+    },
+    {
+      "model__n_estimators": [
+        613
+      ],
+      "model__num_leaves": [
+        14
+      ],
+      "model__max_depth": [
+        21
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.79
+      ]
+    },
+    {
+      "model__n_estimators": [
+        204
+      ],
+      "model__num_leaves": [
+        8
+      ],
+      "model__max_depth": [
+        25
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.63
+      ]
+    },
+    {
+      "model__n_estimators": [
+        171
+      ],
+      "model__num_leaves": [
+        28
+      ],
+      "model__max_depth": [
+        25
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.573
+      ]
+    },
+    {
+      "model__n_estimators": [
+        261
+      ],
+      "model__num_leaves": [
+        7
+      ],
+      "model__max_depth": [
+        15
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.658
+      ]
+    },
+    {
+      "model__n_estimators": [
+        153
+      ],
+      "model__num_leaves": [
+        17
+      ],
+      "model__max_depth": [
+        12
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.765
+      ]
+    },
+    {
+      "model__n_estimators": [
+        458
+      ],
+      "model__num_leaves": [
+        11
+      ],
+      "model__max_depth": [
+        18
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.558
+      ]
+    },
+    {
+      "model__n_estimators": [
+        201
+      ],
+      "model__num_leaves": [
+        16
+      ],
+      "model__max_depth": [
+        18
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.759
+      ]
+    },
+    {
+      "model__n_estimators": [
+        577
+      ],
+      "model__num_leaves": [
+        14
+      ],
+      "model__max_depth": [
+        9
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.675
+      ]
+    },
+    {
+      "model__n_estimators": [
+        84
+      ],
+      "model__num_leaves": [
+        21
+      ],
+      "model__max_depth": [
+        12
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.552
+      ]
+    },
+    {
+      "model__n_estimators": [
+        688
+      ],
+      "model__num_leaves": [
+        19
+      ],
+      "model__max_depth": [
+        25
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.678
+      ]
+    },
+    {
+      "model__n_estimators": [
+        653
+      ],
+      "model__num_leaves": [
+        17
+      ],
+      "model__max_depth": [
+        19
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.522
+      ]
+    },
+    {
+      "model__n_estimators": [
+        235
+      ],
+      "model__num_leaves": [
+        10
+      ],
+      "model__max_depth": [
+        13
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.763
+      ]
+    },
+    {
+      "model__n_estimators": [
+        586
+      ],
+      "model__num_leaves": [
+        10
+      ],
+      "model__max_depth": [
+        9
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.444
+      ]
+    },
+    {
+      "model__n_estimators": [
+        609
+      ],
+      "model__num_leaves": [
+        8
+      ],
+      "model__max_depth": [
+        19
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.308
+      ]
+    },
+    {
+      "model__n_estimators": [
+        52
+      ],
+      "model__num_leaves": [
+        24
+      ],
+      "model__max_depth": [
+        15
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.317
+      ]
+    },
+    {
+      "model__n_estimators": [
+        291
+      ],
+      "model__num_leaves": [
+        7
+      ],
+      "model__max_depth": [
+        5
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.799
+      ]
+    },
+    {
+      "model__n_estimators": [
+        657
+      ],
+      "model__num_leaves": [
+        19
+      ],
+      "model__max_depth": [
+        6
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.568
+      ]
+    },
+    {
+      "model__n_estimators": [
+        82
+      ],
+      "model__num_leaves": [
+        30
+      ],
+      "model__max_depth": [
+        16
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.457
+      ]
+    },
+    {
+      "model__n_estimators": [
+        568
+      ],
+      "model__num_leaves": [
+        11
+      ],
+      "model__max_depth": [
+        18
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.582
+      ]
+    },
+    {
+      "model__n_estimators": [
+        653
+      ],
+      "model__num_leaves": [
+        21
+      ],
+      "model__max_depth": [
+        6
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.739
+      ]
+    },
+    {
+      "model__n_estimators": [
+        145
+      ],
+      "model__num_leaves": [
+        26
+      ],
+      "model__max_depth": [
+        7
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.559
+      ]
+    },
+    {
+      "model__n_estimators": [
+        541
+      ],
+      "model__num_leaves": [
+        19
+      ],
+      "model__max_depth": [
+        8
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.3
+      ]
+    },
+    {
+      "model__n_estimators": [
+        245
+      ],
+      "model__num_leaves": [
+        27
+      ],
+      "model__max_depth": [
+        17
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.22
+      ]
+    },
+    {
+      "model__n_estimators": [
+        217
+      ],
+      "model__num_leaves": [
+        6
+      ],
+      "model__max_depth": [
+        18
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.436
+      ]
+    },
+    {
+      "model__n_estimators": [
+        523
+      ],
+      "model__num_leaves": [
+        21
+      ],
+      "model__max_depth": [
+        24
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.367
+      ]
+    },
+    {
+      "model__n_estimators": [
+        568
+      ],
+      "model__num_leaves": [
+        7
+      ],
+      "model__max_depth": [
+        22
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.261
+      ]
+    },
+    {
+      "model__n_estimators": [
+        587
+      ],
+      "model__num_leaves": [
+        23
+      ],
+      "model__max_depth": [
+        6
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.335
+      ]
+    },
+    {
+      "model__n_estimators": [
+        664
+      ],
+      "model__num_leaves": [
+        6
+      ],
+      "model__max_depth": [
+        6
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.203
+      ]
+    },
+    {
+      "model__n_estimators": [
+        395
+      ],
+      "model__num_leaves": [
+        6
+      ],
+      "model__max_depth": [
+        11
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.548
+      ]
+    },
+    {
+      "model__n_estimators": [
+        688
+      ],
+      "model__num_leaves": [
+        10
+      ],
+      "model__max_depth": [
+        13
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.723
+      ]
+    },
+    {
+      "model__n_estimators": [
+        591
+      ],
+      "model__num_leaves": [
+        19
+      ],
+      "model__max_depth": [
+        22
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.569
+      ]
+    },
+    {
+      "model__n_estimators": [
+        536
+      ],
+      "model__num_leaves": [
+        19
+      ],
+      "model__max_depth": [
+        11
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.67
+      ]
+    },
+    {
+      "model__n_estimators": [
+        339
+      ],
+      "model__num_leaves": [
+        23
+      ],
+      "model__max_depth": [
+        7
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.772
+      ]
+    },
+    {
+      "model__n_estimators": [
+        670
+      ],
+      "model__num_leaves": [
+        28
+      ],
+      "model__max_depth": [
+        22
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.443
+      ]
+    },
+    {
+      "model__n_estimators": [
+        646
+      ],
+      "model__num_leaves": [
+        29
+      ],
+      "model__max_depth": [
+        19
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.541
+      ]
+    },
+    {
+      "model__n_estimators": [
+        440
+      ],
+      "model__num_leaves": [
+        15
+      ],
+      "model__max_depth": [
+        24
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.483
+      ]
+    },
+    {
+      "model__n_estimators": [
+        103
+      ],
+      "model__num_leaves": [
+        6
+      ],
+      "model__max_depth": [
+        17
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.356
+      ]
+    },
+    {
+      "model__n_estimators": [
+        253
+      ],
+      "model__num_leaves": [
+        30
+      ],
+      "model__max_depth": [
+        17
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.396
+      ]
+    },
+    {
+      "model__n_estimators": [
+        119
+      ],
+      "model__num_leaves": [
+        28
+      ],
+      "model__max_depth": [
+        13
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.361
+      ]
+    },
+    {
+      "model__n_estimators": [
+        489
+      ],
+      "model__num_leaves": [
+        20
+      ],
+      "model__max_depth": [
+        20
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.217
+      ]
+    },
+    {
+      "model__n_estimators": [
+        322
+      ],
+      "model__num_leaves": [
+        8
+      ],
+      "model__max_depth": [
+        13
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.58
+      ]
+    },
+    {
+      "model__n_estimators": [
+        473
+      ],
+      "model__num_leaves": [
+        20
+      ],
+      "model__max_depth": [
+        22
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.536
+      ]
+    },
+    {
+      "model__n_estimators": [
+        671
+      ],
+      "model__num_leaves": [
+        6
+      ],
+      "model__max_depth": [
+        7
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.651
+      ]
+    },
+    {
+      "model__n_estimators": [
+        256
+      ],
+      "model__num_leaves": [
+        14
+      ],
+      "model__max_depth": [
+        23
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.558
+      ]
+    },
+    {
+      "model__n_estimators": [
+        537
+      ],
+      "model__num_leaves": [
+        14
+      ],
+      "model__max_depth": [
+        12
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.52
+      ]
+    },
+    {
+      "model__n_estimators": [
+        567
+      ],
+      "model__num_leaves": [
+        7
+      ],
+      "model__max_depth": [
+        17
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.488
+      ]
+    },
+    {
+      "model__n_estimators": [
+        83
+      ],
+      "model__num_leaves": [
+        14
+      ],
+      "model__max_depth": [
+        9
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.405
+      ]
+    },
+    {
+      "model__n_estimators": [
+        672
+      ],
+      "model__num_leaves": [
+        7
+      ],
+      "model__max_depth": [
+        6
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.553
+      ]
+    },
+    {
+      "model__n_estimators": [
+        218
+      ],
+      "model__num_leaves": [
+        26
+      ],
+      "model__max_depth": [
+        25
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.46
+      ]
+    },
+    {
+      "model__n_estimators": [
+        661
+      ],
+      "model__num_leaves": [
+        27
+      ],
+      "model__max_depth": [
+        17
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.485
+      ]
+    },
+    {
+      "model__n_estimators": [
+        596
+      ],
+      "model__num_leaves": [
+        19
+      ],
+      "model__max_depth": [
+        21
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.665
+      ]
+    },
+    {
+      "model__n_estimators": [
+        174
+      ],
+      "model__num_leaves": [
+        9
+      ],
+      "model__max_depth": [
+        7
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.298
+      ]
+    },
+    {
+      "model__n_estimators": [
+        210
+      ],
+      "model__num_leaves": [
+        29
+      ],
+      "model__max_depth": [
+        20
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.624
+      ]
+    },
+    {
+      "model__n_estimators": [
+        85
+      ],
+      "model__num_leaves": [
+        5
+      ],
+      "model__max_depth": [
+        9
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.303
+      ]
+    },
+    {
+      "model__n_estimators": [
+        325
+      ],
+      "model__num_leaves": [
+        16
+      ],
+      "model__max_depth": [
+        19
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.231
+      ]
+    },
+    {
+      "model__n_estimators": [
+        569
+      ],
+      "model__num_leaves": [
+        20
+      ],
+      "model__max_depth": [
+        16
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.29
+      ]
+    },
+    {
+      "model__n_estimators": [
+        509
+      ],
+      "model__num_leaves": [
+        30
+      ],
+      "model__max_depth": [
+        21
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.605
+      ]
+    },
+    {
+      "model__n_estimators": [
+        368
+      ],
+      "model__num_leaves": [
+        8
+      ],
+      "model__max_depth": [
+        11
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.443
+      ]
+    },
+    {
+      "model__n_estimators": [
+        616
+      ],
+      "model__num_leaves": [
+        18
+      ],
+      "model__max_depth": [
+        11
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.586
+      ]
+    },
+    {
+      "model__n_estimators": [
+        251
+      ],
+      "model__num_leaves": [
+        7
+      ],
+      "model__max_depth": [
+        11
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.38
+      ]
+    },
+    {
+      "model__n_estimators": [
+        405
+      ],
+      "model__num_leaves": [
+        8
+      ],
+      "model__max_depth": [
+        20
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.313
+      ]
+    },
+    {
+      "model__n_estimators": [
+        304
+      ],
+      "model__num_leaves": [
+        22
+      ],
+      "model__max_depth": [
+        5
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.245
+      ]
+    },
+    {
+      "model__n_estimators": [
+        227
+      ],
+      "model__num_leaves": [
+        21
+      ],
+      "model__max_depth": [
+        20
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.778
+      ]
+    },
+    {
+      "model__n_estimators": [
+        67
+      ],
+      "model__num_leaves": [
+        16
+      ],
+      "model__max_depth": [
+        24
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.606
+      ]
+    },
+    {
+      "model__n_estimators": [
+        100
+      ],
+      "model__num_leaves": [
+        6
+      ],
+      "model__max_depth": [
+        18
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.587
+      ]
+    },
+    {
+      "model__n_estimators": [
+        471
+      ],
+      "model__num_leaves": [
+        11
+      ],
+      "model__max_depth": [
+        8
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.501
+      ]
+    },
+    {
+      "model__n_estimators": [
+        172
+      ],
+      "model__num_leaves": [
+        28
+      ],
+      "model__max_depth": [
+        25
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.651
+      ]
+    },
+    {
+      "model__n_estimators": [
+        458
+      ],
+      "model__num_leaves": [
+        25
+      ],
+      "model__max_depth": [
+        16
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.664
+      ]
+    },
+    {
+      "model__n_estimators": [
+        112
+      ],
+      "model__num_leaves": [
+        24
+      ],
+      "model__max_depth": [
+        8
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.579
+      ]
+    },
+    {
+      "model__n_estimators": [
+        479
+      ],
+      "model__num_leaves": [
+        26
+      ],
+      "model__max_depth": [
+        8
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.755
+      ]
+    },
+    {
+      "model__n_estimators": [
+        279
+      ],
+      "model__num_leaves": [
+        28
+      ],
+      "model__max_depth": [
+        11
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.268
+      ]
+    },
+    {
+      "model__n_estimators": [
+        508
+      ],
+      "model__num_leaves": [
+        14
+      ],
+      "model__max_depth": [
+        16
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.556
+      ]
+    },
+    {
+      "model__n_estimators": [
+        428
+      ],
+      "model__num_leaves": [
+        24
+      ],
+      "model__max_depth": [
+        8
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.24
+      ]
+    },
+    {
+      "model__n_estimators": [
+        667
+      ],
+      "model__num_leaves": [
+        19
+      ],
+      "model__max_depth": [
+        15
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.703
+      ]
+    },
+    {
+      "model__n_estimators": [
+        271
+      ],
+      "model__num_leaves": [
+        28
+      ],
+      "model__max_depth": [
+        8
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.733
+      ]
+    },
+    {
+      "model__n_estimators": [
+        228
+      ],
+      "model__num_leaves": [
+        6
+      ],
+      "model__max_depth": [
+        6
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.293
+      ]
+    },
+    {
+      "model__n_estimators": [
+        96
+      ],
+      "model__num_leaves": [
+        15
+      ],
+      "model__max_depth": [
+        25
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.371
+      ]
+    },
+    {
+      "model__n_estimators": [
+        597
+      ],
+      "model__num_leaves": [
+        22
+      ],
+      "model__max_depth": [
+        14
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.787
+      ]
+    },
+    {
+      "model__n_estimators": [
+        663
+      ],
+      "model__num_leaves": [
+        6
+      ],
+      "model__max_depth": [
+        11
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.392
+      ]
+    },
+    {
+      "model__n_estimators": [
+        525
+      ],
+      "model__num_leaves": [
+        28
+      ],
+      "model__max_depth": [
+        9
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.724
+      ]
+    },
+    {
+      "model__n_estimators": [
+        607
+      ],
+      "model__num_leaves": [
+        5
+      ],
+      "model__max_depth": [
+        19
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.345
+      ]
+    },
+    {
+      "model__n_estimators": [
+        229
+      ],
+      "model__num_leaves": [
+        18
+      ],
+      "model__max_depth": [
+        18
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.666
+      ]
+    },
+    {
+      "model__n_estimators": [
+        307
+      ],
+      "model__num_leaves": [
+        5
+      ],
+      "model__max_depth": [
+        7
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.536
+      ]
+    },
+    {
+      "model__n_estimators": [
+        473
+      ],
+      "model__num_leaves": [
+        21
+      ],
+      "model__max_depth": [
+        8
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.477
+      ]
+    },
+    {
+      "model__n_estimators": [
+        524
+      ],
+      "model__num_leaves": [
+        18
+      ],
+      "model__max_depth": [
+        17
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.483
+      ]
+    },
+    {
+      "model__n_estimators": [
+        351
+      ],
+      "model__num_leaves": [
+        15
+      ],
+      "model__max_depth": [
+        11
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.463
+      ]
+    },
+    {
+      "model__n_estimators": [
+        560
+      ],
+      "model__num_leaves": [
+        20
+      ],
+      "model__max_depth": [
+        10
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.304
+      ]
+    },
+    {
+      "model__n_estimators": [
+        293
+      ],
+      "model__num_leaves": [
+        10
+      ],
+      "model__max_depth": [
+        8
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.358
+      ]
+    },
+    {
+      "model__n_estimators": [
+        238
+      ],
+      "model__num_leaves": [
+        17
+      ],
+      "model__max_depth": [
+        19
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.427
+      ]
+    },
+    {
+      "model__n_estimators": [
+        195
+      ],
+      "model__num_leaves": [
+        14
+      ],
+      "model__max_depth": [
+        8
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.719
+      ]
+    },
+    {
+      "model__n_estimators": [
+        251
+      ],
+      "model__num_leaves": [
+        24
+      ],
+      "model__max_depth": [
+        5
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.296
+      ]
+    },
+    {
+      "model__n_estimators": [
+        596
+      ],
+      "model__num_leaves": [
+        11
+      ],
+      "model__max_depth": [
+        19
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.678
+      ]
+    },
+    {
+      "model__n_estimators": [
+        433
+      ],
+      "model__num_leaves": [
+        5
+      ],
+      "model__max_depth": [
+        17
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.262
+      ]
+    },
+    {
+      "model__n_estimators": [
+        242
+      ],
+      "model__num_leaves": [
+        7
+      ],
+      "model__max_depth": [
+        23
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.669
+      ]
+    },
+    {
+      "model__n_estimators": [
+        368
+      ],
+      "model__num_leaves": [
+        15
+      ],
+      "model__max_depth": [
+        14
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.398
+      ]
+    },
+    {
+      "model__n_estimators": [
+        116
+      ],
+      "model__num_leaves": [
+        24
+      ],
+      "model__max_depth": [
+        11
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.621
+      ]
+    },
+    {
+      "model__n_estimators": [
+        609
+      ],
+      "model__num_leaves": [
+        30
+      ],
+      "model__max_depth": [
+        18
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.24
+      ]
+    },
+    {
+      "model__n_estimators": [
+        413
+      ],
+      "model__num_leaves": [
+        22
+      ],
+      "model__max_depth": [
+        18
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.2
+      ]
+    },
+    {
+      "model__n_estimators": [
+        114
+      ],
+      "model__num_leaves": [
+        29
+      ],
+      "model__max_depth": [
+        20
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.544
+      ]
+    },
+    {
+      "model__n_estimators": [
+        673
+      ],
+      "model__num_leaves": [
+        29
+      ],
+      "model__max_depth": [
+        10
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.506
+      ]
+    },
+    {
+      "model__n_estimators": [
+        139
+      ],
+      "model__num_leaves": [
+        15
+      ],
+      "model__max_depth": [
+        24
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.466
+      ]
+    },
+    {
+      "model__n_estimators": [
+        425
+      ],
+      "model__num_leaves": [
+        15
+      ],
+      "model__max_depth": [
+        18
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.581
+      ]
+    },
+    {
+      "model__n_estimators": [
+        468
+      ],
+      "model__num_leaves": [
+        28
+      ],
+      "model__max_depth": [
+        16
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.507
+      ]
+    },
+    {
+      "model__n_estimators": [
+        234
+      ],
+      "model__num_leaves": [
+        19
+      ],
+      "model__max_depth": [
+        25
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.689
+      ]
+    },
+    {
+      "model__n_estimators": [
+        201
+      ],
+      "model__num_leaves": [
+        24
+      ],
+      "model__max_depth": [
+        8
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.582
+      ]
+    },
+    {
+      "model__n_estimators": [
+        250
+      ],
+      "model__num_leaves": [
+        8
+      ],
+      "model__max_depth": [
+        12
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.643
+      ]
+    },
+    {
+      "model__n_estimators": [
+        189
+      ],
+      "model__num_leaves": [
+        17
+      ],
+      "model__max_depth": [
+        10
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.795
+      ]
+    },
+    {
+      "model__n_estimators": [
+        439
+      ],
+      "model__num_leaves": [
+        27
+      ],
+      "model__max_depth": [
+        19
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.422
+      ]
+    },
+    {
+      "model__n_estimators": [
+        576
+      ],
+      "model__num_leaves": [
+        7
+      ],
+      "model__max_depth": [
+        11
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.73
+      ]
+    },
+    {
+      "model__n_estimators": [
+        101
+      ],
+      "model__num_leaves": [
+        12
+      ],
+      "model__max_depth": [
+        19
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.207
+      ]
+    },
+    {
+      "model__n_estimators": [
+        365
+      ],
+      "model__num_leaves": [
+        8
+      ],
+      "model__max_depth": [
+        20
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.333
+      ]
+    },
+    {
+      "model__n_estimators": [
+        110
+      ],
+      "model__num_leaves": [
+        29
+      ],
+      "model__max_depth": [
+        9
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.254
+      ]
+    },
+    {
+      "model__n_estimators": [
+        665
+      ],
+      "model__num_leaves": [
+        8
+      ],
+      "model__max_depth": [
+        21
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.329
+      ]
+    },
+    {
+      "model__n_estimators": [
+        614
+      ],
+      "model__num_leaves": [
+        29
+      ],
+      "model__max_depth": [
+        11
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.2
+      ]
+    },
+    {
+      "model__n_estimators": [
+        190
+      ],
+      "model__num_leaves": [
+        19
+      ],
+      "model__max_depth": [
+        22
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.338
+      ]
+    },
+    {
+      "model__n_estimators": [
+        550
+      ],
+      "model__num_leaves": [
+        24
+      ],
+      "model__max_depth": [
+        6
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.647
+      ]
+    },
+    {
+      "model__n_estimators": [
+        81
+      ],
+      "model__num_leaves": [
+        21
+      ],
+      "model__max_depth": [
+        13
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.397
+      ]
+    },
+    {
+      "model__n_estimators": [
+        119
+      ],
+      "model__num_leaves": [
+        11
+      ],
+      "model__max_depth": [
+        23
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.483
+      ]
+    },
+    {
+      "model__n_estimators": [
+        610
+      ],
+      "model__num_leaves": [
+        23
+      ],
+      "model__max_depth": [
+        16
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.227
+      ]
+    },
+    {
+      "model__n_estimators": [
+        158
+      ],
+      "model__num_leaves": [
+        25
+      ],
+      "model__max_depth": [
+        20
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.523
+      ]
+    },
+    {
+      "model__n_estimators": [
+        263
+      ],
+      "model__num_leaves": [
+        25
+      ],
+      "model__max_depth": [
+        9
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.33
+      ]
+    },
+    {
+      "model__n_estimators": [
+        70
+      ],
+      "model__num_leaves": [
+        11
+      ],
+      "model__max_depth": [
+        21
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.63
+      ]
+    },
+    {
+      "model__n_estimators": [
+        674
+      ],
+      "model__num_leaves": [
+        22
+      ],
+      "model__max_depth": [
+        24
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.361
+      ]
+    },
+    {
+      "model__n_estimators": [
+        599
+      ],
+      "model__num_leaves": [
+        30
+      ],
+      "model__max_depth": [
+        20
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.439
+      ]
+    },
+    {
+      "model__n_estimators": [
+        455
+      ],
+      "model__num_leaves": [
+        15
+      ],
+      "model__max_depth": [
+        8
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.276
+      ]
+    },
+    {
+      "model__n_estimators": [
+        524
+      ],
+      "model__num_leaves": [
+        26
+      ],
+      "model__max_depth": [
+        6
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.747
+      ]
+    },
+    {
+      "model__n_estimators": [
+        595
+      ],
+      "model__num_leaves": [
+        14
+      ],
+      "model__max_depth": [
+        21
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.555
+      ]
+    },
+    {
+      "model__n_estimators": [
+        443
+      ],
+      "model__num_leaves": [
+        17
+      ],
+      "model__max_depth": [
+        10
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.607
+      ]
+    },
+    {
+      "model__n_estimators": [
+        542
+      ],
+      "model__num_leaves": [
+        21
+      ],
+      "model__max_depth": [
+        7
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.706
+      ]
+    },
+    {
+      "model__n_estimators": [
+        311
+      ],
+      "model__num_leaves": [
+        9
+      ],
+      "model__max_depth": [
+        5
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.55
+      ]
+    },
+    {
+      "model__n_estimators": [
+        599
+      ],
+      "model__num_leaves": [
+        22
+      ],
+      "model__max_depth": [
+        12
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.698
+      ]
+    },
+    {
+      "model__n_estimators": [
+        269
+      ],
+      "model__num_leaves": [
+        22
+      ],
+      "model__max_depth": [
+        18
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.764
+      ]
+    },
+    {
+      "model__n_estimators": [
+        272
+      ],
+      "model__num_leaves": [
+        5
+      ],
+      "model__max_depth": [
+        11
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.647
+      ]
+    },
+    {
+      "model__n_estimators": [
+        512
+      ],
+      "model__num_leaves": [
+        24
+      ],
+      "model__max_depth": [
+        19
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.278
+      ]
+    },
+    {
+      "model__n_estimators": [
+        466
+      ],
+      "model__num_leaves": [
+        27
+      ],
+      "model__max_depth": [
+        24
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.598
+      ]
+    },
+    {
+      "model__n_estimators": [
+        665
+      ],
+      "model__num_leaves": [
+        17
+      ],
+      "model__max_depth": [
+        10
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.602
+      ]
+    },
+    {
+      "model__n_estimators": [
+        498
+      ],
+      "model__num_leaves": [
+        6
+      ],
+      "model__max_depth": [
+        16
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.592
+      ]
+    },
+    {
+      "model__n_estimators": [
+        476
+      ],
+      "model__num_leaves": [
+        21
+      ],
+      "model__max_depth": [
+        20
+      ],
+      "model__min_child_samples": [
+        14
+      ],
+      "model__subsample": [
+        0.663
+      ]
+    },
+    {
+      "model__n_estimators": [
+        450
+      ],
+      "model__num_leaves": [
+        19
+      ],
+      "model__max_depth": [
+        15
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.785
+      ]
+    },
+    {
+      "model__n_estimators": [
+        133
+      ],
+      "model__num_leaves": [
+        22
+      ],
+      "model__max_depth": [
+        11
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.753
+      ]
+    },
+    {
+      "model__n_estimators": [
+        345
+      ],
+      "model__num_leaves": [
+        28
+      ],
+      "model__max_depth": [
+        22
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.278
+      ]
+    },
+    {
+      "model__n_estimators": [
+        454
+      ],
+      "model__num_leaves": [
+        25
+      ],
+      "model__max_depth": [
+        11
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.253
+      ]
+    },
+    {
+      "model__n_estimators": [
+        389
+      ],
+      "model__num_leaves": [
+        23
+      ],
+      "model__max_depth": [
+        14
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.232
+      ]
+    },
+    {
+      "model__n_estimators": [
+        149
+      ],
+      "model__num_leaves": [
+        7
+      ],
+      "model__max_depth": [
+        23
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.686
+      ]
+    },
+    {
+      "model__n_estimators": [
+        332
+      ],
+      "model__num_leaves": [
+        8
+      ],
+      "model__max_depth": [
+        23
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.64
+      ]
+    },
+    {
+      "model__n_estimators": [
+        534
+      ],
+      "model__num_leaves": [
+        15
+      ],
+      "model__max_depth": [
+        13
+      ],
+      "model__min_child_samples": [
+        11
+      ],
+      "model__subsample": [
+        0.205
+      ]
+    },
+    {
+      "model__n_estimators": [
+        92
+      ],
+      "model__num_leaves": [
+        23
+      ],
+      "model__max_depth": [
+        23
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.306
+      ]
+    },
+    {
+      "model__n_estimators": [
+        174
+      ],
+      "model__num_leaves": [
+        5
+      ],
+      "model__max_depth": [
+        19
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.311
+      ]
+    },
+    {
+      "model__n_estimators": [
+        299
+      ],
+      "model__num_leaves": [
+        29
+      ],
+      "model__max_depth": [
+        9
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.563
+      ]
+    },
+    {
+      "model__n_estimators": [
+        54
+      ],
+      "model__num_leaves": [
+        7
+      ],
+      "model__max_depth": [
+        18
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.346
+      ]
+    },
+    {
+      "model__n_estimators": [
+        167
+      ],
+      "model__num_leaves": [
+        11
+      ],
+      "model__max_depth": [
+        18
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.534
+      ]
+    },
+    {
+      "model__n_estimators": [
+        381
+      ],
+      "model__num_leaves": [
+        12
+      ],
+      "model__max_depth": [
+        17
+      ],
+      "model__min_child_samples": [
+        13
+      ],
+      "model__subsample": [
+        0.612
+      ]
+    },
+    {
+      "model__n_estimators": [
+        94
+      ],
+      "model__num_leaves": [
+        8
+      ],
+      "model__max_depth": [
+        7
+      ],
+      "model__min_child_samples": [
+        15
+      ],
+      "model__subsample": [
+        0.482
+      ]
+    },
+    {
+      "model__n_estimators": [
+        255
+      ],
+      "model__num_leaves": [
+        22
+      ],
+      "model__max_depth": [
+        14
+      ],
+      "model__min_child_samples": [
+        12
+      ],
+      "model__subsample": [
+        0.498
+      ]
+    },
+    {
+      "model__n_estimators": [
+        423
+      ],
+      "model__num_leaves": [
+        10
+      ],
+      "model__max_depth": [
+        24
+      ],
+      "model__min_child_samples": [
+        10
+      ],
+      "model__subsample": [
+        0.534
+      ]
+    }
+  ],
+  "logbb_classification_threshold": -1.0,
+  "versions": {
+    "python": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:28:47) [Clang 19.1.7 ]",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.7.2",
+    "lightgbm": "4.6.0",
+    "joblib": "1.5.3"
+  }
+}
