@@ -1,15 +1,5 @@
 #!/usr/bin/env python3
 """
-Ensure all models are in 
-
-python predict_inxight_logbb_pred_matched.py \
-    --external-csv ../../datasets/all_valid_dataset_breaks_SLogP_gt_5_labelled.csv \
-    --model-dir ../all_models_results/fitted_models \
-    --models custom_mtl_original,lightgbm_mse_regression,dummy_mean_regression,dummy_prior_classification,logbb_pred_shaker_retrained \
-    --output-dir bbb_not_drug_like
-
-All current models
-------------------
 python 09_predict_external_set.py \
     --external-csv ../datasets/not_druglike_b3db_labelled.csv \
     --model-dir ./all_models/fitted_models \

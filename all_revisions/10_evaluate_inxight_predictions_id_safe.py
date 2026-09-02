@@ -31,7 +31,7 @@ python ./10_evaluate_inxight_predictions_id_safe.py \
     --external ../datasets/not_druglike_b3db_labelled.csv \
     --predictions external_test_set/all_selected_models.csv \
     --output-dir external_test_set/01_eval/ \
-    --n-bootstrap 500
+    --n-bootstrap 500 --allow-row-order-id-repair
 
 --primary-model xgboost_aft_logistic_clean \
 """

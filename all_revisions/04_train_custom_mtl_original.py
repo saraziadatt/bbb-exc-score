@@ -542,7 +542,6 @@ def fit_fold_imputer(
     )
 
 
-
 def tune_and_fit_custom_mtl(
     *,
     X_train: np.ndarray,
@@ -553,20 +552,32 @@ def tune_and_fit_custom_mtl(
     n_trials: int,
     boost_rounds: int,
     margin: float,
-    inner_beta: float,
-    final_beta: float,
 ) -> tuple[lgb.Booster, dict[str, Any], float]:
     optuna.logging.set_verbosity(optuna.logging.WARNING)
 
     def objective(trial: optuna.Trial) -> float:
         fold_mse: list[float] = []
-        margin_buffer = trial.suggest_float("margin_buffer", 0.15, 0.35, step=0.02)
+
+        # Custom-loss hyperparameters
+        beta = trial.suggest_float("beta", 0.5, 5.0, step=0.25)
+        margin_buffer = trial.suggest_float(
+            "margin_buffer",
+            0.15,
+            0.35,
+            step=0.02,
+        )
+
+        # LightGBM hyperparameters
         learning_rate = trial.suggest_float("learning_rate", 0.01, 0.3)
         num_leaves = trial.suggest_int("num_leaves", 20, 150)
         max_depth = trial.suggest_int("max_depth", 3, 12)
         min_child_samples = trial.suggest_int("min_child_samples", 5, 50)
         subsample = trial.suggest_float("subsample", 0.5, 1.0)
-        colsample_bytree = trial.suggest_float("colsample_bytree", 0.5, 1.0)
+        colsample_bytree = trial.suggest_float(
+            "colsample_bytree",
+            0.5,
+            1.0,
+        )
 
         for inner_number, (fit_rel, val_rel) in enumerate(inner_splits):
             train_data = lgb.Dataset(
@@ -574,13 +585,15 @@ def tune_and_fit_custom_mtl(
                 label=y_reg_train[fit_rel],
                 free_raw_data=False,
             )
+
             inner_seed = seed + 100 * inner_number
+
             parameters = {
                 "objective": custom_multi_loss(
                     y_class_train[fit_rel],
                     y_reg_train[fit_rel],
                     alpha=1.0,
-                    beta=inner_beta,
+                    beta=beta,
                     margin=margin,
                     margin_buffer=margin_buffer,
                 ),
@@ -602,9 +615,17 @@ def tune_and_fit_custom_mtl(
                 "force_col_wise": True,
                 "num_threads": 1,
             }
-            model = lgb.train(parameters, train_data, num_boost_round=boost_rounds)
+
+            model = lgb.train(
+                parameters,
+                train_data,
+                num_boost_round=boost_rounds,
+            )
+
             validation_prediction = model.predict(X_train[val_rel])
+
             measured_validation = np.isfinite(y_reg_train[val_rel])
+
             if np.any(measured_validation):
                 fold_mse.append(
                     float(
@@ -614,29 +635,42 @@ def tune_and_fit_custom_mtl(
                         )
                     )
                 )
+
         if not fold_mse:
             raise RuntimeError(
                 "No measured validation observations were available during "
                 "custom-MTL tuning."
             )
+
         return float(np.mean(fold_mse))
 
     study = optuna.create_study(
         direction="minimize",
         sampler=optuna.samplers.TPESampler(seed=seed),
     )
-    study.optimize(objective, n_trials=n_trials, show_progress_bar=False)
+
+    study.optimize(
+        objective,
+        n_trials=n_trials,
+        show_progress_bar=False,
+    )
+
+    # Best hyperparameters from inner CV
     selected = dict(study.best_trial.params)
+
+    beta = float(selected.pop("beta"))
     margin_buffer = float(selected.pop("margin_buffer"))
+
+    # Fit final model on all outer-training data using the
+    # beta selected during inner CV.
     final_parameters = {
         "objective": custom_multi_loss(
             y_class_train,
             y_reg_train,
             alpha=1.0,
-            beta=final_beta,
+            beta=beta,
             margin=margin,
             margin_buffer=margin_buffer,
-            k=10,
         ),
         "metric": "None",
         "boosting_type": "gbdt",
@@ -651,21 +685,32 @@ def tune_and_fit_custom_mtl(
         "force_col_wise": True,
         "num_threads": 1,
     }
-    final_data = lgb.Dataset(X_train, label=y_reg_train, free_raw_data=False)
+
+    final_data = lgb.Dataset(
+        X_train,
+        label=y_reg_train,
+        free_raw_data=False,
+    )
+
     final_model = lgb.train(
         final_parameters,
         final_data,
         num_boost_round=boost_rounds,
     )
+
     reported_parameters = {
         **selected,
         "margin_buffer": margin_buffer,
+        "beta": beta,
         "alpha": 1.0,
-        "inner_beta": inner_beta,
-        "final_beta": final_beta,
         "num_boost_round": boost_rounds,
     }
-    return final_model, reported_parameters, float(study.best_value)
+
+    return (
+        final_model,
+        reported_parameters,
+        float(study.best_value),
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -937,8 +982,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--logbb-threshold", type=float, default=-1.0)
     parser.add_argument("--mtl-trials", type=int, default=30)
     parser.add_argument("--mtl-boost-rounds", type=int, default=1000)
-    parser.add_argument("--mtl-inner-beta", type=float, default=2.5)
-    parser.add_argument("--mtl-final-beta", type=float, default=2.5)
+    # parser.add_argument("--mtl-inner-beta", type=float, default=2.5)
+    # parser.add_argument("--mtl-final-beta", type=float, default=2.5)
     parser.add_argument("--skip-model-saving", action="store_true")
     parser.add_argument("--allow-label-disagreement", action="store_true")
     parser.add_argument(
@@ -1043,8 +1088,6 @@ def main() -> None:
             n_trials=args.mtl_trials,
             boost_rounds=args.mtl_boost_rounds,
             margin=args.logbb_threshold,
-            inner_beta=args.mtl_inner_beta,
-            final_beta=args.mtl_final_beta,
         )
 
         predicted_logbb = np.asarray(model.predict(X_test), dtype=float)
@@ -1133,8 +1176,8 @@ def main() -> None:
         "inner_folds": args.inner_folds,
         "mtl_trials": args.mtl_trials,
         "mtl_boost_rounds": args.mtl_boost_rounds,
-        "mtl_inner_beta": args.mtl_inner_beta,
-        "mtl_final_beta": args.mtl_final_beta,
+        # "mtl_inner_beta": args.mtl_inner_beta,
+        # "mtl_final_beta": args.mtl_final_beta,
         "versions": {
             "python": sys.version,
             "platform": platform.platform(),
