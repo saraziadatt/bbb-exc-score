@@ -1,0 +1,5 @@
+source,input_smiles,standardized_smiles,retained_smiles,action,reason
+hERGCentral,O=C(NC[P+](=O)O)OCc1ccccc1,O=C(NC[PH+](=O)=O)OCc1ccccc1,,excluded,unreadable_standardized_SMILES_not_resolved_by_charge_retention
+hERGCentral,Cc1cc([P+](=O)O)c(C)n1-c1ccc(Br)cc1,Cc1cc([PH+](=O)=O)c(C)n1-c1ccc(Br)cc1,,excluded,unreadable_standardized_SMILES_not_resolved_by_charge_retention
+hERGCentral,Cc1ccc(NC(=O)c2cc(N(C)C)ccc2[P+](=O)O)cc1,Cc1ccc(NC(=O)c2cc(N(C)C)ccc2[PH+](=O)=O)cc1,,excluded,unreadable_standardized_SMILES_not_resolved_by_charge_retention
+hERGCentral,CCOC(=O)c1cccc([P+](=O)O)c1,CCOC(=O)c1cccc([PH+](=O)=O)c1,,excluded,unreadable_standardized_SMILES_not_resolved_by_charge_retention

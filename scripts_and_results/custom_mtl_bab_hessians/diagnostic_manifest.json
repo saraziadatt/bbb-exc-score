@@ -1,0 +1,76 @@
+{
+  "master_csv": "/Users/sziadat/Documents/bbbx/bbb-exc-score/datasets/druglike_b3db_labelled_outerfolds.csv",
+  "master_csv_sha256": "1e6870793c1ac669861ba6c77b853a9db13a1c27e25f25eaafd98904f98b52e8",
+  "model_dir": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions_clean_103126/random_outerfolds/custom_mtl_bab_results/fitted_models",
+  "output_dir": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions_clean_103126/custom_mtl_bab_hessians",
+  "loss_mode": "original",
+  "model_prefix": "custom_mtl_bab",
+  "model_glob": "custom_mtl_bab_outer_*.txt",
+  "requested_tree_numbers": [
+    1,
+    10,
+    25,
+    50,
+    100,
+    250,
+    500,
+    750,
+    1000
+  ],
+  "sample_level_scope": "Selected pre-tree stages plus one after-final-tree stage; not every boosting iteration unless explicitly requested.",
+  "stored_leaf_scope": "Every fitted tree and every leaf for which LightGBM stores leaf_weight.",
+  "initial_score_assumed": 0.0,
+  "initial_score_verified_from_saved_training_data": false,
+  "zero_tolerance": 1e-12,
+  "outer_folds_checked": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "reconstruction_assumption": "The master CSV, row order, fold assignments, preprocessing, loss parameters, and initial score match training.",
+  "models": [
+    {
+      "outer_fold": 0,
+      "model_path": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions_clean_103126/random_outerfolds/custom_mtl_bab_results/fitted_models/custom_mtl_bab_outer_0.txt",
+      "model_sha256": "e04023d379ee0272e36016f4d52aa04688c13e742a00f97c631be17f2cdd2dbf",
+      "preprocessor_path": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions_clean_103126/random_outerfolds/custom_mtl_bab_results/fitted_models/custom_mtl_bab_outer_0_preprocessor.joblib",
+      "preprocessor_sha256": "f3b1595a4d471eccfd69f1550134d96f7bcf097a4cf6f668cdee4b6997b22be3"
+    },
+    {
+      "outer_fold": 1,
+      "model_path": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions_clean_103126/random_outerfolds/custom_mtl_bab_results/fitted_models/custom_mtl_bab_outer_1.txt",
+      "model_sha256": "ba4884efcfde79eb7b17a2ed18773ea35ea280f2ac04824bdae3764917df9147",
+      "preprocessor_path": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions_clean_103126/random_outerfolds/custom_mtl_bab_results/fitted_models/custom_mtl_bab_outer_1_preprocessor.joblib",
+      "preprocessor_sha256": "d9077d9a2e42e4223f71af66c3d2c5f1ec8d22f4c29899a7c97aa224dd1fa7ac"
+    },
+    {
+      "outer_fold": 2,
+      "model_path": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions_clean_103126/random_outerfolds/custom_mtl_bab_results/fitted_models/custom_mtl_bab_outer_2.txt",
+      "model_sha256": "a8a6516a4fa1b94dac6f3ceea0795c828d1f99206686a6416234264c9f30b5b3",
+      "preprocessor_path": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions_clean_103126/random_outerfolds/custom_mtl_bab_results/fitted_models/custom_mtl_bab_outer_2_preprocessor.joblib",
+      "preprocessor_sha256": "1bbb4b7cd341398e787101eeb4990a45e2083ec72693dddfaed2e646dd0b1963"
+    },
+    {
+      "outer_fold": 3,
+      "model_path": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions_clean_103126/random_outerfolds/custom_mtl_bab_results/fitted_models/custom_mtl_bab_outer_3.txt",
+      "model_sha256": "0bcb818a8cba635e4fa48f033b14eac1f480feb04d559f8b815926825cf6f3b9",
+      "preprocessor_path": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions_clean_103126/random_outerfolds/custom_mtl_bab_results/fitted_models/custom_mtl_bab_outer_3_preprocessor.joblib",
+      "preprocessor_sha256": "08d7e49f28d6349409b0b1c751c621745fa00f762e0d1560ec3946227acec1ad"
+    },
+    {
+      "outer_fold": 4,
+      "model_path": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions_clean_103126/random_outerfolds/custom_mtl_bab_results/fitted_models/custom_mtl_bab_outer_4.txt",
+      "model_sha256": "2660441014ed4995da8c3e2b87ac94291bef6a4651d9b94b7e225b1162994dd5",
+      "preprocessor_path": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions_clean_103126/random_outerfolds/custom_mtl_bab_results/fitted_models/custom_mtl_bab_outer_4_preprocessor.joblib",
+      "preprocessor_sha256": "6ed87a92a4b3c10c7d177d576dc3e350e447a9a7e927718c22add1bb46d98f1c"
+    }
+  ],
+  "versions": {
+    "lightgbm": "4.6.0",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "joblib": "1.5.3"
+  }
+}

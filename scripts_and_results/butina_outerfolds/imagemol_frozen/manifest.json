@@ -1,0 +1,40 @@
+{
+  "encoder": "imagemol_resnet18_frozen",
+  "encoder_metadata": {
+    "checkpoint_sha256": "6bd38d2da57ba2e8b6d0f40d23956a04fdaa2f0018ef4b9e277bfe7cce894a6a",
+    "resume_key": "state_dict",
+    "preprocessing": "rdkit_MolsToGridImage_RGB_224_center_crop_imagenet_norm_v1",
+    "loading": "exact_resnet18_backbone_v2",
+    "rdkit": "2026.03.4",
+    "torchvision": "0.29.0",
+    "torch": "2.14.0"
+  },
+  "experiment": "frozen pretrained encoder with conventional logBB regression versus custom MTL",
+  "models": [
+    "regression",
+    "mtl"
+  ],
+  "class_convention": "0=penetrant, 1=non-penetrant",
+  "tau": -1.0,
+  "beta": 2.5,
+  "margin_buffer": 0.25,
+  "loss_parameters_tuned": false,
+  "loss": "0.5*sum_measured(error^2) + beta*sum_class_means(squared_margin_violation)",
+  "loss_scaling": "none",
+  "hpo_objectives": [
+    "mean_inner_measured_mse:minimize",
+    "mean_inner_all_balanced_accuracy:maximize"
+  ],
+  "hpo_selection": "normalized Pareto distance to the ideal point",
+  "threshold_units": "native_threshold and inner_tuned_threshold use -logBB; classification_threshold uses logBB",
+  "classification_rule": "predicted_logBB < logBB_threshold (equivalently score > score_threshold)",
+  "trials_per_model_per_outer_fold": 15,
+  "inner_folds": 5,
+  "seed": 42,
+  "max_epochs": 250,
+  "patience": 25,
+  "prediction_batch_size": 256,
+  "optimizer_updates_per_epoch": 1,
+  "device": "cpu",
+  "note": "This is frozen-encoder transfer, not end-to-end fine-tuning."
+}

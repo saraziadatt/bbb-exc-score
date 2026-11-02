@@ -1,0 +1,9 @@
+{
+  "outer_fold": 4,
+  "fixed_threshold": -1.0,
+  "tuned_threshold": -0.45110273030406856,
+  "threshold_selection": "inner_oof_max_balanced_accuracy",
+  "inner_balanced_accuracy_fixed": 0.582113901558865,
+  "inner_balanced_accuracy_tuned": 0.6936557307981168,
+  "inner_predicted_nonpenetrant_rate_tuned": 0.32847003154574134
+}

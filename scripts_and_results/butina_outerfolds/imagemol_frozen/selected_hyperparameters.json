@@ -1,0 +1,106 @@
+{
+  "imagemol_resnet18_frozen_regression": {
+    "0": {
+      "lr": 0.0029495096299256966,
+      "weight_decay": 9.270187906561345e-08,
+      "dropout": 0.2,
+      "epochs": 77,
+      "inner_tuned_threshold": 0.279130682349205,
+      "native_threshold": 1.0,
+      "beta": 2.5,
+      "margin_buffer": 0.25
+    },
+    "1": {
+      "lr": 0.0010708133191969836,
+      "weight_decay": 1.6182491995254267e-06,
+      "dropout": 0.4,
+      "epochs": 80,
+      "inner_tuned_threshold": 0.2515625059604645,
+      "native_threshold": 1.0,
+      "beta": 2.5,
+      "margin_buffer": 0.25
+    },
+    "2": {
+      "lr": 0.0013470637970015315,
+      "weight_decay": 1.0615438142584004e-08,
+      "dropout": 0.1,
+      "epochs": 109,
+      "inner_tuned_threshold": 0.3010886609554291,
+      "native_threshold": 1.0,
+      "beta": 2.5,
+      "margin_buffer": 0.25
+    },
+    "3": {
+      "lr": 0.000610393702712463,
+      "weight_decay": 1.0805738799507069e-08,
+      "dropout": 0.4,
+      "epochs": 144,
+      "inner_tuned_threshold": 0.02359406091272831,
+      "native_threshold": 1.0,
+      "beta": 2.5,
+      "margin_buffer": 0.25
+    },
+    "4": {
+      "lr": 0.0008475655138168565,
+      "weight_decay": 1.1751483059888625e-08,
+      "dropout": 0.2,
+      "epochs": 101,
+      "inner_tuned_threshold": 0.3382880389690399,
+      "native_threshold": 1.0,
+      "beta": 2.5,
+      "margin_buffer": 0.25
+    }
+  },
+  "imagemol_resnet18_frozen_custom_mtl": {
+    "0": {
+      "lr": 0.0011536162338241388,
+      "weight_decay": 1.879466824163843e-07,
+      "dropout": 0.1,
+      "epochs": 105,
+      "inner_tuned_threshold": 0.11625246703624725,
+      "native_threshold": 1.0,
+      "beta": 2.5,
+      "margin_buffer": 0.25
+    },
+    "1": {
+      "lr": 0.0025367428755045693,
+      "weight_decay": 0.005336701868871857,
+      "dropout": 0.1,
+      "epochs": 38,
+      "inner_tuned_threshold": 0.1637720838189125,
+      "native_threshold": 1.0,
+      "beta": 2.5,
+      "margin_buffer": 0.25
+    },
+    "2": {
+      "lr": 0.0013470637970015315,
+      "weight_decay": 1.0615438142584004e-08,
+      "dropout": 0.1,
+      "epochs": 147,
+      "inner_tuned_threshold": 0.2247992753982544,
+      "native_threshold": 1.0,
+      "beta": 2.5,
+      "margin_buffer": 0.25
+    },
+    "3": {
+      "lr": 0.002091683925226654,
+      "weight_decay": 2.0620993100070487e-05,
+      "dropout": 0.4,
+      "epochs": 83,
+      "inner_tuned_threshold": 0.14904194325208664,
+      "native_threshold": 1.0,
+      "beta": 2.5,
+      "margin_buffer": 0.25
+    },
+    "4": {
+      "lr": 0.0013551513788794213,
+      "weight_decay": 1.853040054524525e-08,
+      "dropout": 0.30000000000000004,
+      "epochs": 110,
+      "inner_tuned_threshold": 0.20447341352701187,
+      "native_threshold": 1.0,
+      "beta": 2.5,
+      "margin_buffer": 0.25
+    }
+  }
+}

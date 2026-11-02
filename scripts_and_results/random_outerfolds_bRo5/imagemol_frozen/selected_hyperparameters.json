@@ -1,0 +1,106 @@
+{
+  "imagemol_resnet18_frozen_regression": {
+    "0": {
+      "lr": 0.002751489692095262,
+      "weight_decay": 2.9294766895014297e-05,
+      "dropout": 0.1,
+      "epochs": 56,
+      "inner_tuned_threshold": 0.19101600348949432,
+      "native_threshold": 1.0,
+      "beta": 2.5,
+      "margin_buffer": 0.25
+    },
+    "1": {
+      "lr": 0.0010186905341222341,
+      "weight_decay": 0.004353844738712885,
+      "dropout": 0.30000000000000004,
+      "epochs": 118,
+      "inner_tuned_threshold": 0.3805902451276779,
+      "native_threshold": 1.0,
+      "beta": 2.5,
+      "margin_buffer": 0.25
+    },
+    "2": {
+      "lr": 0.0013368190024384433,
+      "weight_decay": 1.5498875440132344e-08,
+      "dropout": 0.1,
+      "epochs": 61,
+      "inner_tuned_threshold": 0.2440287321805954,
+      "native_threshold": 1.0,
+      "beta": 2.5,
+      "margin_buffer": 0.25
+    },
+    "3": {
+      "lr": 0.0004475280717918504,
+      "weight_decay": 0.0001063642658319525,
+      "dropout": 0.2,
+      "epochs": 122,
+      "inner_tuned_threshold": 0.25561748445034027,
+      "native_threshold": 1.0,
+      "beta": 2.5,
+      "margin_buffer": 0.25
+    },
+    "4": {
+      "lr": 0.002347539536383536,
+      "weight_decay": 2.9911915310890153e-05,
+      "dropout": 0.1,
+      "epochs": 56,
+      "inner_tuned_threshold": 0.37393873929977417,
+      "native_threshold": 1.0,
+      "beta": 2.5,
+      "margin_buffer": 0.25
+    }
+  },
+  "imagemol_resnet18_frozen_custom_mtl": {
+    "0": {
+      "lr": 0.0026461524561851896,
+      "weight_decay": 2.2547863111427205e-05,
+      "dropout": 0.1,
+      "epochs": 71,
+      "inner_tuned_threshold": 0.30755746364593506,
+      "native_threshold": 1.0,
+      "beta": 2.5,
+      "margin_buffer": 0.25
+    },
+    "1": {
+      "lr": 0.0029038650904497916,
+      "weight_decay": 5.023880019744867e-06,
+      "dropout": 0.5,
+      "epochs": 84,
+      "inner_tuned_threshold": 0.4528057277202606,
+      "native_threshold": 1.0,
+      "beta": 2.5,
+      "margin_buffer": 0.25
+    },
+    "2": {
+      "lr": 0.0013470637970015315,
+      "weight_decay": 0.0003731714122903335,
+      "dropout": 0.1,
+      "epochs": 146,
+      "inner_tuned_threshold": 0.2857828587293625,
+      "native_threshold": 1.0,
+      "beta": 2.5,
+      "margin_buffer": 0.25
+    },
+    "3": {
+      "lr": 0.002820614751313098,
+      "weight_decay": 2.028232811103072e-06,
+      "dropout": 0.5,
+      "epochs": 94,
+      "inner_tuned_threshold": 0.2967485636472702,
+      "native_threshold": 1.0,
+      "beta": 2.5,
+      "margin_buffer": 0.25
+    },
+    "4": {
+      "lr": 0.0013551513788794213,
+      "weight_decay": 1.853040054524525e-08,
+      "dropout": 0.30000000000000004,
+      "epochs": 108,
+      "inner_tuned_threshold": 0.029786963015794754,
+      "native_threshold": 1.0,
+      "beta": 2.5,
+      "margin_buffer": 0.25
+    }
+  }
+}

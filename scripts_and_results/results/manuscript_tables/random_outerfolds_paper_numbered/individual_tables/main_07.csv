@@ -1,0 +1,4 @@
+﻿Dataset,BBB penetrant (BBB+),BBB nonpenetrant (BBB-),Total
+B3DB,4956 (930),2851 (128),7807 (1058)
+Data set used,2220 (680),968 (87),3188 (767)
+External validation set,105 (0),105 (0),210 (0)

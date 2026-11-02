@@ -1,0 +1,37 @@
+[
+  {
+    "limit": 1000,
+    "next": "/chembl/api/data/assay.json?limit=1000&offset=1000&target_chembl_id=CHEMBL240&confidence_score=9&relationship_type=D",
+    "offset": 0,
+    "previous": null,
+    "total_count": 4648
+  },
+  {
+    "limit": 1000,
+    "next": "/chembl/api/data/assay.json?limit=1000&offset=2000&target_chembl_id=CHEMBL240&confidence_score=9&relationship_type=D",
+    "offset": 1000,
+    "previous": "/chembl/api/data/assay.json?limit=1000&offset=0&target_chembl_id=CHEMBL240&confidence_score=9&relationship_type=D",
+    "total_count": 4648
+  },
+  {
+    "limit": 1000,
+    "next": "/chembl/api/data/assay.json?limit=1000&offset=3000&target_chembl_id=CHEMBL240&confidence_score=9&relationship_type=D",
+    "offset": 2000,
+    "previous": "/chembl/api/data/assay.json?limit=1000&offset=1000&target_chembl_id=CHEMBL240&confidence_score=9&relationship_type=D",
+    "total_count": 4648
+  },
+  {
+    "limit": 1000,
+    "next": "/chembl/api/data/assay.json?limit=1000&offset=4000&target_chembl_id=CHEMBL240&confidence_score=9&relationship_type=D",
+    "offset": 3000,
+    "previous": "/chembl/api/data/assay.json?limit=1000&offset=2000&target_chembl_id=CHEMBL240&confidence_score=9&relationship_type=D",
+    "total_count": 4648
+  },
+  {
+    "limit": 1000,
+    "next": null,
+    "offset": 4000,
+    "previous": "/chembl/api/data/assay.json?limit=1000&offset=3000&target_chembl_id=CHEMBL240&confidence_score=9&relationship_type=D",
+    "total_count": 4648
+  }
+]

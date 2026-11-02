@@ -1,0 +1,6 @@
+﻿Model,1r: Regression baseline,2: Retrained logBB_pred,3: LightGBM (MSE objective),4: This model (outer fold test sets)
+MAE,0.582,0.358,0.354,"0.396 (0.028, 0.057) [p<0.001; vs 3]"
+MSE,0.547,0.239,0.233,"0.277 (0.021, 0.067) [p=0.002; vs 3]"
+PCC,-0.013,0.75,0.758,"0.735 (-0.044, -0.001) [p=0.224; vs 3]"
+R²,0,0.563,0.574,"0.494 (-0.123, -0.038) [p=0.002; vs 3]"
+Non-penetrant MAE,1.385,0.681,0.662,"0.53 (-0.174, -0.091) [p<0.001; vs 3]"

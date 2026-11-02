@@ -1,0 +1,169 @@
+table,field,fold,value,source_file,detail
+main_07,B3DB/penetrant/count,,4956,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/datasets/../datasets/01_B3DB_classification.csv,class_column=BBB+/BBB-
+main_07,B3DB/penetrant/measured_count,,930,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/datasets/../datasets/01_B3DB_classification.csv,availability_flag=None; observation=logBB; explicit_none=False
+main_07,B3DB/nonpenetrant/count,,2851,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/datasets/../datasets/01_B3DB_classification.csv,class_column=BBB+/BBB-
+main_07,B3DB/nonpenetrant/measured_count,,128,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/datasets/../datasets/01_B3DB_classification.csv,availability_flag=None; observation=logBB; explicit_none=False
+main_07,B3DB/total/count,,7807,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/datasets/../datasets/01_B3DB_classification.csv,class_column=BBB+/BBB-
+main_07,B3DB/total/measured_count,,1058,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/datasets/../datasets/01_B3DB_classification.csv,availability_flag=None; observation=logBB; explicit_none=False
+main_07,Data set used/penetrant/count,,2220,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/datasets/druglike_b3db_labelled_outerfolds.csv,class_column=bbb_class
+main_07,Data set used/penetrant/measured_count,,680,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/datasets/druglike_b3db_labelled_outerfolds.csv,availability_flag=has_logbb; observation=None; explicit_none=False
+main_07,Data set used/nonpenetrant/count,,968,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/datasets/druglike_b3db_labelled_outerfolds.csv,class_column=bbb_class
+main_07,Data set used/nonpenetrant/measured_count,,87,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/datasets/druglike_b3db_labelled_outerfolds.csv,availability_flag=has_logbb; observation=None; explicit_none=False
+main_07,Data set used/total/count,,3188,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/datasets/druglike_b3db_labelled_outerfolds.csv,class_column=bbb_class
+main_07,Data set used/total/measured_count,,767,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/datasets/druglike_b3db_labelled_outerfolds.csv,availability_flag=has_logbb; observation=None; explicit_none=False
+main_07,External validation set/penetrant/count,,105,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/datasets/inxight_labelled_balanced.csv,class_column=bbb_class
+main_07,External validation set/penetrant/measured_count,,0,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/datasets/inxight_labelled_balanced.csv,availability_flag=None; observation=None; explicit_none=True
+main_07,External validation set/nonpenetrant/count,,105,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/datasets/inxight_labelled_balanced.csv,class_column=bbb_class
+main_07,External validation set/nonpenetrant/measured_count,,0,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/datasets/inxight_labelled_balanced.csv,availability_flag=None; observation=None; explicit_none=True
+main_07,External validation set/total/count,,210,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/datasets/inxight_labelled_balanced.csv,class_column=bbb_class
+main_07,External validation set/total/measured_count,,0,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/datasets/inxight_labelled_balanced.csv,availability_flag=None; observation=None; explicit_none=True
+supplementary_07,Mordred/before,,1826,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/datasets/../datasets/preprocessed_b3db/druglike_b3db_labelled_features_before_filtering.csv,counted saved descriptor columns/feature names
+supplementary_07,Mordred/after,,1022,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/custom_mtl_bab_results/checkpoints/run_signature.json,counted saved descriptor columns/feature names
+supplementary_07,ECFP/before,,2048,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/datasets/../datasets/preprocessed_b3db/druglike_b3db_labelled_features_before_filtering.csv,counted saved descriptor columns/feature names
+supplementary_07,ECFP/after,,2048,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/custom_mtl_bab_results/checkpoints/run_signature.json,counted saved descriptor columns/feature names
+supplementary_07,MACCS/before,,167,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/datasets/../datasets/preprocessed_b3db/druglike_b3db_labelled_features_before_filtering.csv,counted saved descriptor columns/feature names
+supplementary_07,MACCS/after,,153,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/custom_mtl_bab_results/checkpoints/run_signature.json,counted saved descriptor columns/feature names
+supplementary_08,colsample_bytree,,0.5-1,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/04_train_custom_mtl_mse_ba_hpo.py,
+supplementary_08,learning_rate,,0.01-0.3,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/04_train_custom_mtl_mse_ba_hpo.py,
+supplementary_08,margin_buffer,,0.15-0.35; step=0.02,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/04_train_custom_mtl_mse_ba_hpo.py,
+supplementary_08,beta,,0.5-5; step=0.25,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/04_train_custom_mtl_mse_ba_hpo.py,
+supplementary_08,max_depth,,3-12,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/04_train_custom_mtl_mse_ba_hpo.py,
+supplementary_08,num_leaves,,20-150,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/04_train_custom_mtl_mse_ba_hpo.py,
+supplementary_08,min_child_samples,,5-50,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/04_train_custom_mtl_mse_ba_hpo.py,
+supplementary_08,subsample,,0.5-1,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/04_train_custom_mtl_mse_ba_hpo.py,
+supplementary_09,beta,1,3.0,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,beta,2,5.0,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,beta,3,4.0,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,beta,4,4.75,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,beta,5,4.75,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,margin_buffer,1,0.35,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,margin_buffer,2,0.32999999999999996,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,margin_buffer,3,0.35,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,margin_buffer,4,0.32999999999999996,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,margin_buffer,5,0.35,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,learning_rate,1,0.06392810877607104,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,learning_rate,2,0.010994430935344355,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,learning_rate,3,0.010258795082279344,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,learning_rate,4,0.025152552621343,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,learning_rate,5,0.02231743216166228,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,num_leaves,1,78.0,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,num_leaves,2,37.0,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,num_leaves,3,58.0,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,num_leaves,4,30.0,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,num_leaves,5,31.0,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,max_depth,1,6.0,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,max_depth,2,7.0,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,max_depth,3,9.0,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,max_depth,4,7.0,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,max_depth,5,11.0,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,min_child_samples,1,48.0,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,min_child_samples,2,11.0,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,min_child_samples,3,9.0,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,min_child_samples,4,21.0,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,min_child_samples,5,44.0,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,subsample,1,0.630213444563022,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,subsample,2,0.7065634239337023,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,subsample,3,0.5628728525855307,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,subsample,4,0.5767572052890675,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,subsample,5,0.6157221915161727,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,colsample_bytree,1,0.7197744275954819,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,colsample_bytree,2,0.8636522851600535,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,colsample_bytree,3,0.5784398112778938,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,colsample_bytree,4,0.6250594454148183,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_09,colsample_bytree,5,0.7384525851527083,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_best_parameters.csv,
+supplementary_10,mse,1,0.2657002893322671,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,mse,2,0.2579024389506129,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,mse,3,0.3254525012853698,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,mse,4,0.2521370474275488,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,mse,5,0.2822801465761526,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,mde,1,0.2917268139559557,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,mde,2,0.2873922613934695,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,mde,3,0.3059189461236503,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,mde,4,0.3285939266710559,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,mde,5,0.3123977541236161,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,mae,1,0.3819056014377721,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,mae,2,0.3801871338507325,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,mae,3,0.4235107605293579,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,mae,4,0.3925642303443091,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,mae,5,0.4022790352758243,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,pearson_r,1,0.7348290882079389,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,pearson_r,2,0.7455031588892971,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,pearson_r,3,0.7438052802233739,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,pearson_r,4,0.762784959975172,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,pearson_r,5,0.725997138462166,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,r2,1,0.5356454411118345,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,r2,2,0.503431881236295,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,r2,3,0.4283184760071163,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,r2,4,0.508055801695962,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,r2,5,0.495381950392519,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_10,mse/fold_mean,,0.27669448471439023,,Unweighted mean of saved unrounded outer-fold metrics.
+supplementary_10,mse/fold_sd,,0.029519590277285415,,ddof=1
+supplementary_10,mde/fold_mean,,0.30520594045354954,,Unweighted mean of saved unrounded outer-fold metrics.
+supplementary_10,mde/fold_sd,,0.016569870798036495,,ddof=1
+supplementary_10,mae/fold_mean,,0.3960893522875991,,Unweighted mean of saved unrounded outer-fold metrics.
+supplementary_10,mae/fold_sd,,0.017725205425853142,,ddof=1
+supplementary_10,pearson_r/fold_mean,,0.7425839251515896,,Unweighted mean of saved unrounded outer-fold metrics.
+supplementary_10,pearson_r/fold_sd,,0.013723651395249954,,ddof=1
+supplementary_10,r2/fold_mean,,0.49416671008874535,,Unweighted mean of saved unrounded outer-fold metrics.
+supplementary_10,r2/fold_sd,,0.03980170263323465,,ddof=1
+supplementary_11,balanced_accuracy,1,0.6550106807838767,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,balanced_accuracy,2,0.7033296182780719,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,balanced_accuracy,3,0.6972229961920684,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,balanced_accuracy,4,0.6645719553750642,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,balanced_accuracy,5,0.6511693040190449,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,np_precision,1,0.6880733944954128,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,np_precision,2,0.7540983606557377,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,np_precision,3,0.7014925373134329,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,np_precision,4,0.7129629629629629,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,np_precision,5,0.6727272727272727,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,np_recall,1,0.3865979381443299,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,np_recall,2,0.4742268041237113,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,np_recall,3,0.4845360824742268,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,np_recall,4,0.3989637305699481,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,np_recall,5,0.3834196891191709,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,roc_auc,1,0.7957880560973345,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,roc_auc,2,0.844826785548435,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,roc_auc,3,0.8301174886226432,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,roc_auc,4,0.7730593287588107,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,roc_auc,5,0.7895719553750642,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,pr_auc_nonpenetrant,1,0.640305722366946,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,pr_auc_nonpenetrant,2,0.7288893749543467,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,pr_auc_nonpenetrant,3,0.6968903207825332,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,pr_auc_nonpenetrant,4,0.6286236575526477,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,pr_auc_nonpenetrant,5,0.649781441842827,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,cohens_kappa,1,0.3536438399703354,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,cohens_kappa,2,0.4541070317361543,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,cohens_kappa,3,0.4320667378808688,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,cohens_kappa,4,0.3759438583396091,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,cohens_kappa,5,0.3441757278264508,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,mcc,1,0.378915947883365,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,mcc,2,0.4756836506293387,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,mcc,3,0.4454636082820367,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,mcc,4,0.4031032046066568,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,mcc,5,0.3675886545569091,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,np_f1,1,0.495049504950495,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,np_f1,2,0.5822784810126582,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,np_f1,3,0.573170731707317,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,np_f1,4,0.5116279069767442,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,np_f1,5,0.4884488448844885,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/all_models_fold_metrics.csv,
+supplementary_11,balanced_accuracy/fold_mean,,0.6742609109296251,,Unweighted mean of saved unrounded outer-fold metrics.
+supplementary_11,balanced_accuracy/fold_sd,,0.024340894789554545,,ddof=1
+supplementary_11,np_precision/fold_mean,,0.7058709056309638,,Unweighted mean of saved unrounded outer-fold metrics.
+supplementary_11,np_precision/fold_sd,,0.030865055520627207,,ddof=1
+supplementary_11,np_recall/fold_mean,,0.4255488488862774,,Unweighted mean of saved unrounded outer-fold metrics.
+supplementary_11,np_recall/fold_sd,,0.049618154738612814,,ddof=1
+supplementary_11,roc_auc/fold_mean,,0.8066727228804575,,Unweighted mean of saved unrounded outer-fold metrics.
+supplementary_11,roc_auc/fold_sd,,0.029774830072597482,,ddof=1
+supplementary_11,pr_auc_nonpenetrant/fold_mean,,0.6688981034998601,,Unweighted mean of saved unrounded outer-fold metrics.
+supplementary_11,pr_auc_nonpenetrant/fold_sd,,0.04238961808993008,,ddof=1
+supplementary_11,cohens_kappa/fold_mean,,0.3919874391506836,,Unweighted mean of saved unrounded outer-fold metrics.
+supplementary_11,cohens_kappa/fold_sd,,0.048679517748188364,,ddof=1
+supplementary_11,mcc/fold_mean,,0.4141510131916612,,Unweighted mean of saved unrounded outer-fold metrics.
+supplementary_11,mcc/fold_sd,,0.045547670699972544,,ddof=1
+supplementary_11,np_f1/fold_mean,,0.5301150939063406,,Unweighted mean of saved unrounded outer-fold metrics.
+supplementary_11,np_f1/fold_sd,,0.044391031802024965,,ddof=1
+supplementary_12,chosen_threshold,1,-0.395051444140461,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/fitted_models/lightgbm_mse_regression_threshold_outer_0.json,
+supplementary_12,chosen_threshold,2,-0.3226397243728173,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/fitted_models/lightgbm_mse_regression_threshold_outer_1.json,
+supplementary_12,chosen_threshold,3,-0.5121932817312398,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/fitted_models/lightgbm_mse_regression_threshold_outer_2.json,
+supplementary_12,chosen_threshold,4,-0.3338324581988166,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/fitted_models/lightgbm_mse_regression_threshold_outer_3.json,
+supplementary_12,chosen_threshold,5,-0.38861194666177645,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/scripts_and_results/random_outerfolds/all_model_results_main/fitted_models/lightgbm_mse_regression_threshold_outer_4.json,

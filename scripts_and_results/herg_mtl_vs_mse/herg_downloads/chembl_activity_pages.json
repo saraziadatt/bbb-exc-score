@@ -1,0 +1,79 @@
+[
+  {
+    "limit": 1000,
+    "next": "/chembl/api/data/activity.json?limit=1000&offset=1000&target_chembl_id=CHEMBL240&standard_type=IC50&standard_relation=%3D&standard_units=nM&assay_type__in=B%2CF",
+    "offset": 0,
+    "previous": null,
+    "total_count": 10436
+  },
+  {
+    "limit": 1000,
+    "next": "/chembl/api/data/activity.json?limit=1000&offset=2000&target_chembl_id=CHEMBL240&standard_type=IC50&standard_relation=%3D&standard_units=nM&assay_type__in=B%2CF",
+    "offset": 1000,
+    "previous": "/chembl/api/data/activity.json?limit=1000&offset=0&target_chembl_id=CHEMBL240&standard_type=IC50&standard_relation=%3D&standard_units=nM&assay_type__in=B%2CF",
+    "total_count": 10436
+  },
+  {
+    "limit": 1000,
+    "next": "/chembl/api/data/activity.json?limit=1000&offset=3000&target_chembl_id=CHEMBL240&standard_type=IC50&standard_relation=%3D&standard_units=nM&assay_type__in=B%2CF",
+    "offset": 2000,
+    "previous": "/chembl/api/data/activity.json?limit=1000&offset=1000&target_chembl_id=CHEMBL240&standard_type=IC50&standard_relation=%3D&standard_units=nM&assay_type__in=B%2CF",
+    "total_count": 10436
+  },
+  {
+    "limit": 1000,
+    "next": "/chembl/api/data/activity.json?limit=1000&offset=4000&target_chembl_id=CHEMBL240&standard_type=IC50&standard_relation=%3D&standard_units=nM&assay_type__in=B%2CF",
+    "offset": 3000,
+    "previous": "/chembl/api/data/activity.json?limit=1000&offset=2000&target_chembl_id=CHEMBL240&standard_type=IC50&standard_relation=%3D&standard_units=nM&assay_type__in=B%2CF",
+    "total_count": 10436
+  },
+  {
+    "limit": 1000,
+    "next": "/chembl/api/data/activity.json?limit=1000&offset=5000&target_chembl_id=CHEMBL240&standard_type=IC50&standard_relation=%3D&standard_units=nM&assay_type__in=B%2CF",
+    "offset": 4000,
+    "previous": "/chembl/api/data/activity.json?limit=1000&offset=3000&target_chembl_id=CHEMBL240&standard_type=IC50&standard_relation=%3D&standard_units=nM&assay_type__in=B%2CF",
+    "total_count": 10436
+  },
+  {
+    "limit": 1000,
+    "next": "/chembl/api/data/activity.json?limit=1000&offset=6000&target_chembl_id=CHEMBL240&standard_type=IC50&standard_relation=%3D&standard_units=nM&assay_type__in=B%2CF",
+    "offset": 5000,
+    "previous": "/chembl/api/data/activity.json?limit=1000&offset=4000&target_chembl_id=CHEMBL240&standard_type=IC50&standard_relation=%3D&standard_units=nM&assay_type__in=B%2CF",
+    "total_count": 10436
+  },
+  {
+    "limit": 1000,
+    "next": "/chembl/api/data/activity.json?limit=1000&offset=7000&target_chembl_id=CHEMBL240&standard_type=IC50&standard_relation=%3D&standard_units=nM&assay_type__in=B%2CF",
+    "offset": 6000,
+    "previous": "/chembl/api/data/activity.json?limit=1000&offset=5000&target_chembl_id=CHEMBL240&standard_type=IC50&standard_relation=%3D&standard_units=nM&assay_type__in=B%2CF",
+    "total_count": 10436
+  },
+  {
+    "limit": 1000,
+    "next": "/chembl/api/data/activity.json?limit=1000&offset=8000&target_chembl_id=CHEMBL240&standard_type=IC50&standard_relation=%3D&standard_units=nM&assay_type__in=B%2CF",
+    "offset": 7000,
+    "previous": "/chembl/api/data/activity.json?limit=1000&offset=6000&target_chembl_id=CHEMBL240&standard_type=IC50&standard_relation=%3D&standard_units=nM&assay_type__in=B%2CF",
+    "total_count": 10436
+  },
+  {
+    "limit": 1000,
+    "next": "/chembl/api/data/activity.json?limit=1000&offset=9000&target_chembl_id=CHEMBL240&standard_type=IC50&standard_relation=%3D&standard_units=nM&assay_type__in=B%2CF",
+    "offset": 8000,
+    "previous": "/chembl/api/data/activity.json?limit=1000&offset=7000&target_chembl_id=CHEMBL240&standard_type=IC50&standard_relation=%3D&standard_units=nM&assay_type__in=B%2CF",
+    "total_count": 10436
+  },
+  {
+    "limit": 1000,
+    "next": "/chembl/api/data/activity.json?limit=1000&offset=10000&target_chembl_id=CHEMBL240&standard_type=IC50&standard_relation=%3D&standard_units=nM&assay_type__in=B%2CF",
+    "offset": 9000,
+    "previous": "/chembl/api/data/activity.json?limit=1000&offset=8000&target_chembl_id=CHEMBL240&standard_type=IC50&standard_relation=%3D&standard_units=nM&assay_type__in=B%2CF",
+    "total_count": 10436
+  },
+  {
+    "limit": 1000,
+    "next": null,
+    "offset": 10000,
+    "previous": "/chembl/api/data/activity.json?limit=1000&offset=9000&target_chembl_id=CHEMBL240&standard_type=IC50&standard_relation=%3D&standard_units=nM&assay_type__in=B%2CF",
+    "total_count": 10436
+  }
+]

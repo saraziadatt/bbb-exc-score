@@ -1,0 +1,22 @@
+figure,status,details,files
+Figure 1,missing_input,Set FIGURE_SOURCES['oof_predictions'] to the original saved source.,
+Figure 2,missing_input,Set FIGURE_SOURCES['oof_predictions'] to the original saved source.,
+Figure 3,generated,Held-out grouped SHAP above two aligned rows of three equal square plots; single combined figure without panel letters.,figures/Figure_3.pdf | figures/Figure_3.svg | figures/Figure_3.png
+Figure 4,generated,Two MI curves; B3DB/Inxight rule combinations; molecule structures and descriptor table; single combined figure without panel letters or footer.,figures/Figure_4.pdf | figures/Figure_4.svg | figures/Figure_4.png
+Figure 5,missing_input,"Set FIGURE_SOURCES[""flowchart""] to the original cleaning-audit JSON (nodes and edges).",
+Figure S1,missing_input,Set FIGURE_SOURCES['oof_predictions'] to the original saved source.,
+Figure S2,missing_input,Set FIGURE_SOURCES['oof_predictions'] to the original saved source.,
+Figure S3,missing_input,Set FIGURE_SOURCES['oof_predictions'] to the original saved source.,
+Figure S4,generated,Top 10 training-ranked medoids; tight classification axes and supported-bin GAM ranges; GAM 95% prediction intervals use all measured training rows. Raw fold 0.,figures/Figure_S4.pdf | figures/Figure_S4.svg | figures/Figure_S4.png
+Figure S5,generated,Top 10 training-ranked medoids; tight classification axes and supported-bin GAM ranges; GAM 95% prediction intervals use all measured training rows. Raw fold 1.,figures/Figure_S5.pdf | figures/Figure_S5.svg | figures/Figure_S5.png
+Figure S6,generated,Top 10 training-ranked medoids; tight classification axes and supported-bin GAM ranges; GAM 95% prediction intervals use all measured training rows. Raw fold 2.,figures/Figure_S6.pdf | figures/Figure_S6.svg | figures/Figure_S6.png
+Figure S7,generated,Top 10 training-ranked medoids; tight classification axes and supported-bin GAM ranges; GAM 95% prediction intervals use all measured training rows. Raw fold 3.,figures/Figure_S7.pdf | figures/Figure_S7.svg | figures/Figure_S7.png
+Figure S8,generated,Top 10 training-ranked medoids; tight classification axes and supported-bin GAM ranges; GAM 95% prediction intervals use all measured training rows. Raw fold 4.,figures/Figure_S8.pdf | figures/Figure_S8.svg | figures/Figure_S8.png
+Figure S9,generated,"Union of top 10 medoids; mean ± sample SD across five OUTER-training partitions; tight classification axes, supported-bin GAM ranges and unsupported curve gaps.",figures/Figure_S9.pdf | figures/Figure_S9.svg | figures/Figure_S9.png
+Figure S10,generated,"Union of top 10 medoids; mean ± sample SD across five OUTER-training partitions; tight classification axes, supported-bin GAM ranges and unsupported curve gaps.",figures/Figure_S10.pdf | figures/Figure_S10.svg | figures/Figure_S10.png
+Figure S11,generated,Step-conditional MI; outer-training/test rule counts; raw fold 0; Wilson CIs and original Holm families.,figures/Figure_S11.pdf | figures/Figure_S11.svg | figures/Figure_S11.png
+Figure S12,generated,Step-conditional MI; outer-training/test rule counts; raw fold 1; Wilson CIs and original Holm families.,figures/Figure_S12.pdf | figures/Figure_S12.svg | figures/Figure_S12.png
+Figure S13,generated,Step-conditional MI; outer-training/test rule counts; raw fold 2; Wilson CIs and original Holm families.,figures/Figure_S13.pdf | figures/Figure_S13.svg | figures/Figure_S13.png
+Figure S14,generated,Step-conditional MI; outer-training/test rule counts; raw fold 3; Wilson CIs and original Holm families.,figures/Figure_S14.pdf | figures/Figure_S14.svg | figures/Figure_S14.png
+Figure S15,generated,Step-conditional MI; outer-training/test rule counts; raw fold 4; Wilson CIs and original Holm families.,figures/Figure_S15.pdf | figures/Figure_S15.svg | figures/Figure_S15.png
+Figure S16,generated,"Unfiltered class-wise distributions: H-bond donors/acceptors, molecular weight, TopoPSA and SLogP.",figures/Figure_S16.pdf | figures/Figure_S16.svg | figures/Figure_S16.png

@@ -1,0 +1,60 @@
+{
+  "input": "/Users/sziadat/Documents/bbbx/bbb-exc-score/datasets/druglike_b3db_labelled_outerfolds.csv",
+  "models": {
+    "mse": "gnn_mse",
+    "mtl": "gnn_custom_mtl"
+  },
+  "architecture": "GINE",
+  "arguments": {
+    "input": "../datasets/druglike_b3db_labelled_outerfolds.csv",
+    "output_dir": "random_outerfolds/gnn_mtl_ablation_hpo",
+    "smiles_col": "smiles",
+    "target_col": "logBB",
+    "class_col": "bbb_class",
+    "fold_col": "outer_fold",
+    "id_col": "sample_id",
+    "threshold": -1.0,
+    "alpha": 1.0,
+    "beta": 2.5,
+    "margin_buffer": 0.25,
+    "hidden_dim": 128,
+    "layers": 3,
+    "dropout": 0.15,
+    "batch_size": 128,
+    "learning_rate": 0.0003,
+    "weight_decay": 1e-05,
+    "epochs": 100,
+    "patience": 15,
+    "min_delta": 0.0001,
+    "hpo_trials": 100,
+    "hpo_epochs": 75,
+    "hpo_patience": 10,
+    "hpo_progress_bar": false,
+    "seed": 15,
+    "num_workers": 0,
+    "cpu": false,
+    "inner_folds": 5,
+    "tune_loss": false,
+    "overwrite": false
+  },
+  "outer_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "device": "cpu",
+  "loss": "alpha/2*sum_measured(error^2) + beta*sum_class_means(squared_margin_violation)",
+  "loss_scaling": "none",
+  "updates_per_epoch": 1,
+  "batching": "additive gradient accumulation, then gradient clipping and one AdamW step",
+  "inner_cv": "all saved inner folds, or class-by-measured-status stratification",
+  "hpo_sampler": "TPE",
+  "hpo_objectives": [
+    "mean inner MSE",
+    "mean inner balanced accuracy"
+  ],
+  "selection": "normalized Pareto distance; median inner best epoch for final refit",
+  "comparison_scope": "objective plus classification-only supervision; model hyperparameters tuned independently"
+}

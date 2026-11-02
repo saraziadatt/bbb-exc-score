@@ -1,0 +1,45 @@
+{
+  "input_file": "/Users/sziadat/Documents/bbbx/bbb-exc-score/datasets/druglike_b3db_labelled_outerfolds.csv",
+  "input_sha256": "1e6870793c1ac669861ba6c77b853a9db13a1c27e25f25eaafd98904f98b52e8",
+  "output_directory": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions_clean/random_outerfolds/custom_mtl_bab_results",
+  "n_samples": 3188,
+  "n_measured_logbb": 767,
+  "n_classification_only": 2421,
+  "n_features_loaded": 3223,
+  "outer_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "model": "custom_mtl_bab",
+  "class_encoding": {
+    "0": "BBB penetrant",
+    "1": "BBB non-penetrant"
+  },
+  "logbb_threshold": -1.0,
+  "seed": 15,
+  "inner_folds": 5,
+  "mtl_trials": 100,
+  "mtl_boost_rounds": 1000,
+  "missing_value_policy": "native LightGBM NaN handling; no imputation",
+  "custom_objective_dataset_label_policy": "classification-only rows receive an inert finite Dataset-label placeholder; the custom objective retains the original NaN target mask, so these rows receive no regression supervision",
+  "hyperparameter_optimization": {
+    "type": "multi_objective",
+    "regression_objective": "mean inner-fold MSE on measured-logBB rows; minimize",
+    "classification_objective": "mean inner-fold balanced accuracy on all rows; maximize",
+    "classification_threshold": -1.0,
+    "pareto_selection": "equal-weight Euclidean distance to the ideal point after min-max normalization across the Pareto front"
+  },
+  "versions": {
+    "python": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:28:47) [Clang 19.1.7 ]",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.7.2",
+    "lightgbm": "4.6.0",
+    "optuna": "4.6.0",
+    "joblib": "1.5.3"
+  }
+}

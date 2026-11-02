@@ -1,0 +1,4 @@
+model,positive_class,kpuu_cutoff,predicted_logBB_cutoff,tn,fp,fn,tp,n_low_Kpuu,n_high_Kpuu
+lightgbm_mse_regression,low_Kpuu,0.3,-1.0,15,0,26,2,28,15
+lightgbm_mse_regression_threshold,low_Kpuu,0.3,-0.3904657710210222,8,7,9,19,28,15
+custom_mtl_bab,low_Kpuu,0.3,-1.0,15,0,20,8,28,15

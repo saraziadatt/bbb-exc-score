@@ -1,0 +1,212 @@
+{
+  "gnn_mse_outer_0": {
+    "model": "gnn_mse",
+    "outer_fold": 0,
+    "selected_trial": 24,
+    "validation_mse": 0.36063639135298253,
+    "validation_balanced_accuracy": 0.5069311711980008,
+    "parameters": {
+      "hidden_dim": 256,
+      "layers": 4,
+      "dropout": 0.0,
+      "learning_rate": 0.0002663856701311759,
+      "weight_decay": 3.929238933812364e-06
+    },
+    "inner_best_epochs": [
+      73,
+      74,
+      70,
+      74,
+      74
+    ]
+  },
+  "gnn_custom_mtl_outer_0": {
+    "model": "gnn_custom_mtl",
+    "outer_fold": 0,
+    "selected_trial": 94,
+    "validation_mse": 0.3674441179988965,
+    "validation_balanced_accuracy": 0.5193493996368073,
+    "parameters": {
+      "hidden_dim": 256,
+      "layers": 5,
+      "dropout": 0.0,
+      "learning_rate": 0.0004352101645139551,
+      "weight_decay": 4.1144096491577824e-06
+    },
+    "inner_best_epochs": [
+      75,
+      73,
+      64,
+      56,
+      71
+    ]
+  },
+  "gnn_mse_outer_1": {
+    "model": "gnn_mse",
+    "outer_fold": 1,
+    "selected_trial": 65,
+    "validation_mse": 0.3652177917579412,
+    "validation_balanced_accuracy": 0.5012903225806451,
+    "parameters": {
+      "hidden_dim": 128,
+      "layers": 5,
+      "dropout": 0.05,
+      "learning_rate": 0.0005439008658043741,
+      "weight_decay": 3.0497296338894212e-05
+    },
+    "inner_best_epochs": [
+      63,
+      73,
+      73,
+      67,
+      73
+    ]
+  },
+  "gnn_custom_mtl_outer_1": {
+    "model": "gnn_custom_mtl",
+    "outer_fold": 1,
+    "selected_trial": 51,
+    "validation_mse": 0.36242108925474087,
+    "validation_balanced_accuracy": 0.5141208541572013,
+    "parameters": {
+      "hidden_dim": 256,
+      "layers": 5,
+      "dropout": 0.0,
+      "learning_rate": 0.0003766127646831234,
+      "weight_decay": 9.140869060702792e-05
+    },
+    "inner_best_epochs": [
+      45,
+      75,
+      75,
+      74,
+      75
+    ]
+  },
+  "gnn_mse_outer_2": {
+    "model": "gnn_mse",
+    "outer_fold": 2,
+    "selected_trial": 58,
+    "validation_mse": 0.37164288620674774,
+    "validation_balanced_accuracy": 0.5112214636794373,
+    "parameters": {
+      "hidden_dim": 128,
+      "layers": 5,
+      "dropout": 0.0,
+      "learning_rate": 0.001054307615895569,
+      "weight_decay": 0.0006153083898219835
+    },
+    "inner_best_epochs": [
+      75,
+      62,
+      73,
+      71,
+      55
+    ]
+  },
+  "gnn_custom_mtl_outer_2": {
+    "model": "gnn_custom_mtl",
+    "outer_fold": 2,
+    "selected_trial": 55,
+    "validation_mse": 0.37292068121114536,
+    "validation_balanced_accuracy": 0.5196547856117562,
+    "parameters": {
+      "hidden_dim": 128,
+      "layers": 5,
+      "dropout": 0.05,
+      "learning_rate": 0.0006939174361447065,
+      "weight_decay": 5.143692147728993e-05
+    },
+    "inner_best_epochs": [
+      75,
+      73,
+      73,
+      72,
+      72
+    ]
+  },
+  "gnn_mse_outer_3": {
+    "model": "gnn_mse",
+    "outer_fold": 3,
+    "selected_trial": 21,
+    "validation_mse": 0.37689933763711053,
+    "validation_balanced_accuracy": 0.5171830985915493,
+    "parameters": {
+      "hidden_dim": 256,
+      "layers": 4,
+      "dropout": 0.05,
+      "learning_rate": 0.00046162022814490937,
+      "weight_decay": 5.286998372083865e-07
+    },
+    "inner_best_epochs": [
+      58,
+      61,
+      52,
+      74,
+      75
+    ]
+  },
+  "gnn_custom_mtl_outer_3": {
+    "model": "gnn_custom_mtl",
+    "outer_fold": 3,
+    "selected_trial": 31,
+    "validation_mse": 0.37236958681858123,
+    "validation_balanced_accuracy": 0.5209869109546734,
+    "parameters": {
+      "hidden_dim": 128,
+      "layers": 4,
+      "dropout": 0.05,
+      "learning_rate": 0.0011276571270829204,
+      "weight_decay": 6.406527891263899e-05
+    },
+    "inner_best_epochs": [
+      74,
+      55,
+      66,
+      74,
+      57
+    ]
+  },
+  "gnn_mse_outer_4": {
+    "model": "gnn_mse",
+    "outer_fold": 4,
+    "selected_trial": 79,
+    "validation_mse": 0.38402560456649415,
+    "validation_balanced_accuracy": 0.5140035172980617,
+    "parameters": {
+      "hidden_dim": 256,
+      "layers": 5,
+      "dropout": 0.05,
+      "learning_rate": 0.0002806302901453324,
+      "weight_decay": 2.334829431539034e-05
+    },
+    "inner_best_epochs": [
+      75,
+      44,
+      73,
+      70,
+      35
+    ]
+  },
+  "gnn_custom_mtl_outer_4": {
+    "model": "gnn_custom_mtl",
+    "outer_fold": 4,
+    "selected_trial": 84,
+    "validation_mse": 0.3696658242070002,
+    "validation_balanced_accuracy": 0.5176299332785405,
+    "parameters": {
+      "hidden_dim": 128,
+      "layers": 3,
+      "dropout": 0.0,
+      "learning_rate": 0.0010608032314985306,
+      "weight_decay": 2.303629929841432e-06
+    },
+    "inner_best_epochs": [
+      73,
+      74,
+      72,
+      74,
+      75
+    ]
+  }
+}

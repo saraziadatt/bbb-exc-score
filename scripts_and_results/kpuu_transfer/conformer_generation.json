@@ -1,0 +1,21 @@
+{
+  "conformer_method": "OpenChemLib / notebook 01",
+  "openchemlib_jar": "/Users/sziadat/Documents/bbbx/bbb-exc-score/tools/datawarrior_all.jar",
+  "openchemlib_jar_sha256": "b8120e0f9ae855f452f53010f154c558b00e0ae385261c9ba4ca6f0b554021a4",
+  "java": "/Users/sziadat/miniforge3/envs/bbbx_env_revisions/lib/jvm/bin/java",
+  "java_version": "openjdk version \"21.0.10\" 2026-01-20 LTS\nOpenJDK Runtime Environment Zulu21.48+17-CA (build 21.0.10+7-LTS)\nOpenJDK 64-Bit Server VM Zulu21.48+17-CA (build 21.0.10+7-LTS, mixed mode, sharing)",
+  "java_source_sha256": "a921d5bc458cebc059dfc6903ce74301862693f286cbc76a91dc1912c5a0d0e4",
+  "conformer_seed": 20260915,
+  "seed_derivation": "signed 64-bit SHA256 of base_seed + NUL + stripped original SMILES; zero replaced by one",
+  "conformer_selection": "first conformer from STRATEGY_LIKELY_SYSTEMATIC",
+  "torsion_source": "crystallographic",
+  "max_torsion_sets": 1000,
+  "forcefield": "MMFF94s+",
+  "dielectric_constant": 1,
+  "max_optimization_iterations": 10000,
+  "gradient_tolerance": 0.0001,
+  "function_tolerance": 1e-06,
+  "minimization_failure_policy": "retain generated conformer, as in notebook 01",
+  "n_minimization_errors": 0,
+  "sdf_sha256": "d65571ce31619d3e8c88ccad326d96974ca1a39b0032735d02b31ee266268e3e"
+}

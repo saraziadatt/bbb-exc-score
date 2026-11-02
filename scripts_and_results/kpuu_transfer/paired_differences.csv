@@ -1,0 +1,10 @@
+model,reference,metric,delta,ci_low,ci_high,n_valid_bootstraps
+custom_mtl_bab,lightgbm_mse_regression,spearman_r,0.18685801456987527,0.046197382772008466,0.3364488021229292,2000
+custom_mtl_bab,lightgbm_mse_regression,pearson_r,0.10844434482517618,0.02249899494687727,0.23098588360579514,2000
+custom_mtl_bab,lightgbm_mse_regression,kendall_tau_b,0.1178441383476021,0.01370519782444732,0.22121309062204517,2000
+lightgbm_mse_regression_threshold,lightgbm_mse_regression,spearman_r,0.0,0.0,0.0,2000
+lightgbm_mse_regression_threshold,lightgbm_mse_regression,pearson_r,0.0,0.0,0.0,2000
+lightgbm_mse_regression_threshold,lightgbm_mse_regression,kendall_tau_b,0.0,0.0,0.0,2000
+lightgbm_mse_regression_threshold,custom_mtl_bab,spearman_r,-0.18685801456987527,-0.3364488021229292,-0.04619738277200866,2000
+lightgbm_mse_regression_threshold,custom_mtl_bab,pearson_r,-0.10844434482517618,-0.23098588360579522,-0.022498994946877272,2000
+lightgbm_mse_regression_threshold,custom_mtl_bab,kendall_tau_b,-0.1178441383476021,-0.22121309062204517,-0.013705197824447327,2000

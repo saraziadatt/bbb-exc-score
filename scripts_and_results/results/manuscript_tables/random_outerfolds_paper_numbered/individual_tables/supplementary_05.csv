@@ -1,0 +1,16 @@
+﻿Metric,"Model 3: LightGBM, MSE","Model 4: LightGBM, MTL",Adjusted p-value
+Accuracy,0.506,0.896,p=0.024
+Balanced accuracy,0.662,0.858,p=0.024
+Blocker precision,0.036,0.153,p=0.024
+Blocker recall (sensitivity),0.825,0.819,p=1.000
+Blocker F1,0.069,0.258,p=0.024
+Nonblocker recall (specificity),0.499,0.898,p=0.024
+Nonblocker precision (NPV),0.992,0.995,p=0.024
+Nonblocker F1,0.664,0.944,p=0.024
+ROC AUC,0.755,0.924,p=0.024
+Average precision,0.111,0.459,p=0.024
+PR AUC (trapezoidal),0.111,0.459,p=0.024
+Matthews correlation coefficient,0.095,0.326,p=0.024
+Cohen's kappa,0.027,0.230,p=0.024
+Misclassification rate,0.494,0.104,p=0.024
+Mean boundary distance among misclassified compounds (pIC50),0.322,0.105,p=0.024

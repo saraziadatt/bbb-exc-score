@@ -1,0 +1,32 @@
+{
+  "schema_version": 2,
+  "input_format": "external",
+  "prediction_source_files": [
+    "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions_clean/inxight_results/butina_outerfolds/all_selected_models.csv"
+  ],
+  "models": [
+    "dummy_mean_regression",
+    "dummy_prior_classification",
+    "lightgbm_mse_regression",
+    "lightgbm_mse_regression_threshold",
+    "custom_mtl_original",
+    "logbb_pred_shaker_retrained"
+  ],
+  "n_unique_model_pairs": 15,
+  "n_expected_pairwise_metric_rows": 195,
+  "n_actual_pairwise_metric_rows": 195,
+  "all_pairwise_metrics_exported": true,
+  "permutation_test": "paired two-sided within-compound swap of model outputs; class decision, score, and predicted logBB move together",
+  "permutation_replicates": 10000,
+  "bootstrap_replicates": 10000,
+  "bootstrap_purpose": "percentile confidence intervals for estimates and paired metric differences; not p-values",
+  "bootstrap_stratification": "BBB class (external compounds)",
+  "undefined_resample_policy": "Exclude only undefined metric replicates, never compounds; valid counts are exported and conditional inference is flagged.",
+  "distance_definition": "Distance is mean |predicted logBB + 1| among incorrectly classified compounds, using each model's actual saved decisions (including tuned thresholds). The margin is fixed at -1; classification uses the table's classification population and regression uses measured-logBB compounds. Means with no mistakes or no predicted logBB are undefined.",
+  "wrong_side_count_definition": "Total classification errors: false positives + false negatives, using each model's actual saved decisions within the evaluated subset.",
+  "np_wrong_side_count_definition": "Non-penetrant false negatives: true BBB class 1 predicted as class 0, using each model's actual saved decisions within the evaluated subset.",
+  "zero_denominator_convention": "NP precision, NP F1 (when recall is defined), and MCC are zero for zero denominators; constant-input Pearson correlation and empty conditional means are undefined.",
+  "holm_family": "all finite metric p-values within each unique model pair and subset; no adjustment across pairs or for later comparator selection",
+  "confidence": 0.95,
+  "seed": 20260730
+}

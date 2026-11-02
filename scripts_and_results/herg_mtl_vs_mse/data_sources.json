@@ -1,0 +1,24 @@
+{
+  "screen": {
+    "path": "herg_mtl_vs_mse/herg_downloads/herg_central_10uM.csv",
+    "sha256": "0bd2fb445c36ce2a50619627bbefcf4937b0a17c781e880a22fa9f1a3a0665a7",
+    "download": {
+      "url": "https://huggingface.co/datasets/scikit-fingerprints/TDC_herg_central_at_10um/resolve/main/tdc_herg_central_at_10um.csv",
+      "sha256": "0bd2fb445c36ce2a50619627bbefcf4937b0a17c781e880a22fa9f1a3a0665a7"
+    }
+  },
+  "ic50": {
+    "path": "herg_mtl_vs_mse/herg_downloads/chembl_activity.csv",
+    "sha256": "b16a559b24957cf188bf08afaa070e117edbd6d288c3befb18e09c702db74e67"
+  },
+  "assays": {
+    "path": "herg_mtl_vs_mse/herg_downloads/chembl_assay.csv",
+    "sha256": "eea380452bcf290754dc888d55f4ae1b90fe091d17496f9e0237936f78095427"
+  },
+  "retrieved_utc": "2026-10-29T19:28:48.982324+00:00",
+  "references": [
+    "https://doi.org/10.1371/journal.pone.0199348",
+    "https://tdcommons.ai/single_pred_tasks/tox/#herg-central",
+    "https://www.ebi.ac.uk/chembl/api/data/docs"
+  ]
+}

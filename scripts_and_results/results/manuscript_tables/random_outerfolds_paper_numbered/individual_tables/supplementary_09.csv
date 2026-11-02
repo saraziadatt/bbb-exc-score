@@ -1,0 +1,9 @@
+﻿Hyperparameter,Fold 1,Fold 2,Fold 3,Fold 4,Fold 5
+Beta,3,5,4,4.75,4.75
+Margin buffer,0.35,0.33,0.35,0.33,0.35
+Learning rate,0.064,0.011,0.010,0.025,0.022
+Number of leaves,78,37,58,30,31
+Maximum depth,6,7,9,7,11
+Minimum child samples,48,11,9,21,44
+Subsample,0.630,0.707,0.563,0.577,0.616
+Column samples by tree,0.720,0.864,0.578,0.625,0.738

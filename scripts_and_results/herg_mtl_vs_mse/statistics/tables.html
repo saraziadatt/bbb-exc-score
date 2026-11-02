@@ -1,0 +1,588 @@
+<!doctype html><meta charset="utf-8"><title>hERG model comparison</title><style>body{font:15px Arial,sans-serif;margin:32px;color:#17202a;max-width:1500px} table{border-collapse:collapse;width:100%;margin:18px 0 36px} th,td{padding:9px 12px;border-bottom:1px solid #d7dde3;text-align:right;font-variant-numeric:tabular-nums}th{background:#e8eef4} th:first-child,td:first-child{text-align:left} h2{font-size:20px;margin-top:36px} p{line-height:1.5} @media print{body{font-size:10px;margin:0} h2{break-before:page} tr{break-inside:avoid}}</style><h1>hERG model comparison</h1><p>Positive class: hERG blocker. Predictions &gt;= 5 pIC50 are classified as blockers. Difference = mtl minus mse. CI: paired percentile bootstrap, 2,000 resamples stratified by fold, label source and class. P-values: two-sided paired prediction-swap permutation tests, 2,000 randomizations. Holm correction is applied across all classification metrics and subsets together, and separately across measured-subset regression metrics. NA denotes an undefined estimate/test. N is the eligible subset size; wrong-side distance uses each model&#x27;s own misclassified compounds (counts are in counts.csv). CIs are conditional on these fitted out-of-fold models; training-set and chemical-series dependence are not captured. Degenerate bootstrap intervals can understate uncertainty.</p><h2>Classification: All compounds</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Metric</th>
+      <th>N</th>
+      <th>mse [95% CI]</th>
+      <th>mtl [95% CI]</th>
+      <th>Difference [95% CI]</th>
+      <th>p (raw)</th>
+      <th>p (Holm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Accuracy</td>
+      <td>282155</td>
+      <td>0.506 [0.504, 0.508]</td>
+      <td>0.896 [0.895, 0.897]</td>
+      <td>0.391 [0.389, 0.392]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Balanced accuracy</td>
+      <td>282155</td>
+      <td>0.662 [0.657, 0.667]</td>
+      <td>0.858 [0.854, 0.863]</td>
+      <td>0.196 [0.191, 0.202]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Blocker precision</td>
+      <td>282155</td>
+      <td>0.036 [0.035, 0.036]</td>
+      <td>0.153 [0.151, 0.155]</td>
+      <td>0.117 [0.115, 0.120]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Blocker recall (sensitivity)</td>
+      <td>282155</td>
+      <td>0.825 [0.816, 0.834]</td>
+      <td>0.819 [0.809, 0.828]</td>
+      <td>-0.007 [-0.016, 0.004]</td>
+      <td>0.2224</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Blocker F1</td>
+      <td>282155</td>
+      <td>0.069 [0.068, 0.069]</td>
+      <td>0.258 [0.255, 0.262]</td>
+      <td>0.190 [0.186, 0.193]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Nonblocker recall (specificity)</td>
+      <td>282155</td>
+      <td>0.499 [0.497, 0.500]</td>
+      <td>0.898 [0.897, 0.899]</td>
+      <td>0.399 [0.398, 0.401]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Nonblocker precision (NPV)</td>
+      <td>282155</td>
+      <td>0.992 [0.992, 0.993]</td>
+      <td>0.995 [0.995, 0.996]</td>
+      <td>0.003 [0.003, 0.004]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Nonblocker F1</td>
+      <td>282155</td>
+      <td>0.664 [0.662, 0.665]</td>
+      <td>0.944 [0.944, 0.945]</td>
+      <td>0.281 [0.279, 0.282]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>ROC AUC</td>
+      <td>282155</td>
+      <td>0.755 [0.749, 0.761]</td>
+      <td>0.924 [0.920, 0.928]</td>
+      <td>0.169 [0.164, 0.175]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Average precision</td>
+      <td>282155</td>
+      <td>0.111 [0.104, 0.118]</td>
+      <td>0.459 [0.448, 0.471]</td>
+      <td>0.349 [0.339, 0.359]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>PR AUC (trapezoidal)</td>
+      <td>282155</td>
+      <td>0.111 [0.104, 0.118]</td>
+      <td>0.459 [0.448, 0.471]</td>
+      <td>0.349 [0.339, 0.359]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Matthews correlation coefficient</td>
+      <td>282155</td>
+      <td>0.095 [0.092, 0.098]</td>
+      <td>0.326 [0.322, 0.331]</td>
+      <td>0.231 [0.227, 0.236]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Cohen's kappa</td>
+      <td>282155</td>
+      <td>0.027 [0.027, 0.028]</td>
+      <td>0.230 [0.226, 0.233]</td>
+      <td>0.202 [0.199, 0.205]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Misclassification rate</td>
+      <td>282155</td>
+      <td>0.494 [0.492, 0.496]</td>
+      <td>0.104 [0.103, 0.105]</td>
+      <td>-0.391 [-0.392, -0.389]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Mean boundary distance among misclassified compounds (pIC50)</td>
+      <td>282155</td>
+      <td>0.322 [0.321, 0.324]</td>
+      <td>0.105 [0.103, 0.106]</td>
+      <td>-0.218 [-0.219, -0.216]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Mean absolute boundary distance, all predictions (pIC50)</td>
+      <td>282155</td>
+      <td>0.305 [0.304, 0.306]</td>
+      <td>0.232 [0.231, 0.232]</td>
+      <td>-0.073 [-0.074, -0.072]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+  </tbody>
+</table><h2>Classification: Measured IC50</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Metric</th>
+      <th>N</th>
+      <th>mse [95% CI]</th>
+      <th>mtl [95% CI]</th>
+      <th>Difference [95% CI]</th>
+      <th>p (raw)</th>
+      <th>p (Holm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Accuracy</td>
+      <td>2815</td>
+      <td>0.788 [0.774, 0.802]</td>
+      <td>0.796 [0.782, 0.811]</td>
+      <td>0.008 [-0.005, 0.020]</td>
+      <td>0.2559</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Balanced accuracy</td>
+      <td>2815</td>
+      <td>0.730 [0.712, 0.748]</td>
+      <td>0.743 [0.725, 0.761]</td>
+      <td>0.013 [-0.003, 0.029]</td>
+      <td>0.09895</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Blocker precision</td>
+      <td>2815</td>
+      <td>0.818 [0.807, 0.830]</td>
+      <td>0.828 [0.816, 0.839]</td>
+      <td>0.010 [-0.001, 0.020]</td>
+      <td>0.06697</td>
+      <td>0.8706</td>
+    </tr>
+    <tr>
+      <td>Blocker recall (sensitivity)</td>
+      <td>2815</td>
+      <td>0.888 [0.875, 0.902]</td>
+      <td>0.887 [0.872, 0.901]</td>
+      <td>-0.002 [-0.015, 0.011]</td>
+      <td>0.8741</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Blocker F1</td>
+      <td>2815</td>
+      <td>0.852 [0.842, 0.861]</td>
+      <td>0.856 [0.846, 0.866]</td>
+      <td>0.004 [-0.004, 0.013]</td>
+      <td>0.3293</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Nonblocker recall (specificity)</td>
+      <td>2815</td>
+      <td>0.571 [0.539, 0.605]</td>
+      <td>0.600 [0.568, 0.631]</td>
+      <td>0.028 [-0.001, 0.057]</td>
+      <td>0.06747</td>
+      <td>0.8706</td>
+    </tr>
+    <tr>
+      <td>Nonblocker precision (NPV)</td>
+      <td>2815</td>
+      <td>0.703 [0.675, 0.730]</td>
+      <td>0.710 [0.683, 0.739]</td>
+      <td>0.007 [-0.019, 0.034]</td>
+      <td>0.5927</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Nonblocker F1</td>
+      <td>2815</td>
+      <td>0.630 [0.604, 0.657]</td>
+      <td>0.650 [0.624, 0.676]</td>
+      <td>0.020 [-0.004, 0.044]</td>
+      <td>0.09995</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>ROC AUC</td>
+      <td>2815</td>
+      <td>0.832 [0.816, 0.847]</td>
+      <td>0.855 [0.840, 0.870]</td>
+      <td>0.023 [0.012, 0.033]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Average precision</td>
+      <td>2815</td>
+      <td>0.905 [0.892, 0.917]</td>
+      <td>0.918 [0.906, 0.931]</td>
+      <td>0.013 [0.007, 0.020]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>PR AUC (trapezoidal)</td>
+      <td>2815</td>
+      <td>0.905 [0.892, 0.917]</td>
+      <td>0.918 [0.906, 0.930]</td>
+      <td>0.013 [0.007, 0.020]</td>
+      <td>0.0009995</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Matthews correlation coefficient</td>
+      <td>2815</td>
+      <td>0.489 [0.455, 0.524]</td>
+      <td>0.511 [0.476, 0.547]</td>
+      <td>0.022 [-0.009, 0.053]</td>
+      <td>0.1759</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Cohen's kappa</td>
+      <td>2815</td>
+      <td>0.484 [0.449, 0.519]</td>
+      <td>0.508 [0.473, 0.542]</td>
+      <td>0.023 [-0.008, 0.055]</td>
+      <td>0.1464</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Misclassification rate</td>
+      <td>2815</td>
+      <td>0.212 [0.198, 0.226]</td>
+      <td>0.204 [0.189, 0.218]</td>
+      <td>-0.008 [-0.020, 0.005]</td>
+      <td>0.2559</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Mean boundary distance among misclassified compounds (pIC50)</td>
+      <td>2815</td>
+      <td>0.253 [0.231, 0.277]</td>
+      <td>0.193 [0.172, 0.218]</td>
+      <td>-0.060 [-0.076, -0.043]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Mean absolute boundary distance, all predictions (pIC50)</td>
+      <td>2815</td>
+      <td>0.490 [0.473, 0.507]</td>
+      <td>0.427 [0.411, 0.444]</td>
+      <td>-0.063 [-0.070, -0.055]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+  </tbody>
+</table><h2>Classification: Screen-only</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Metric</th>
+      <th>N</th>
+      <th>mse [95% CI]</th>
+      <th>mtl [95% CI]</th>
+      <th>Difference [95% CI]</th>
+      <th>p (raw)</th>
+      <th>p (Holm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Accuracy</td>
+      <td>279340</td>
+      <td>0.503 [0.501, 0.505]</td>
+      <td>0.897 [0.896, 0.898]</td>
+      <td>0.394 [0.393, 0.396]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Balanced accuracy</td>
+      <td>279340</td>
+      <td>0.648 [0.641, 0.654]</td>
+      <td>0.844 [0.838, 0.850]</td>
+      <td>0.196 [0.189, 0.203]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Blocker precision</td>
+      <td>279340</td>
+      <td>0.024 [0.024, 0.025]</td>
+      <td>0.109 [0.107, 0.110]</td>
+      <td>0.084 [0.083, 0.086]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Blocker recall (sensitivity)</td>
+      <td>279340</td>
+      <td>0.797 [0.784, 0.810]</td>
+      <td>0.788 [0.777, 0.801]</td>
+      <td>-0.009 [-0.023, 0.006]</td>
+      <td>0.2209</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Blocker F1</td>
+      <td>279340</td>
+      <td>0.047 [0.046, 0.048]</td>
+      <td>0.191 [0.188, 0.194]</td>
+      <td>0.144 [0.141, 0.147]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Nonblocker recall (specificity)</td>
+      <td>279340</td>
+      <td>0.498 [0.496, 0.500]</td>
+      <td>0.899 [0.898, 0.900]</td>
+      <td>0.401 [0.399, 0.403]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Nonblocker precision (NPV)</td>
+      <td>279340</td>
+      <td>0.994 [0.993, 0.994]</td>
+      <td>0.996 [0.996, 0.997]</td>
+      <td>0.003 [0.002, 0.003]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Nonblocker F1</td>
+      <td>279340</td>
+      <td>0.664 [0.662, 0.665]</td>
+      <td>0.945 [0.945, 0.946]</td>
+      <td>0.281 [0.280, 0.283]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>ROC AUC</td>
+      <td>279340</td>
+      <td>0.737 [0.729, 0.745]</td>
+      <td>0.912 [0.908, 0.917]</td>
+      <td>0.175 [0.168, 0.183]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Average precision</td>
+      <td>279340</td>
+      <td>0.063 [0.058, 0.069]</td>
+      <td>0.264 [0.253, 0.277]</td>
+      <td>0.201 [0.191, 0.212]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>PR AUC (trapezoidal)</td>
+      <td>279340</td>
+      <td>0.063 [0.058, 0.069]</td>
+      <td>0.264 [0.252, 0.276]</td>
+      <td>0.201 [0.191, 0.212]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Matthews correlation coefficient</td>
+      <td>279340</td>
+      <td>0.073 [0.070, 0.076]</td>
+      <td>0.268 [0.264, 0.273]</td>
+      <td>0.196 [0.191, 0.201]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Cohen's kappa</td>
+      <td>279340</td>
+      <td>0.018 [0.017, 0.018]</td>
+      <td>0.168 [0.165, 0.172]</td>
+      <td>0.151 [0.148, 0.154]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Misclassification rate</td>
+      <td>279340</td>
+      <td>0.497 [0.495, 0.499]</td>
+      <td>0.103 [0.102, 0.104]</td>
+      <td>-0.394 [-0.396, -0.393]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Mean boundary distance among misclassified compounds (pIC50)</td>
+      <td>279340</td>
+      <td>0.323 [0.321, 0.324]</td>
+      <td>0.103 [0.102, 0.104]</td>
+      <td>-0.220 [-0.221, -0.218]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+    <tr>
+      <td>Mean absolute boundary distance, all predictions (pIC50)</td>
+      <td>279340</td>
+      <td>0.303 [0.302, 0.304]</td>
+      <td>0.230 [0.229, 0.230]</td>
+      <td>-0.073 [-0.074, -0.072]</td>
+      <td>0.0004998</td>
+      <td>0.02399</td>
+    </tr>
+  </tbody>
+</table><h2>Regression: Measured IC50</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Metric</th>
+      <th>N</th>
+      <th>mse [95% CI]</th>
+      <th>mtl [95% CI]</th>
+      <th>Difference [95% CI]</th>
+      <th>p (raw)</th>
+      <th>p (Holm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MAE (pIC50)</td>
+      <td>2815</td>
+      <td>0.361 [0.349, 0.374]</td>
+      <td>0.358 [0.345, 0.371]</td>
+      <td>-0.004 [-0.011, 0.004]</td>
+      <td>0.3433</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>MSE (squared pIC50)</td>
+      <td>2815</td>
+      <td>0.244 [0.222, 0.268]</td>
+      <td>0.249 [0.225, 0.276]</td>
+      <td>0.005 [-0.005, 0.016]</td>
+      <td>0.3078</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>RMSE (pIC50)</td>
+      <td>2815</td>
+      <td>0.494 [0.471, 0.518]</td>
+      <td>0.499 [0.475, 0.526]</td>
+      <td>0.005 [-0.005, 0.016]</td>
+      <td>0.3078</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Median absolute error (pIC50)</td>
+      <td>2815</td>
+      <td>0.276 [0.264, 0.286]</td>
+      <td>0.262 [0.250, 0.278]</td>
+      <td>-0.014 [-0.024, -0.000]</td>
+      <td>0.02749</td>
+      <td>0.1649</td>
+    </tr>
+    <tr>
+      <td>R-squared</td>
+      <td>2815</td>
+      <td>0.556 [0.514, 0.594]</td>
+      <td>0.546 [0.501, 0.586]</td>
+      <td>-0.010 [-0.029, 0.009]</td>
+      <td>0.3078</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Pearson r</td>
+      <td>2815</td>
+      <td>0.747 [0.719, 0.771]</td>
+      <td>0.743 [0.712, 0.770]</td>
+      <td>-0.003 [-0.016, 0.009]</td>
+      <td>0.5907</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Spearman rho</td>
+      <td>2815</td>
+      <td>0.709 [0.687, 0.729]</td>
+      <td>0.726 [0.707, 0.746]</td>
+      <td>0.018 [0.004, 0.031]</td>
+      <td>0.01699</td>
+      <td>0.1189</td>
+    </tr>
+    <tr>
+      <td>Blocker MAE (pIC50)</td>
+      <td>1926</td>
+      <td>0.350 [0.334, 0.365]</td>
+      <td>0.363 [0.346, 0.379]</td>
+      <td>0.013 [0.004, 0.022]</td>
+      <td>0.001999</td>
+      <td>0.01599</td>
+    </tr>
+    <tr>
+      <td>Nonblocker MAE (pIC50)</td>
+      <td>889</td>
+      <td>0.387 [0.365, 0.410]</td>
+      <td>0.347 [0.328, 0.368]</td>
+      <td>-0.039 [-0.053, -0.027]</td>
+      <td>0.0004998</td>
+      <td>0.005497</td>
+    </tr>
+    <tr>
+      <td>Blocker RMSE (pIC50)</td>
+      <td>1926</td>
+      <td>0.485 [0.459, 0.513]</td>
+      <td>0.516 [0.488, 0.547]</td>
+      <td>0.031 [0.019, 0.044]</td>
+      <td>0.0004998</td>
+      <td>0.005497</td>
+    </tr>
+    <tr>
+      <td>Nonblocker RMSE (pIC50)</td>
+      <td>889</td>
+      <td>0.512 [0.471, 0.561]</td>
+      <td>0.461 [0.414, 0.514]</td>
+      <td>-0.051 [-0.071, -0.033]</td>
+      <td>0.0004998</td>
+      <td>0.005497</td>
+    </tr>
+  </tbody>
+</table>

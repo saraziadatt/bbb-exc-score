@@ -1,0 +1,61 @@
+{
+  "input_file": "/Users/sziadat/Documents/bbbx/bbb-exc-score/datasets/druglike_b3db_labelled_outerfolds.csv",
+  "input_sha256": "1e6870793c1ac669861ba6c77b853a9db13a1c27e25f25eaafd98904f98b52e8",
+  "output_directory": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions_clean/random_outerfolds/baseline_threshold_ablation_results",
+  "n_samples": 3188,
+  "n_measured_logbb": 767,
+  "n_classification_only": 2421,
+  "n_features_loaded": 3223,
+  "outer_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "models_trained_here": [
+    "dummy_mean_regression",
+    "lightgbm_mse_regression",
+    "dummy_prior_classification"
+  ],
+  "models_in_final_output": [
+    "dummy_mean_regression",
+    "lightgbm_mse_regression",
+    "dummy_prior_classification",
+    "lightgbm_mse_regression_threshold"
+  ],
+  "class_encoding": {
+    "0": "BBB penetrant",
+    "1": "BBB non-penetrant"
+  },
+  "logbb_threshold": -1.0,
+  "seed": 15,
+  "inner_folds": 5,
+  "lgbm_search_iterations": 100,
+  "lgbm_boost_rounds": 1000,
+  "mse_threshold_ablation": {
+    "enabled": true,
+    "tuned_model_name": "lightgbm_mse_regression_threshold",
+    "selection_data": "inner-fold OOF predictions on all classification-labelled outer-training rows; each inner model fitted only on measured-logBB rows",
+    "selection_metric": "balanced_accuracy",
+    "continuous_model_identical_to_fixed_threshold_mse": true
+  },
+  "missing_value_policy": "native LightGBM NaN handling; no imputation",
+  "matched_mse_ablation": {
+    "structural_search_space": "matched to custom-MTL script 04",
+    "sampler": "Optuna TPESampler",
+    "boost_rounds": 1000,
+    "search_iterations": 100,
+    "note": "Use the same iteration count as --mtl-trials for the paired comparison."
+  },
+  "versions": {
+    "python": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:28:47) [Clang 19.1.7 ]",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.7.2",
+    "lightgbm": "4.6.0",
+    "optuna": "4.6.0",
+    "joblib": "1.5.3"
+  }
+}

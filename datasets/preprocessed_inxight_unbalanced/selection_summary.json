@@ -1,0 +1,20 @@
+{
+  "reference_csv": "/Users/sziadat/Documents/bbbx/bbb-exc-score/datasets/druglike_b3db_labelled_outerfolds.csv",
+  "penetrant_csv": "/Users/sziadat/Documents/bbbx/bbb-exc-score/datasets/preprocessed_inxight/druglike_inxight_penetrant.csv",
+  "nonpenetrant_csv": "/Users/sziadat/Documents/bbbx/bbb-exc-score/datasets/preprocessed_inxight/druglike_inxight_nonpenetrant.csv",
+  "similarity_definition": {
+    "fingerprint": "Morgan",
+    "radius": 2,
+    "bits": 2048,
+    "include_chirality": true,
+    "metric": "Tanimoto"
+  },
+  "reference_exclusion_rule": "exclude if max Tanimoto >= 0.9",
+  "pairwise_external_threshold": null,
+  "seed": 15,
+  "n_reference_unique_valid": 3188,
+  "n_final_penetrant": 450,
+  "n_final_nonpenetrant": 154,
+  "n_final_total": 604,
+  "max_reference_similarity_in_final_set": 0.8947368421052632
+}

@@ -1,0 +1,44 @@
+{
+  "data_path": "../datasets/druglike_b3db_labelled_butina_outerfolds.csv",
+  "model_dir": "butina_outerfolds/all_model_results/fitted_models",
+  "selected_outer_fold": "0",
+  "inner_fold_column": "inner_fold_outer_0",
+  "fallback_inner_seed": 15,
+  "figure_sources": {
+    "grouped_shap": "./results/shap_analysis/butina_outerfolds/grouped_shap/grouped_shap_summary.csv",
+    "oof_predictions": null,
+    "training_predictions": null,
+    "external_predictions": null,
+    "beta_sweep": null,
+    "regression_tests": null,
+    "flowchart": null,
+    "feature_distributions": null
+  },
+  "model_ids": {
+    "mse": "lightgbm_mse_regression",
+    "custom": "custom_mtl_bab",
+    "tuned": "lightgbm_mse_regression_threshold"
+  },
+  "main_features": [
+    "TopoPSA",
+    "DPSA4",
+    "ATSC4c"
+  ],
+  "formats": [
+    "pdf",
+    "svg",
+    "png"
+  ],
+  "consensus_rules": [
+    [
+      "DPSA4",
+      ">",
+      38.62656570208128
+    ],
+    [
+      "nAcid",
+      ">",
+      0.0
+    ]
+  ]
+}

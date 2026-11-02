@@ -1,0 +1,6 @@
+﻿Metric,"Model 3: LightGBM, MSE","Model 4: LightGBM, MTL",Adjusted p-value
+MAE,0.361,0.358,p=1.000
+MSE,0.244,0.249,p=1.000
+MDE,0.276,0.262,p=0.165
+R²,0.556,0.546,p=1.000
+Pearson's R,0.747,0.743,p=1.000

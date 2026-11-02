@@ -1,0 +1,79 @@
+model,display_name,subset,subset_label,metric,n_samples,value,metric_status,estimate_ci_lower,estimate_ci_upper,n_bootstrap_valid,n_incorrect_for_distance_mean,direction
+dummy_mean_regression,Dummy regression mean,all_threshold,All labelled compounds: threshold-derived,balanced_accuracy,210,0.5,available,0.5,0.5,10000,,higher
+dummy_mean_regression,Dummy regression mean,all_threshold,All labelled compounds: threshold-derived,np_recall,210,0.0,available,0.0,0.0,10000,,higher
+dummy_mean_regression,Dummy regression mean,all_threshold,All labelled compounds: threshold-derived,np_precision,210,0.0,available,0.0,0.0,10000,,higher
+dummy_mean_regression,Dummy regression mean,all_threshold,All labelled compounds: threshold-derived,np_f1,210,0.0,available,0.0,0.0,10000,,higher
+dummy_mean_regression,Dummy regression mean,all_threshold,All labelled compounds: threshold-derived,roc_auc,210,0.5,available,0.5,0.5,10000,,higher
+dummy_mean_regression,Dummy regression mean,all_threshold,All labelled compounds: threshold-derived,pr_auc_nonpenetrant,210,0.5,available,0.5,0.5,10000,,higher
+dummy_mean_regression,Dummy regression mean,all_threshold,All labelled compounds: threshold-derived,mcc,210,0.0,available,0.0,0.0,10000,,higher
+dummy_mean_regression,Dummy regression mean,all_threshold,All labelled compounds: threshold-derived,cohens_kappa,210,0.0,available,0.0,0.0,10000,,higher
+dummy_mean_regression,Dummy regression mean,all_threshold,All labelled compounds: threshold-derived,wrong_side_count,210,105.0,available,105.0,105.0,10000,,lower
+dummy_mean_regression,Dummy regression mean,all_threshold,All labelled compounds: threshold-derived,np_wrong_side_count,210,105.0,available,105.0,105.0,10000,,lower
+dummy_mean_regression,Dummy regression mean,all_threshold,All labelled compounds: threshold-derived,wrong_side_mean_distance,210,0.9268580906241094,available,0.9268580906241095,0.9268580906241095,10000,105.0,lower
+dummy_mean_regression,Dummy regression mean,all_threshold,All labelled compounds: threshold-derived,np_wrong_side_mean_distance,210,0.9268580906241094,available,0.9268580906241095,0.9268580906241095,10000,105.0,lower
+dummy_mean_regression,Dummy regression mean,all_threshold,All labelled compounds: threshold-derived,penetrant_wrong_side_mean_distance,210,,no_incorrect_compounds_in_conditioning_group,,,0,0.0,lower
+dummy_prior_classification,Dummy classification baseline,all_threshold,All labelled compounds: threshold-derived,balanced_accuracy,210,0.5,available,0.5,0.5,10000,,higher
+dummy_prior_classification,Dummy classification baseline,all_threshold,All labelled compounds: threshold-derived,np_recall,210,0.0,available,0.0,0.0,10000,,higher
+dummy_prior_classification,Dummy classification baseline,all_threshold,All labelled compounds: threshold-derived,np_precision,210,0.0,available,0.0,0.0,10000,,higher
+dummy_prior_classification,Dummy classification baseline,all_threshold,All labelled compounds: threshold-derived,np_f1,210,0.0,available,0.0,0.0,10000,,higher
+dummy_prior_classification,Dummy classification baseline,all_threshold,All labelled compounds: threshold-derived,roc_auc,210,0.5,available,0.5,0.5,10000,,higher
+dummy_prior_classification,Dummy classification baseline,all_threshold,All labelled compounds: threshold-derived,pr_auc_nonpenetrant,210,0.5,available,0.5,0.5,10000,,higher
+dummy_prior_classification,Dummy classification baseline,all_threshold,All labelled compounds: threshold-derived,mcc,210,0.0,available,0.0,0.0,10000,,higher
+dummy_prior_classification,Dummy classification baseline,all_threshold,All labelled compounds: threshold-derived,cohens_kappa,210,0.0,available,0.0,0.0,10000,,higher
+dummy_prior_classification,Dummy classification baseline,all_threshold,All labelled compounds: threshold-derived,wrong_side_count,210,105.0,available,105.0,105.0,10000,,lower
+dummy_prior_classification,Dummy classification baseline,all_threshold,All labelled compounds: threshold-derived,np_wrong_side_count,210,105.0,available,105.0,105.0,10000,,lower
+dummy_prior_classification,Dummy classification baseline,all_threshold,All labelled compounds: threshold-derived,wrong_side_mean_distance,210,,no_predicted_logBB,,,0,105.0,lower
+dummy_prior_classification,Dummy classification baseline,all_threshold,All labelled compounds: threshold-derived,np_wrong_side_mean_distance,210,,no_predicted_logBB,,,0,105.0,lower
+dummy_prior_classification,Dummy classification baseline,all_threshold,All labelled compounds: threshold-derived,penetrant_wrong_side_mean_distance,210,,no_predicted_logBB,,,0,0.0,lower
+lightgbm_mse_regression,LightGBM MSE (native threshold),all_threshold,All labelled compounds: threshold-derived,balanced_accuracy,210,0.5333333333333333,available,0.4857142857142857,0.5809523809523809,10000,,higher
+lightgbm_mse_regression,LightGBM MSE (native threshold),all_threshold,All labelled compounds: threshold-derived,np_recall,210,0.17142857142857143,available,0.10476190476190476,0.24761904761904763,10000,,higher
+lightgbm_mse_regression,LightGBM MSE (native threshold),all_threshold,All labelled compounds: threshold-derived,np_precision,210,0.6206896551724138,available,0.45,0.7916666666666666,10000,,higher
+lightgbm_mse_regression,LightGBM MSE (native threshold),all_threshold,All labelled compounds: threshold-derived,np_f1,210,0.26865671641791045,available,0.16920168067226918,0.364963503649635,10000,,higher
+lightgbm_mse_regression,LightGBM MSE (native threshold),all_threshold,All labelled compounds: threshold-derived,roc_auc,210,0.6126984126984127,available,0.5365963718820862,0.689795918367347,10000,,higher
+lightgbm_mse_regression,LightGBM MSE (native threshold),all_threshold,All labelled compounds: threshold-derived,pr_auc_nonpenetrant,210,0.5763962530395419,available,0.5168528001732935,0.6663609934890258,10000,,higher
+lightgbm_mse_regression,LightGBM MSE (native threshold),all_threshold,All labelled compounds: threshold-derived,mcc,210,0.09661838049667341,available,-0.04027299167373659,0.22821361948450733,10000,,higher
+lightgbm_mse_regression,LightGBM MSE (native threshold),all_threshold,All labelled compounds: threshold-derived,cohens_kappa,210,0.06666666666666665,available,-0.02857142857142858,0.161904761904762,10000,,higher
+lightgbm_mse_regression,LightGBM MSE (native threshold),all_threshold,All labelled compounds: threshold-derived,wrong_side_count,210,98.0,available,88.0,108.0,10000,,lower
+lightgbm_mse_regression,LightGBM MSE (native threshold),all_threshold,All labelled compounds: threshold-derived,np_wrong_side_count,210,87.0,available,79.0,94.0,10000,,lower
+lightgbm_mse_regression,LightGBM MSE (native threshold),all_threshold,All labelled compounds: threshold-derived,wrong_side_mean_distance,210,0.5456175880844409,available,0.4650311209454782,0.6299381060045928,10000,98.0,lower
+lightgbm_mse_regression,LightGBM MSE (native threshold),all_threshold,All labelled compounds: threshold-derived,np_wrong_side_mean_distance,210,0.5783476194353402,available,0.49141890957967355,0.6691456022884191,10000,87.0,lower
+lightgbm_mse_regression,LightGBM MSE (native threshold),all_threshold,All labelled compounds: threshold-derived,penetrant_wrong_side_mean_distance,210,0.28675279467278403,available,0.15628794918985114,0.4265489311554826,10000,11.0,lower
+lightgbm_mse_regression_threshold,LightGBM MSE (altered threshold),all_threshold,All labelled compounds: threshold-derived,balanced_accuracy,210,0.5714285714285714,available,0.5047619047619047,0.638095238095238,10000,,higher
+lightgbm_mse_regression_threshold,LightGBM MSE (altered threshold),all_threshold,All labelled compounds: threshold-derived,np_recall,210,0.6761904761904762,available,0.5904761904761905,0.7619047619047619,10000,,higher
+lightgbm_mse_regression_threshold,LightGBM MSE (altered threshold),all_threshold,All labelled compounds: threshold-derived,np_precision,210,0.5590551181102362,available,0.5039370078740157,0.6178861788617886,10000,,higher
+lightgbm_mse_regression_threshold,LightGBM MSE (altered threshold),all_threshold,All labelled compounds: threshold-derived,np_f1,210,0.6120689655172413,available,0.547945205479452,0.6724890829694322,10000,,higher
+lightgbm_mse_regression_threshold,LightGBM MSE (altered threshold),all_threshold,All labelled compounds: threshold-derived,roc_auc,210,0.6126984126984127,available,0.5365963718820862,0.689795918367347,10000,,higher
+lightgbm_mse_regression_threshold,LightGBM MSE (altered threshold),all_threshold,All labelled compounds: threshold-derived,pr_auc_nonpenetrant,210,0.5763962530395419,available,0.5168528001732935,0.6663609934890258,10000,,higher
+lightgbm_mse_regression_threshold,LightGBM MSE (altered threshold),all_threshold,All labelled compounds: threshold-derived,mcc,210,0.14610004590464165,available,0.009782787848062486,0.2824600887489738,10000,,higher
+lightgbm_mse_regression_threshold,LightGBM MSE (altered threshold),all_threshold,All labelled compounds: threshold-derived,cohens_kappa,210,0.1428571428571428,available,0.00952380952380949,0.2761904761904761,10000,,higher
+lightgbm_mse_regression_threshold,LightGBM MSE (altered threshold),all_threshold,All labelled compounds: threshold-derived,wrong_side_count,210,90.0,available,76.0,104.0,10000,,lower
+lightgbm_mse_regression_threshold,LightGBM MSE (altered threshold),all_threshold,All labelled compounds: threshold-derived,np_wrong_side_count,210,34.0,available,25.0,43.0,10000,,lower
+lightgbm_mse_regression_threshold,LightGBM MSE (altered threshold),all_threshold,All labelled compounds: threshold-derived,wrong_side_mean_distance,210,0.5993081704324597,available,0.5285928358068089,0.6730051508322312,10000,90.0,lower
+lightgbm_mse_regression_threshold,LightGBM MSE (altered threshold),all_threshold,All labelled compounds: threshold-derived,np_wrong_side_mean_distance,210,1.0181885484158224,available,0.9126833686028691,1.1311496885932275,10000,34.0,lower
+lightgbm_mse_regression_threshold,LightGBM MSE (altered threshold),all_threshold,All labelled compounds: threshold-derived,penetrant_wrong_side_mean_distance,210,0.3449879409425608,available,0.29658522643049257,0.39307739856478086,10000,56.0,lower
+custom_mtl_original,Custom MTL LightGBM clean,all_threshold,All labelled compounds: threshold-derived,balanced_accuracy,210,0.5714285714285714,available,0.5142857142857142,0.6285714285714286,10000,,higher
+custom_mtl_original,Custom MTL LightGBM clean,all_threshold,All labelled compounds: threshold-derived,np_recall,210,0.3238095238095238,available,0.23809523809523808,0.4095238095238095,10000,,higher
+custom_mtl_original,Custom MTL LightGBM clean,all_threshold,All labelled compounds: threshold-derived,np_precision,210,0.6415094339622641,available,0.5294117647058824,0.7592777777777775,10000,,higher
+custom_mtl_original,Custom MTL LightGBM clean,all_threshold,All labelled compounds: threshold-derived,np_f1,210,0.430379746835443,available,0.33121019108280253,0.5238095238095237,10000,,higher
+custom_mtl_original,Custom MTL LightGBM clean,all_threshold,All labelled compounds: threshold-derived,roc_auc,210,0.6424489795918368,available,0.5685260770975057,0.7169160997732427,10000,,higher
+custom_mtl_original,Custom MTL LightGBM clean,all_threshold,All labelled compounds: threshold-derived,pr_auc_nonpenetrant,210,0.6093626396219955,available,0.5439264249575065,0.6994390787603038,10000,,higher
+custom_mtl_original,Custom MTL LightGBM clean,all_threshold,All labelled compounds: threshold-derived,mcc,210,0.1644384967957872,available,0.03331483023263848,0.2993453443880276,10000,,higher
+custom_mtl_original,Custom MTL LightGBM clean,all_threshold,All labelled compounds: threshold-derived,cohens_kappa,210,0.1428571428571428,available,0.02857142857142847,0.2571428571428571,10000,,higher
+custom_mtl_original,Custom MTL LightGBM clean,all_threshold,All labelled compounds: threshold-derived,wrong_side_count,210,90.0,available,78.0,102.0,10000,,lower
+custom_mtl_original,Custom MTL LightGBM clean,all_threshold,All labelled compounds: threshold-derived,np_wrong_side_count,210,71.0,available,62.0,80.0,10000,,lower
+custom_mtl_original,Custom MTL LightGBM clean,all_threshold,All labelled compounds: threshold-derived,wrong_side_mean_distance,210,0.33732614075146233,available,0.28502034788500413,0.39417189537293884,10000,90.0,lower
+custom_mtl_original,Custom MTL LightGBM clean,all_threshold,All labelled compounds: threshold-derived,np_wrong_side_mean_distance,210,0.3640278704090169,available,0.30115748711330453,0.43170796975746006,10000,71.0,lower
+custom_mtl_original,Custom MTL LightGBM clean,all_threshold,All labelled compounds: threshold-derived,penetrant_wrong_side_mean_distance,210,0.23754599308375837,available,0.16046025350658685,0.3191666789262029,10000,19.0,lower
+logbb_pred_shaker_retrained,Matched-retrained logBB_pred strategy (Shaker et al.),all_threshold,All labelled compounds: threshold-derived,balanced_accuracy,210,0.5333333333333333,available,0.49047619047619045,0.5761904761904761,10000,,higher
+logbb_pred_shaker_retrained,Matched-retrained logBB_pred strategy (Shaker et al.),all_threshold,All labelled compounds: threshold-derived,np_recall,210,0.1523809523809524,available,0.08571428571428572,0.21904761904761905,10000,,higher
+logbb_pred_shaker_retrained,Matched-retrained logBB_pred strategy (Shaker et al.),all_threshold,All labelled compounds: threshold-derived,np_precision,210,0.64,available,0.45454545454545453,0.8235294117647058,10000,,higher
+logbb_pred_shaker_retrained,Matched-retrained logBB_pred strategy (Shaker et al.),all_threshold,All labelled compounds: threshold-derived,np_f1,210,0.2461538461538462,available,0.14754098360655737,0.34285714285714286,10000,,higher
+logbb_pred_shaker_retrained,Matched-retrained logBB_pred strategy (Shaker et al.),all_threshold,All labelled compounds: threshold-derived,roc_auc,210,0.607437641723356,available,0.5297936507936508,0.6841746031746032,10000,,higher
+logbb_pred_shaker_retrained,Matched-retrained logBB_pred strategy (Shaker et al.),all_threshold,All labelled compounds: threshold-derived,pr_auc_nonpenetrant,210,0.578857494415144,available,0.5172598323971143,0.6709946873628403,10000,,higher
+logbb_pred_shaker_retrained,Matched-retrained logBB_pred strategy (Shaker et al.),all_threshold,All labelled compounds: threshold-derived,mcc,210,0.10293004709313308,available,-0.031098520678556143,0.23132597278649608,10000,,higher
+logbb_pred_shaker_retrained,Matched-retrained logBB_pred strategy (Shaker et al.),all_threshold,All labelled compounds: threshold-derived,cohens_kappa,210,0.06666666666666665,available,-0.01904761904761909,0.15238095238095228,10000,,higher
+logbb_pred_shaker_retrained,Matched-retrained logBB_pred strategy (Shaker et al.),all_threshold,All labelled compounds: threshold-derived,wrong_side_count,210,98.0,available,89.0,107.0,10000,,lower
+logbb_pred_shaker_retrained,Matched-retrained logBB_pred strategy (Shaker et al.),all_threshold,All labelled compounds: threshold-derived,np_wrong_side_count,210,89.0,available,82.0,96.0,10000,,lower
+logbb_pred_shaker_retrained,Matched-retrained logBB_pred strategy (Shaker et al.),all_threshold,All labelled compounds: threshold-derived,wrong_side_mean_distance,210,0.5444295013578165,available,0.4679431780276532,0.6251884801623928,10000,98.0,lower
+logbb_pred_shaker_retrained,Matched-retrained logBB_pred strategy (Shaker et al.),all_threshold,All labelled compounds: threshold-derived,np_wrong_side_mean_distance,210,0.5787635727096807,available,0.4981949548089562,0.6633487713806697,10000,89.0,lower
+logbb_pred_shaker_retrained,Matched-retrained logBB_pred strategy (Shaker et al.),all_threshold,All labelled compounds: threshold-derived,penetrant_wrong_side_mean_distance,210,0.20490368465604858,available,0.09504029260899229,0.32350180842130255,9999,9.0,lower

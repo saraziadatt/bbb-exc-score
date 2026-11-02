@@ -1,0 +1,119 @@
+family,subset,metric,label,better,n_subset,n_metric,model,estimate,ci_low,ci_high,n_valid_bootstraps,ci_degenerate
+classification,all,accuracy,Accuracy,higher,282155,282155,mse,0.5057220322163349,0.5039002498626641,0.5075691552515461,2000,False
+classification,all,accuracy,Accuracy,higher,282155,282155,mtl,0.8962662366429799,0.8951213871808048,0.89738273289504,2000,False
+classification,all,balanced_accuracy,Balanced accuracy,higher,282155,282155,mse,0.661880368221301,0.6568475901971298,0.6665717241370571,2000,False
+classification,all,balanced_accuracy,Balanced accuracy,higher,282155,282155,mtl,0.8583326773739819,0.8535549524047353,0.8631747956174379,2000,False
+classification,all,blocker_precision,Blocker precision,higher,282155,282155,mse,0.03576779156707942,0.03532931764815668,0.03618414930142002,2000,False
+classification,all,blocker_precision,Blocker precision,higher,282155,282155,mtl,0.15322119579935606,0.15110153339365287,0.15545794214959976,2000,False
+classification,all,blocker_recall,Blocker recall (sensitivity),higher,282155,282155,mse,0.8252411575562701,0.8155948553054663,0.8344091639871383,2000,False
+classification,all,blocker_recall,Blocker recall (sensitivity),higher,282155,282155,mtl,0.8186495176848875,0.8090032154340836,0.8282998392282959,2000,False
+classification,all,blocker_f1,Blocker F1,higher,282155,282155,mse,0.06856387206219236,0.06772746899992134,0.06935557796479758,2000,False
+classification,all,blocker_f1,Blocker F1,higher,282155,282155,mtl,0.2581299267482828,0.2547046374994194,0.2615434065015569,2000,False
+classification,all,nonblocker_specificity,Nonblocker recall (specificity),higher,282155,282155,mse,0.4985195788863319,0.4966422345842318,0.5004186674397956,2000,False
+classification,all,nonblocker_specificity,Nonblocker recall (specificity),higher,282155,282155,mtl,0.8980158370630764,0.8968592240926305,0.8991683729863917,2000,False
+classification,all,nonblocker_precision,Nonblocker precision (NPV),higher,282155,282155,mse,0.9921598892142579,0.9917235874432608,0.9925728117664624,2000,False
+classification,all,nonblocker_precision,Nonblocker precision (NPV),higher,282155,282155,mtl,0.9954684599995179,0.9952278606240836,0.9957106239373995,2000,False
+classification,all,nonblocker_f1,Nonblocker F1,higher,282155,282155,mse,0.6636049408921296,0.661951781021108,0.6652894207028951,2000,False
+classification,all,nonblocker_f1,Nonblocker F1,higher,282155,282155,mtl,0.9442343343043915,0.9435851279057896,0.9448680598558101,2000,False
+classification,all,roc_auc,ROC AUC,higher,282155,282155,mse,0.7548984356432793,0.7488074428774962,0.7610815551154139,2000,False
+classification,all,roc_auc,ROC AUC,higher,282155,282155,mtl,0.9241076056112519,0.920108118614192,0.9277254060689419,2000,False
+classification,all,average_precision,Average precision,higher,282155,282155,mse,0.11058500493139237,0.10403224703916028,0.11776990515001377,2000,False
+classification,all,average_precision,Average precision,higher,282155,282155,mtl,0.45944396470614285,0.44803521820422465,0.47113807444466754,2000,False
+classification,all,pr_auc_trapezoidal,PR AUC (trapezoidal),higher,282155,282155,mse,0.11050800871578936,0.10382045727168861,0.11762030970649544,2000,False
+classification,all,pr_auc_trapezoidal,PR AUC (trapezoidal),higher,282155,282155,mtl,0.4593583251391327,0.44783130182830944,0.47102896052664944,2000,False
+classification,all,mcc,Matthews correlation coefficient,higher,282155,282155,mse,0.095088834764654,0.09213033056463629,0.09784977550160737,2000,False
+classification,all,mcc,Matthews correlation coefficient,higher,282155,282155,mtl,0.3264364025663386,0.3219563423846243,0.33098172486699756,2000,False
+classification,all,cohens_kappa,Cohen's kappa,higher,282155,282155,mse,0.027466859487795404,0.026590806193445657,0.02829883489554033,2000,False
+classification,all,cohens_kappa,Cohen's kappa,higher,282155,282155,mtl,0.2295154314859164,0.22593182502219103,0.23310478182460256,2000,False
+classification,all,wrong_side_rate,Misclassification rate,lower,282155,282155,mse,0.494277967783665,0.4924308447484539,0.4960997501373358,2000,False
+classification,all,wrong_side_rate,Misclassification rate,lower,282155,282155,mtl,0.10373376335702007,0.10261726710496005,0.10487861281919511,2000,False
+classification,all,wrong_side_distance,Mean boundary distance among misclassified compounds (pIC50),lower,282155,282155,mse,0.3223356432822087,0.3210248253173363,0.32373837028859853,2000,False
+classification,all,wrong_side_distance,Mean boundary distance among misclassified compounds (pIC50),lower,282155,282155,mtl,0.10460532021021468,0.10340555341517921,0.1057842389359566,2000,False
+classification,all,mean_distance_from_boundary,"Mean absolute boundary distance, all predictions (pIC50)",descriptive,282155,282155,mse,0.3051377601581446,0.3042837227404158,0.30603957182866987,2000,False
+classification,all,mean_distance_from_boundary,"Mean absolute boundary distance, all predictions (pIC50)",descriptive,282155,282155,mtl,0.23179661315025119,0.23133080822552962,0.23226772597588782,2000,False
+classification,measured,accuracy,Accuracy,higher,2815,2815,mse,0.7882770870337478,0.7744227353463587,0.8017761989342806,2000,False
+classification,measured,accuracy,Accuracy,higher,2815,2815,mtl,0.7960923623445826,0.7822291296625221,0.8106571936056839,2000,False
+classification,measured,balanced_accuracy,Balanced accuracy,higher,2815,2815,mse,0.7298991247589378,0.7124564598817671,0.747855824388774,2000,False
+classification,measured,balanced_accuracy,Balanced accuracy,higher,2815,2815,mtl,0.74318105096676,0.7254836720176333,0.7606231464057647,2000,False
+classification,measured,blocker_precision,Blocker precision,higher,2815,2815,mse,0.8178776290630975,0.8065878933946137,0.8298087323772485,2000,False
+classification,measured,blocker_precision,Blocker precision,higher,2815,2815,mtl,0.8275193798449613,0.8161067405503463,0.8391091832288363,2000,False
+classification,measured,blocker_recall,Blocker recall (sensitivity),higher,2815,2815,mse,0.8883696780893042,0.8748572170301142,0.9018691588785047,2000,False
+classification,measured,blocker_recall,Blocker recall (sensitivity),higher,2815,2815,mtl,0.8868120456905504,0.8722741433021807,0.90134994807892,2000,False
+classification,measured,blocker_f1,Blocker F1,higher,2815,2815,mse,0.8516674962667994,0.8420519129071059,0.8610712001641536,2000,False
+classification,measured,blocker_f1,Blocker F1,higher,2815,2815,mtl,0.856140350877193,0.8462694041061593,0.8663850258484654,2000,False
+classification,measured,nonblocker_specificity,Nonblocker recall (specificity),higher,2815,2815,mse,0.5714285714285714,0.5388076490438695,0.6051743532058492,2000,False
+classification,measured,nonblocker_specificity,Nonblocker recall (specificity),higher,2815,2815,mtl,0.5995500562429696,0.5680539932508436,0.6310461192350956,2000,False
+classification,measured,nonblocker_precision,Nonblocker precision (NPV),higher,2815,2815,mse,0.7026279391424619,0.6753398242719706,0.7302928241220307,2000,False
+classification,measured,nonblocker_precision,Nonblocker precision (NPV),higher,2815,2815,mtl,0.7097203728362184,0.6827943343703946,0.7394879872972243,2000,False
+classification,measured,nonblocker_f1,Nonblocker F1,higher,2815,2815,mse,0.630272952853598,0.6038572611697894,0.6570618345618345,2000,False
+classification,measured,nonblocker_f1,Nonblocker F1,higher,2815,2815,mtl,0.65,0.6236789310817568,0.6755456032527309,2000,False
+classification,measured,roc_auc,ROC AUC,higher,2815,2815,mse,0.8323416348657353,0.8160279322561317,0.8474230440821066,2000,False
+classification,measured,roc_auc,ROC AUC,higher,2815,2815,mtl,0.8550829510797131,0.8402106424781015,0.8695136530830843,2000,False
+classification,measured,average_precision,Average precision,higher,2815,2815,mse,0.9049790648017618,0.8920349581413203,0.9171878164868447,2000,False
+classification,measured,average_precision,Average precision,higher,2815,2815,mtl,0.9183828179252315,0.906181105944924,0.9305586350480343,2000,False
+classification,measured,pr_auc_trapezoidal,PR AUC (trapezoidal),higher,2815,2815,mse,0.9048768721466034,0.8917701346802408,0.9170740612149804,2000,False
+classification,measured,pr_auc_trapezoidal,PR AUC (trapezoidal),higher,2815,2815,mtl,0.9181990838046381,0.9057580472833319,0.9304790655674825,2000,False
+classification,measured,mcc,Matthews correlation coefficient,higher,2815,2815,mse,0.4892111498373923,0.4545119927273948,0.5241069918348238,2000,False
+classification,measured,mcc,Matthews correlation coefficient,higher,2815,2815,mtl,0.5111683238975816,0.47628626904729715,0.546679610956983,2000,False
+classification,measured,cohens_kappa,Cohen's kappa,higher,2815,2815,mse,0.4841351590850251,0.44886156906866426,0.5194875563704163,2000,False
+classification,measured,cohens_kappa,Cohen's kappa,higher,2815,2815,mtl,0.5075734719116259,0.47259132411034643,0.5422847066624747,2000,False
+classification,measured,wrong_side_rate,Misclassification rate,lower,2815,2815,mse,0.21172291296625223,0.19822380106571935,0.2255772646536412,2000,False
+classification,measured,wrong_side_rate,Misclassification rate,lower,2815,2815,mtl,0.20390763765541742,0.18934280639431617,0.21777087033747775,2000,False
+classification,measured,wrong_side_distance,Mean boundary distance among misclassified compounds (pIC50),lower,2815,2815,mse,0.25323184664485504,0.23068539075384292,0.2773291999221106,2000,False
+classification,measured,wrong_side_distance,Mean boundary distance among misclassified compounds (pIC50),lower,2815,2815,mtl,0.19338702440717032,0.17171936032498208,0.21806119975378227,2000,False
+classification,measured,mean_distance_from_boundary,"Mean absolute boundary distance, all predictions (pIC50)",descriptive,2815,2815,mse,0.48968923603310416,0.4728225941385944,0.5070123293230967,2000,False
+classification,measured,mean_distance_from_boundary,"Mean absolute boundary distance, all predictions (pIC50)",descriptive,2815,2815,mtl,0.42701146793010003,0.4110907983320198,0.44388057312901213,2000,False
+classification,screen_only,accuracy,Accuracy,higher,279340,279340,mse,0.50287463306365,0.5010310016467387,0.5047187119639149,2000,False
+classification,screen_only,accuracy,Accuracy,higher,279340,279340,mtl,0.897275721343166,0.8961299849645593,0.8984177883582731,2000,False
+classification,screen_only,balanced_accuracy,Balanced accuracy,higher,279340,279340,mse,0.647604933296486,0.6413981557951262,0.6536716311044906,2000,False
+classification,screen_only,balanced_accuracy,Balanced accuracy,higher,279340,279340,mtl,0.8435284599097979,0.837807058092609,0.8498744430075957,2000,False
+classification,screen_only,blocker_precision,Blocker precision,higher,279340,279340,mse,0.02419793942736729,0.02382006288625426,0.02457221495125863,2000,False
+classification,screen_only,blocker_precision,Blocker precision,higher,279340,279340,mtl,0.10856941191568546,0.10676458532292131,0.11048681840682205,2000,False
+classification,screen_only,blocker_recall,Blocker recall (sensitivity),higher,279340,279340,mse,0.7969259431765254,0.784350256171402,0.8095016301816488,2000,False
+classification,screen_only,blocker_recall,Blocker recall (sensitivity),higher,279340,279340,mtl,0.7880763856544015,0.7766592920353983,0.8008849557522124,2000,False
+classification,screen_only,blocker_f1,Blocker F1,higher,279340,279340,mse,0.04696968657136386,0.04623521304528517,0.04769506343197436,2000,False
+classification,screen_only,blocker_f1,Blocker F1,higher,279340,279340,mtl,0.19084679807122917,0.1877994614883405,0.19412014655963583,2000,False
+classification,screen_only,nonblocker_specificity,Nonblocker recall (specificity),higher,279340,279340,mse,0.49828392341644673,0.4964224166139482,0.5001600641347266,2000,False
+classification,screen_only,nonblocker_specificity,Nonblocker recall (specificity),higher,279340,279340,mtl,0.8989805341651942,0.8978205463813326,0.9001440668106426,2000,False
+classification,screen_only,nonblocker_precision,Nonblocker precision (NPV),higher,279340,279340,mse,0.9936776317220478,0.9932911781839872,0.9940467190605315,2000,False
+classification,screen_only,nonblocker_precision,Nonblocker precision (NPV),higher,279340,279340,mtl,0.9963331734973063,0.9961365968815289,0.9965526122261709,2000,False
+classification,screen_only,nonblocker_f1,Nonblocker F1,higher,279340,279340,mse,0.6637350503306544,0.6620767812900294,0.6654186245846712,2000,False
+classification,screen_only,nonblocker_f1,Nonblocker F1,higher,279340,279340,mtl,0.945156598505018,0.9445093571333173,0.9457958939395898,2000,False
+classification,screen_only,roc_auc,ROC AUC,higher,279340,279340,mse,0.7369159727394677,0.728765331863987,0.7445989330485231,2000,False
+classification,screen_only,roc_auc,ROC AUC,higher,279340,279340,mtl,0.9123648245335128,0.9077824171557214,0.9169541412966885,2000,False
+classification,screen_only,average_precision,Average precision,higher,279340,279340,mse,0.06323623287736743,0.05848290511831033,0.06886248680749667,2000,False
+classification,screen_only,average_precision,Average precision,higher,279340,279340,mtl,0.264402577833479,0.25279547861362184,0.2766856864697568,2000,False
+classification,screen_only,pr_auc_trapezoidal,PR AUC (trapezoidal),higher,279340,279340,mse,0.06301086546546643,0.05818224738640636,0.06855801102504373,2000,False
+classification,screen_only,pr_auc_trapezoidal,PR AUC (trapezoidal),higher,279340,279340,mtl,0.2642362578650713,0.2524772263784541,0.27637701760846584,2000,False
+classification,screen_only,mcc,Matthews correlation coefficient,higher,279340,279340,mse,0.07264327205111298,0.0695876373784569,0.07563193002953998,2000,False
+classification,screen_only,mcc,Matthews correlation coefficient,higher,279340,279340,mtl,0.26846610068118876,0.26382588454554007,0.27349888753799784,2000,False
+classification,screen_only,cohens_kappa,Cohen's kappa,higher,279340,279340,mse,0.017658689224207474,0.01690226586758373,0.018407081162336133,2000,False
+classification,screen_only,cohens_kappa,Cohen's kappa,higher,279340,279340,mtl,0.1683752118360054,0.16523403642766543,0.17174645091029928,2000,False
+classification,screen_only,wrong_side_rate,Misclassification rate,lower,279340,279340,mse,0.49712536693634995,0.49528128803608507,0.49896899835326125,2000,False
+classification,screen_only,wrong_side_rate,Misclassification rate,lower,279340,279340,mtl,0.10272427865683396,0.10158221164172693,0.10387001503544067,2000,False
+classification,screen_only,wrong_side_distance,Mean boundary distance among misclassified compounds (pIC50),lower,279340,279340,mse,0.3226322282361276,0.32129960237201033,0.3240430566860179,2000,False
+classification,screen_only,wrong_side_distance,Mean boundary distance among misclassified compounds (pIC50),lower,279340,279340,mtl,0.10282937672845645,0.10171729685033648,0.10391753933562604,2000,False
+classification,screen_only,mean_distance_from_boundary,"Mean absolute boundary distance, all predictions (pIC50)",descriptive,279340,279340,mse,0.30327797493372977,0.30243918533278746,0.30414557294744843,2000,False
+classification,screen_only,mean_distance_from_boundary,"Mean absolute boundary distance, all predictions (pIC50)",descriptive,279340,279340,mtl,0.2298293695896967,0.2293611783604684,0.23028309476005687,2000,False
+regression,measured,mae,MAE (pIC50),lower,2815,2815,mse,0.36130535742137465,0.3486703340921874,0.37416497800772397,2000,False
+regression,measured,mae,MAE (pIC50),lower,2815,2815,mtl,0.3578037352181731,0.3450493389784566,0.3708668312102904,2000,False
+regression,measured,mse,MSE (squared pIC50),lower,2815,2815,mse,0.24393605019015915,0.22209106350737431,0.2682151122558661,2000,False
+regression,measured,mse,MSE (squared pIC50),lower,2815,2815,mtl,0.2493938283954719,0.22528984078613995,0.2764442938640358,2000,False
+regression,measured,rmse,RMSE (pIC50),lower,2815,2815,mse,0.4938988258643253,0.4712653844535241,0.5178948849958941,2000,False
+regression,measured,rmse,RMSE (pIC50),lower,2815,2815,mtl,0.49939346050531325,0.4746470697019431,0.5257796973027773,2000,False
+regression,measured,median_absolute_error,Median absolute error (pIC50),lower,2815,2815,mse,0.2758688110155969,0.26369370690804234,0.2855658033047854,2000,False
+regression,measured,median_absolute_error,Median absolute error (pIC50),lower,2815,2815,mtl,0.26171492263957674,0.2504130234328361,0.27837198215911485,2000,False
+regression,measured,r2,R-squared,higher,2815,2815,mse,0.5563067760604112,0.5137999348545821,0.5943562203087833,2000,False
+regression,measured,r2,R-squared,higher,2815,2815,mtl,0.546379669322499,0.5012147160634021,0.5861060048882999,2000,False
+regression,measured,pearson_r,Pearson r,higher,2815,2815,mse,0.7466179893010634,0.7191933613014355,0.7711737871675721,2000,False
+regression,measured,pearson_r,Pearson r,higher,2815,2815,mtl,0.7432356277646741,0.7124224637085651,0.7699895791108802,2000,False
+regression,measured,spearman_r,Spearman rho,higher,2815,2815,mse,0.7089072772574994,0.6872197520067732,0.7286432187331532,2000,False
+regression,measured,spearman_r,Spearman rho,higher,2815,2815,mtl,0.7264206260474101,0.7065260334286669,0.7463550310497684,2000,False
+regression,measured,blocker_mae,Blocker MAE (pIC50),lower,2815,1926,mse,0.34953061587369527,0.3341396739002279,0.36482681975996634,2000,False
+regression,measured,blocker_mae,Blocker MAE (pIC50),lower,2815,1926,mtl,0.36264273499557426,0.34617105481954114,0.3794096747994518,2000,False
+regression,measured,nonblocker_mae,Nonblocker MAE (pIC50),lower,2815,889,mse,0.3868150899532422,0.36529642552522634,0.4102766902423875,2000,False
+regression,measured,nonblocker_mae,Nonblocker MAE (pIC50),lower,2815,889,mtl,0.34732014289952906,0.32758620803221405,0.36794369581034697,2000,False
+regression,measured,blocker_rmse,Blocker RMSE (pIC50),lower,2815,1926,mse,0.4851578088771924,0.45879335988698894,0.5128161191469726,2000,False
+regression,measured,blocker_rmse,Blocker RMSE (pIC50),lower,2815,1926,mtl,0.5161417026865494,0.48757758791677563,0.5469467137042511,2000,False
+regression,measured,nonblocker_rmse,Nonblocker RMSE (pIC50),lower,2815,889,mse,0.5123247722283668,0.47094336104667794,0.5606455472607513,2000,False
+regression,measured,nonblocker_rmse,Nonblocker RMSE (pIC50),lower,2815,889,mtl,0.461026486463758,0.41421008795918196,0.5140858279797346,2000,False

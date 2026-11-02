@@ -1,0 +1,142 @@
+{
+  "input_file": "/Users/sziadat/Documents/bbbx/bbb-exc-score/datasets/druglike_b3db_labelled_outerfolds.csv",
+  "input_sha256": "1e6870793c1ac669861ba6c77b853a9db13a1c27e25f25eaafd98904f98b52e8",
+  "output_directory": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions_clean/results/beta_sensitivity_final_reference",
+  "n_samples": 3188,
+  "n_measured_logbb": 767,
+  "n_classification_only": 2421,
+  "n_features_loaded": 3223,
+  "descriptor_preprocessing": "no imputation; native LightGBM missing-value handling",
+  "outer_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "model": "custom_mtl_bab",
+  "class_encoding": {
+    "0": "BBB penetrant",
+    "1": "BBB non-penetrant"
+  },
+  "logbb_threshold": -1.0,
+  "seed": 15,
+  "parameter_source": "saved_final_parameters",
+  "reference": {
+    "parameters_file": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions_clean/random_outerfolds/custom_mtl_bab_results/custom_mtl_best_parameters.csv",
+    "parameters_sha256": "e907f670d1ce54aace44f39394683238276573501f1a3fe57cd745b1dafd28ba",
+    "manifest_file": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions_clean/random_outerfolds/custom_mtl_bab_results/run_manifest.json",
+    "manifest_sha256": "7d9fb8d920309c47ac6d623c80e7b47d931828b54235fc97c75370eba7bcdf3c",
+    "manifest": {
+      "input_file": "/Users/sziadat/Documents/bbbx/bbb-exc-score/datasets/druglike_b3db_labelled_outerfolds.csv",
+      "input_sha256": "1e6870793c1ac669861ba6c77b853a9db13a1c27e25f25eaafd98904f98b52e8",
+      "output_directory": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions_clean/random_outerfolds/custom_mtl_bab_results",
+      "n_samples": 3188,
+      "n_measured_logbb": 767,
+      "n_classification_only": 2421,
+      "n_features_loaded": 3223,
+      "outer_folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "model": "custom_mtl_bab",
+      "class_encoding": {
+        "0": "BBB penetrant",
+        "1": "BBB non-penetrant"
+      },
+      "logbb_threshold": -1.0,
+      "seed": 15,
+      "inner_folds": 5,
+      "mtl_trials": 100,
+      "mtl_boost_rounds": 1000,
+      "missing_value_policy": "native LightGBM NaN handling; no imputation",
+      "custom_objective_dataset_label_policy": "classification-only rows receive an inert finite Dataset-label placeholder; the custom objective retains the original NaN target mask, so these rows receive no regression supervision",
+      "hyperparameter_optimization": {
+        "type": "multi_objective",
+        "regression_objective": "mean inner-fold MSE on measured-logBB rows; minimize",
+        "classification_objective": "mean inner-fold balanced accuracy on all rows; maximize",
+        "classification_threshold": -1.0,
+        "pareto_selection": "equal-weight Euclidean distance to the ideal point after min-max normalization across the Pareto front"
+      },
+      "versions": {
+        "python": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:28:47) [Clang 19.1.7 ]",
+        "platform": "macOS-26.5.2-arm64-arm-64bit",
+        "numpy": "1.26.4",
+        "pandas": "2.3.3",
+        "scikit_learn": "1.7.2",
+        "lightgbm": "4.6.0",
+        "optuna": "4.6.0",
+        "joblib": "1.5.3"
+      }
+    }
+  },
+  "run_signature": {
+    "implementation": "training_script_v4_saved_final_parameters_native_missing_v1",
+    "script_sha256": "80f11c309b44e6ef2813b566f6ea714693510aa21865c23898ce237d79fa8220",
+    "input_sha256": "1e6870793c1ac669861ba6c77b853a9db13a1c27e25f25eaafd98904f98b52e8",
+    "mode": "saved_final_parameters",
+    "reference_parameters_sha256": "e907f670d1ce54aace44f39394683238276573501f1a3fe57cd745b1dafd28ba",
+    "reference_manifest_sha256": "7d9fb8d920309c47ac6d623c80e7b47d931828b54235fc97c75370eba7bcdf3c",
+    "seed": 15,
+    "logbb_threshold": -1.0,
+    "mtl_boost_rounds": 1000,
+    "mtl_trials": null,
+    "inner_folds": null,
+    "columns": {
+      "target_col": "logBB",
+      "class_col": "bbb_class",
+      "fold_col": "outer_fold",
+      "smiles_col": "smiles",
+      "id_col": "sample_id"
+    },
+    "save_sensitivity_models": false,
+    "skip_model_saving": false,
+    "versions": {
+      "lightgbm": "4.6.0",
+      "numpy": "1.26.4",
+      "pandas": "2.3.3",
+      "sklearn": "1.7.2",
+      "optuna": null
+    }
+  },
+  "inner_folds": 5,
+  "mtl_trials": 0,
+  "reference_mtl_trials": 100,
+  "mtl_boost_rounds": 1000,
+  "beta_sensitivity_values": [
+    0.0,
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    2.5,
+    3.0,
+    5.0,
+    10.0,
+    20.0,
+    30.0
+  ],
+  "beta_sensitivity_design": "For each outer fold, load the final model's saved parameters without rerunning HPO. Hold all non-beta settings, the original seed, margin, descriptor order, and boosting rounds fixed; refit on the same outer-training partition at each requested beta and evaluate only on its held-out outer fold.",
+  "hyperparameter_optimization": {
+    "performed_in_this_run": false,
+    "type": "multi_objective",
+    "regression_objective": "mean inner-fold MSE on measured-logBB rows; minimize",
+    "classification_objective": "mean inner-fold balanced accuracy on all rows; maximize",
+    "classification_threshold": -1.0,
+    "beta_search_in_reference_hpo": "0.5 to 5.0 in steps of 0.25",
+    "pareto_selection": "equal-weight Euclidean distance to the ideal point after min-max normalization across the Pareto front"
+  },
+  "versions": {
+    "python": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:28:47) [Clang 19.1.7 ]",
+    "platform": "macOS-26.7.1-arm64-arm-64bit",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.7.2",
+    "lightgbm": "4.6.0",
+    "optuna": "4.6.0",
+    "joblib": "1.5.3"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "model_path": "butina_outerfolds/all_model_results/fitted_models/custom_mtl_bab_outer_0.txt",
+  "data_path": "../datasets/druglike_b3db_labelled_butina_outerfolds.csv",
+  "outer_fold": 0,
+  "ranking_population": "outer_training",
+  "n_training": 2562,
+  "n_model_features": 3223,
+  "correlation_method": "spearman",
+  "correlation_threshold": 0.8,
+  "linkage_method": "complete",
+  "descriptor_imputation": "none",
+  "top_n": 100,
+  "all_group_members": false
+}

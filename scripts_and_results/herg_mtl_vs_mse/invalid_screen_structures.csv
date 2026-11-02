@@ -1,0 +1,6 @@
+original_smiles,inhibition_pct,key
+O=C(NC[P+](=O)O)OCc1ccccc1,-11.58458,
+Cc1cc([P+](=O)O)c(C)n1-c1ccc(Br)cc1,-21.75678,
+Cc1ccc(NC(=O)c2cc(N(C)C)ccc2[P+](=O)O)cc1,-8.18228,
+CCOC(=O)c1cccc([P+](=O)O)c1,-8.14358,
+O.[C-]#N.[C-]#N.[C-]#N.[C-]#N.[C-]#N.[Fe+4].[N-]=O.[Na+],-0.436980000000002,

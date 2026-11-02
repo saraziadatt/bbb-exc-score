@@ -1,0 +1,51 @@
+NO.,Name,SMILES,logBB,Class,MW,nHBAcc,nHBDon,SLogP,TopoPSA
+1,sulphasalazine,O=C(O)c1cc(N=Nc2ccc(S(=O)(=O)Nc3ccccn3)cc2)ccc1O,-2.69,1,398.07,7,3,3.7,141.31
+3,clioquinol,Oc1c(I)cc(Cl)c2cccnc12,-2.4,1,304.91,2,1,3.2,33.12
+4,bbcpd11 (cimetidine analog) (y-g13),CCNC(=NCCSCc1ncccc1Br)NC#N,-2.15,1,341.03,4,2,2.11,73.1
+6,"uk-240,455",CS(=O)(=O)N(CCO)c1c(Cl)c(Cl)cc2[nH]c(=O)c(=O)[nH]c12,-2.15,1,366.98,5,3,0.28,123.33
+8,nitrofurantoin,O=C1CN(/N=C/c2ccc([N+](=O)[O-])o2)C(=O)N1,-2.09,1,238.03,6,1,0.07,118.05
+11,icotidine,COc1cccnc1CCCCNc1ncc(Cc2ccc(C)nc2)c(=O)[nH]1,-2.0,1,379.2,6,2,2.9,92.79
+12,ro 64-0802,CCC(CC)O[C@@H]1C=C(C(=O)O)C[C@H](N)[C@@H]1NCOC,-1.96,1,286.19,5,3,0.86,93.81
+13,temelastine,Cc1ccc(Cc2cnc(NCCCCc3ncc(Br)cc3C)[nH]c2=O)cn1,-1.9,1,441.12,5,2,3.96,83.56
+16,1848-75-5,c1ccc(NC2=NCCN2)cc1,-1.89,1,161.1,3,2,1.06,36.42
+17,"2-[4-(5-bromo-3-methylpyridin-2-yl)butylamino]-5-[(6-methylpyridin-3-yl)methyl]-1,3-diazinan-4-one",Cc1ccc(CC2CNC(NCCCCc3ncc(Br)cc3C)NC2=O)cn1,-1.88,1,445.15,5,3,2.63,78.94
+18,m2l-663581,CN1Cc2c(-c3noc(C(C)(O)CO)n3)ncn2-c2cccc(Cl)c2C1=O,-1.82,1,389.09,7,2,1.36,117.51
+20,bis-hydroxylated-l-663581,CN1Cc2c(-c3noc(C(C)(CO)CO)n3)ncn2-c2cccc(Cl)c2C1=O,-1.82,1,403.1,7,2,1.4,117.51
+21,,CN1Cc2c(-c3noc(C(C)(O)O)n3)ncn2-c2cccc(Cl)c2C1=O,-1.82,1,375.07,7,2,1.32,117.51
+24,telmesteine,CCOC(=O)N1CSCC1C(=O)O,-1.72,1,205.04,4,1,0.6,66.84
+25,chlorambucil,O=C(O)CCCc1ccc(N(CCCl)CCCl)cc1,-1.7,1,303.08,2,1,3.38,40.54
+26,quercetin,O=C1c2c(O)cc(O)cc2CC(c2ccc(O)c(O)c2)C1O,-1.7,1,302.08,6,5,1.39,118.22
+28,flurbiprofen,CC(C(=O)O)c1ccc(-c2ccccc2)c(F)c1,-1.68,1,244.09,1,1,3.68,37.3
+29,schembl18285121,C=CCc1cccc(/C=N\NC(=O)CN2CCN(Cc3ccc(S(N)(=O)=O)cc3)CC2)c1O,-1.67,1,471.19,7,3,1.04,128.33
+32,compound 34,CC(=O)Nc1cccc(-c2csc(N=C(N)N)n2)c1,-1.57,1,275.08,4,3,1.67,106.39
+33,y22,O=C(O)c1nc2ccc(C(F)(F)F)cc2nc1NCc1ccc(C(F)(F)F)cc1,-1.57,1,415.08,4,2,4.98,75.11
+35,chebi: 145922,CN=C(NC#N)Nc1cccc(-c2csc(N=C(N)N)n2)c1,-1.54,1,314.11,5,4,1.18,137.5
+36,guanidinothiazol analogue 17 ac1lbibi -- pubmed,NC(N)=Nc1nc(-c2ccc(O)c(O)c2)cs1,-1.54,1,250.05,5,4,1.13,117.75
+37,cube-2,CC(C)CC(=O)c1ccc(OCCCCO)cc1O,-1.52,1,266.15,4,2,2.77,66.76
+38,cube-6,CC(C)CC(=O)c1ccc(OCCCCOc2ccc(CCC(=O)O)c(O)c2)cc1O,-1.52,1,430.2,6,3,4.58,113.29
+39,cube-10,CC(C)CC(=O)c1ccc(OCCCCOc2ccc3ccc(=O)oc3c2)cc1O,-1.52,1,410.17,6,1,4.97,85.97
+7781,frovatriptan racemate,CNC1CCc2[nH]c3ccc(C(N)=O)cc3c2C1,,0,243.14,2,3,1.34,70.91
+7782,mebendazole,COC(=O)Nc1nc2ccc(C(=O)c3ccccc3)cc2[nH]1,,1,295.1,4,2,2.97,84.08
+7784,gliquidone,COc1ccc2c(c1)C(=O)N(CCc1ccc(S(=O)(=O)NC(=O)NC3CCCCC3)cc1)C(=O)C2(C)C,,1,527.21,6,2,3.52,121.88
+7785,pantoprazole,COc1ccnc(C[S+]([O-])c2nc3ccc(OC(F)F)cc3[nH]2)c1OC,,1,383.08,6,1,2.88,92.32
+7786,enoximone,CSc1ccc(C(=O)c2[nH]c(=O)[nH]c2C)cc1,,1,248.06,3,2,1.96,65.72
+7787,alosetron,Cc1[nH]cnc1CN1CCc2c(c3ccccc3n2C)C1=O,,1,294.15,2,1,2.41,53.92
+7788,gemfibrozil,Cc1ccc(C)c(OCCCC(C)(C)C(=O)O)c1,,1,250.16,2,1,3.57,46.53
+7790,torasemide,Cc1cccc(Nc2ccncc2S(=O)(=O)NC(=O)NC(C)C)c1,,1,348.13,5,3,2.53,100.19
+7791,glipizide,Cc1cnc(C(=O)NCCc2ccc(S(=O)(=O)NC(=O)NC3CCCCC3)cc2)cn1,,1,445.18,6,3,2.08,130.15
+7792,sulfamethizole,Cc1nnc(NS(=O)(=O)c2ccc(N)cc2)s1,,1,270.02,6,2,1.23,97.97
+7793,desloratadine,Clc1ccc2c(c1)CCc1cccnc1C2=C1CCNCC1,,1,310.12,2,1,4.02,24.92
+7794,ticlopidine hydrochloride,Clc1ccccc1CN1CCc2sccc2C1,,1,263.05,2,0,3.96,3.24
+7795,methimazole,Cn1cc[nH]c1=S,,1,114.03,1,1,1.08,20.72
+7796,letrozole,N#Cc1ccc(C(c2ccc(C#N)cc2)n2cncn2)cc1,,1,285.1,4,0,2.66,78.29
+7797,mesalamine,Nc1ccc(O)c(C(=O)O)c1,,1,153.04,3,3,0.67,83.55
+7798,nicorandil,O=C(NCCO[N+](=O)[O-])c1cccnc1,,1,211.06,5,1,0.02,94.36
+7799,niacin,O=C(O)c1cccnc1,,1,123.03,2,1,0.78,50.19
+7800,sulfinpyrazone,O=C1C(CC[S+]([O-])c2ccccc2)C(=O)N(c2ccccc2)N1c1ccccc1,,1,404.12,3,0,3.8,63.68
+7801,anagrelide hydrochloride,O=C1CN2Cc3c(ccc(Cl)c3Cl)N=C2N1,,1,255.0,3,1,1.93,44.7
+7802,fluorescein,O=C1OC2(c3ccc(O)cc3Oc3cc(O)ccc32)c2ccccc21,,1,332.07,5,2,3.67,75.99
+7803,antazoline,c1ccc(CN(CC2=NCCN2)c2ccccc2)cc1,,1,265.16,3,1,2.69,27.63
+7804,emedastine,CCOCCn1c(N2CCCN(C)CC2)nc2ccccc21,,0,302.21,4,0,2.21,33.53
+7805,ketotifen,CN1CCC(=C2c3ccccc3CC(=O)c3sccc32)CC1,,0,309.12,3,0,4.01,20.31
+7806,milrinone,Cc1[nH]c(=O)c(C#N)cc1-c1ccncc1,,1,211.07,3,1,1.62,69.54
+7807,amrinone,Nc1cc(-c2ccncc2)c[nH]c1=O,,1,187.07,3,2,1.02,71.77

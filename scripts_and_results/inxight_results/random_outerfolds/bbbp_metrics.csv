@@ -1,0 +1,2 @@
+model,n,n_penetrant,n_nonpenetrant,accuracy,balanced_accuracy,nonpenetrant_recall,nonpenetrant_precision,nonpenetrant_f1,penetrant_specificity,roc_auc,pr_auc_nonpenetrant,average_precision_nonpenetrant,mcc,cohen_kappa,brier_score,ece_10_bins,wrong_side_count,wrong_side_rate,tn,fp,fn,tp
+imagemol_bbbp_released,203,100,103,0.5517241379310345,0.5567961165048544,0.21359223300970873,0.6875,0.32592592592592595,0.9,0.5979126213592233,0.5779554106231146,0.5846775713833692,0.15584547789092107,0.11242973141786387,0.39725937621758245,0.3832456060820557,91,0.4482758620689655,90,10,81,22

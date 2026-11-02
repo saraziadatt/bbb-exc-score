@@ -1,0 +1,9 @@
+﻿Hyperparameter Name,Description,Search Space
+colsample_bytree,Fraction of features sampled for each tree,0.5-1
+learning_rate,Learning rate,0.01-0.3
+Custom loss function hyperparameter: margin_buffer,Custom-loss margin buffer,0.15-0.35; step=0.02
+Custom loss function hyperparameter: beta,Classification-loss weight,0.5-5; step=0.25
+max_depth,Maximum tree depth,3-12
+num_leaves,Maximum number of leaves per tree,20-150
+min_child_samples,Minimum samples in a leaf,5-50
+subsample,Fraction of training samples used for each tree,0.5-1

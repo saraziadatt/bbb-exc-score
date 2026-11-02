@@ -1,0 +1,16 @@
+model_a,model_b,subset,metric_rows,finite_CIs,finite_p_values,all_metric_rows_present
+custom_mtl_original,logbb_pred_shaker_retrained,all_threshold,13,13,13,True
+dummy_mean_regression,custom_mtl_original,all_threshold,13,12,12,True
+dummy_mean_regression,dummy_prior_classification,all_threshold,13,10,10,True
+dummy_mean_regression,lightgbm_mse_regression,all_threshold,13,12,12,True
+dummy_mean_regression,lightgbm_mse_regression_threshold,all_threshold,13,12,12,True
+dummy_mean_regression,logbb_pred_shaker_retrained,all_threshold,13,12,12,True
+dummy_prior_classification,custom_mtl_original,all_threshold,13,10,10,True
+dummy_prior_classification,lightgbm_mse_regression,all_threshold,13,10,10,True
+dummy_prior_classification,lightgbm_mse_regression_threshold,all_threshold,13,10,10,True
+dummy_prior_classification,logbb_pred_shaker_retrained,all_threshold,13,10,10,True
+lightgbm_mse_regression,custom_mtl_original,all_threshold,13,13,13,True
+lightgbm_mse_regression,lightgbm_mse_regression_threshold,all_threshold,13,13,13,True
+lightgbm_mse_regression,logbb_pred_shaker_retrained,all_threshold,13,13,13,True
+lightgbm_mse_regression_threshold,custom_mtl_original,all_threshold,13,13,13,True
+lightgbm_mse_regression_threshold,logbb_pred_shaker_retrained,all_threshold,13,13,13,True

@@ -1,0 +1,29 @@
+{
+  "settings": {
+    "predictions_csv": "herg_mtl_vs_mse/predictions.csv",
+    "output_dir": null,
+    "reference": "mse",
+    "comparison": "mtl",
+    "threshold": 5.0,
+    "bootstrap": 2000,
+    "permutations": 2000,
+    "seed": 42
+  },
+  "input_sha256": "8fa10d1aee100b1892e81df0646f4dc0305002ca37afd4ff9cfa13b1c4fd225d",
+  "created_utc": "2026-10-30T01:25:57.498961+00:00",
+  "python": "3.10.20",
+  "numpy": "1.26.4",
+  "pandas": "2.3.3",
+  "n": 282155,
+  "n_measured": 2815,
+  "n_outer_folds": 5,
+  "completeness_checked_against": [
+    "run_manifest.json",
+    "curated_herg.csv"
+  ],
+  "p_value_definition": "(1 + count(abs(permuted_delta) >= abs(observed_delta))) / (1 + n_permutations)",
+  "p_resolution": 0.0004997501249375312,
+  "correction": "Holm across classification metrics/subsets; separately across regression metrics",
+  "retraining": false,
+  "inference_scope": "Conditional on the saved fitted models and evaluation compounds; assumes independent compound pairs."
+}

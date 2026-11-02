@@ -1,0 +1,458 @@
+﻿Table 1. Classification Performance on Molecules Only Labelled for Their Binary Classification (N = 2421).,,,,,,,,
+Model,1c: Classification baseline,2: Retrained logBB_pred,3: LightGBM (MSE objective),4: This model (outer fold test sets),5: Threshold-tuned LightGBM (MSE objective),,,
+Balanced Accuracy,0.5,0.572,0.566,"0.666 (0.078, 0.111) [p=0.001; vs 2]",0.679 [p=0.454; vs 4],,,
+Recall,0,0.178,0.16,"0.422 (0.215, 0.275) [p=0.001; vs 2]",0.631 [p=0.001; vs 4],,,
+Precision,0,0.744,0.77,"0.728 (-0.094, 0.007) [p=0.083; vs 3]",0.569 [p=0.001; vs 4],,,
+F1,0,0.288,0.265,"0.534 (0.212, 0.281) [p=0.001; vs 2]",0.598 [p=0.001; vs 4],,,
+ROC AUC,0.5,0.734,0.737,"0.782 (0.034, 0.057) [p=0.001; vs 3]",0.737 [p=0.001; vs 4],,,
+PR AUC,0.364,0.623,0.637,"0.687 (0.031, 0.069) [p=0.001; vs 3]",0.637 [p=0.001; vs 4],,,
+κ,0,0.171,0.16,"0.365 (0.157, 0.229) [p=0.001; vs 2]",0.35 [p=0.493; vs 4],,,
+MCC,0,0.244,0.242,"0.391 (0.107, 0.187) [p=0.001; vs 2]",0.351 [p=0.186; vs 4],,,
+NP wrong side (FN),881,724,740,"509 (-242, -189) [p=0.001; vs 2]",325 [p=0.001; vs 4],,,
+"Saved performance estimates and adjusted p-values are displayed without recomputing statistics. Model 4 is compared separately for each metric with the better of models 2 and 3, selected using unrounded saved estimates; exact ties prefer model 2. Parentheses are confidence intervals for model 4 minus its stated comparator. Model 5 p-values compare model 5 with model 4. Saved test: paired two-sided permutation test. Original correction family: all evaluated metrics within each model pair and subset. Nonpenetrants are the positive class. NA / unavailable identifies a missing or undefined saved result; values are never copied from the paper.",,,,,,,,
+,,,,,,,,
+Table 2. Classification Performance on Both Regression and Classification Labelled Molecules in the Dataset (N = 3188).,,,,,,,,
+Model,1c: Classification baseline,2: Retrained logBB_pred,3: LightGBM (MSE objective),4: This model (outer fold test sets),5: Threshold-tuned LightGBM (MSE objective),,,
+Balanced Accuracy,0.5,0.58,0.576,"0.674 (0.079, 0.109) [p=0.001; vs 2]",0.699 [p=0.028; vs 4],,,
+Recall,0,0.191,0.175,"0.426 (0.206, 0.263) [p=0.001; vs 2]",0.65 [p=0.001; vs 4],,,
+Precision,0,0.734,0.768,"0.707 (-0.108, -0.015) [p=0.015; vs 3]",0.53 [p=0.001; vs 4],,,
+F1,0,0.303,0.285,"0.531 (0.196, 0.261) [p=0.001; vs 2]",0.584 [p=0.002; vs 4],,,
+ROC AUC,0.499,0.757,0.759,"0.805 (0.036, 0.056) [p=0.001; vs 3]",0.759 [p=0.001; vs 4],,,
+PR AUC,0.303,0.595,0.613,"0.662 (0.030, 0.068) [p=0.001; vs 3]",0.613 [p=0.001; vs 4],,,
+κ,0,0.203,0.194,"0.393 (0.156, 0.224) [p=0.001; vs 2]",0.375 [p=0.366; vs 4],,,
+MCC,0,0.274,0.275,"0.415 (0.105, 0.174) [p=0.001; vs 3]",0.379 [p=0.141; vs 4],,,
+NP wrong side (FN),968,783,799,"556 (-255, -199) [p=0.001; vs 2]",339 [p=0.001; vs 4],,,
+"Saved performance estimates and adjusted p-values are displayed without recomputing statistics. Model 4 is compared separately for each metric with the better of models 2 and 3, selected using unrounded saved estimates; exact ties prefer model 2. Parentheses are confidence intervals for model 4 minus its stated comparator. Model 5 p-values compare model 5 with model 4. Saved test: paired two-sided permutation test. Original correction family: all evaluated metrics within each model pair and subset. Nonpenetrants are the positive class. NA / unavailable identifies a missing or undefined saved result; values are never copied from the paper.",,,,,,,,
+,,,,,,,,
+Table 3. Regression Performance on Molecules with Experimental logBB Labels (N = 767).,,,,,,,,
+Model,1r: Regression baseline,2: Retrained logBB_pred,3: LightGBM (MSE objective),4: This model (outer fold test sets),,,,
+MAE,0.582,0.358,0.354,"0.396 (0.028, 0.057) [p<0.001; vs 3]",,,,
+MSE,0.547,0.239,0.233,"0.277 (0.021, 0.067) [p=0.002; vs 3]",,,,
+PCC,-0.013,0.75,0.758,"0.735 (-0.044, -0.001) [p=0.224; vs 3]",,,,
+R²,0,0.563,0.574,"0.494 (-0.123, -0.038) [p=0.002; vs 3]",,,,
+Non-penetrant MAE,1.385,0.681,0.662,"0.53 (-0.174, -0.091) [p<0.001; vs 3]",,,,
+"Saved performance estimates and adjusted p-values are displayed without recomputing statistics. Model 4 is compared separately for each metric with the better of models 2 and 3, selected using unrounded saved estimates; exact ties prefer model 2. Parentheses are confidence intervals for model 4 minus its stated comparator. Model 5 p-values compare model 5 with model 4. Saved test: paired two-sided permutation test. Original correction family: all evaluated metrics within each model pair and subset. Nonpenetrants are the positive class. NA / unavailable identifies a missing or undefined saved result; values are never copied from the paper.",,,,,,,,
+,,,,,,,,
+Table 4. Classification Performance on Compounds with Binary Labels under Butina Cluster-Based Nested Cross Validation (N = 2421).,,,,,,,,
+Model,1c: Classification baseline,2: Retrained logBB_pred,3: LightGBM (MSE objective),4: This model,5: Threshold-tuned LightGBM (MSE objective),,,
+Balanced Accuracy,0.5,0.571,0.566,"0.661 (0.073, 0.107) [p=0.001; vs 2]",0.665 [p=0.730; vs 4],,,
+Recall,0,0.173,0.157,"0.422 (0.219, 0.280) [p=0.001; vs 2]",0.577 [p=0.001; vs 4],,,
+Precision,0,0.768,0.789,"0.709 (-0.133, -0.025) [p=0.007; vs 3]",0.572 [p=0.001; vs 4],,,
+F1,0,0.282,0.261,"0.529 (0.213, 0.282) [p=0.001; vs 2]",0.574 [p=0.011; vs 4],,,
+ROC AUC,0.461,0.724,0.731,"0.769 (0.027, 0.050) [p=0.001; vs 3]",0.731 [p=0.001; vs 4],,,
+PR AUC,0.344,0.616,0.624,"0.662 (0.016, 0.060) [p=0.016; vs 3]",0.624 [p=0.036; vs 4],,,
+κ,0,0.171,0.16,"0.353 (0.146, 0.219) [p=0.001; vs 2]",0.329 [p=0.500; vs 4],,,
+MCC,0,0.25,0.246,"0.377 (0.086, 0.168) [p=0.001; vs 2]",0.329 [p=0.081; vs 4],,,
+NP wrong side (FN),881,729,743,"509 (-247, -193) [p=0.001; vs 2]",373 [p=0.001; vs 4],,,
+"Saved performance estimates and adjusted p-values are displayed without recomputing statistics. Model 4 is compared separately for each metric with the better of models 2 and 3, selected using unrounded saved estimates; exact ties prefer model 2. Parentheses are confidence intervals for model 4 minus its stated comparator. Model 5 p-values compare model 5 with model 4. Saved test: paired two-sided permutation test. Original correction family: all evaluated metrics within each model pair and subset. Nonpenetrants are the positive class. NA / unavailable identifies a missing or undefined saved result; values are never copied from the paper.",,,,,,,,
+,,,,,,,,
+Table 5. Classification Performance on an External Inxight Test Dataset (N = 210).,,,,,,,,
+Model,1c: Classification baseline,2: Retrained logBB_pred,3: LightGBM (MSE objective),4: This model,5: Threshold-tuned LightGBM (MSE objective),,,
+Balanced Accuracy,0.5,0.538,0.524,"0.59 (0.000, 0.110) [p=0.940; vs 2]",0.59 [p=1.000; vs 4],,,
+Recall,0,0.143,0.152,"0.371 (0.133, 0.314) [p=0.001; vs 3]",0.686 [p=0.001; vs 4],,,
+Precision,0,0.682,0.593,"0.661 (-0.187, 0.148) [p=1.000; vs 2]",0.576 [p=0.677; vs 4],,,
+F1,0,0.236,0.242,"0.476 (0.134, 0.336) [p=0.001; vs 3]",0.626 [p=0.017; vs 4],,,
+ROC AUC,0.5,0.616,0.613,"0.637 (-0.024, 0.065) [p=1.000; vs 2]",0.613 [p=1.000; vs 4],,,
+PR AUC,0.5,0.591,0.583,"0.612 (-0.038, 0.073) [p=1.000; vs 2]",0.583 [p=1.000; vs 4],,,
+κ,0,0.076,0.048,"0.181 (0.000, 0.219) [p=0.940; vs 2]",0.181 [p=1.000; vs 4],,,
+MCC,0,0.124,0.071,"0.201 (-0.056, 0.211) [p=1.000; vs 2]",0.184 [p=1.000; vs 4],,,
+NP wrong side (FN),105,90,89,"66 (-33, -14) [p=0.001; vs 3]",33 [p=0.001; vs 4],,,
+"Saved performance estimates and adjusted p-values are displayed without recomputing statistics. Model 4 is compared separately for each metric with the better of models 2 and 3, selected using unrounded saved estimates; exact ties prefer model 2. Parentheses are confidence intervals for model 4 minus its stated comparator. Model 5 p-values compare model 5 with model 4. Saved test: paired two-sided permutation test. Original correction family: all evaluated metrics within each model pair and subset. Nonpenetrants are the positive class. NA / unavailable identifies a missing or undefined saved result; values are never copied from the paper.",,,,,,,,
+,,,,,,,,
+Table 7. Breakdown of Compounds in the B3DB and the Constructed Drug-Like Subset. Values in Brackets Indicate the Number of Compounds in Each Class for which logBB Values Are Available.,,,,,,,,
+Dataset,BBB penetrant (BBB+),BBB nonpenetrant (BBB-),Total,,,,,
+B3DB,4956 (930),2851 (128),7807 (1058),,,,,
+Data set used,2220 (680),968 (87),3188 (767),,,,,
+External validation set,105 (0),105 (0),210 (0),,,,,
+"Counts calculated from the supplied datasets. Parentheses contain counts with experimental logBB, using saved availability flags when present. Missing original datasets remain NA; no rows were filtered or duplicated to fill them.",,,,,,,,
+,,,,,,,,
+Table S2. Classification performance on all compounds under Butina cluster-based nested cross validation (n=3188).,,,,,,,,
+Model,1c: Classification baseline,2: Retrained logBB_pred,3: LightGBM (MSE objective),4: This model,5: Threshold-tuned LightGBM (MSE objective),,,
+Balanced Accuracy,0.5,0.576,0.569,"0.666 (0.074, 0.104) [p=0.001; vs 2]",0.682 [p=0.189; vs 4],,,
+Recall,0,0.18,0.16,"0.418 (0.210, 0.268) [p=0.001; vs 2]",0.591 [p=0.001; vs 4],,,
+Precision,0,0.744,0.756,"0.677 (-0.131, -0.027) [p=0.003; vs 3]",0.532 [p=0.001; vs 4],,,
+F1,0,0.29,0.264,"0.517 (0.195, 0.260) [p=0.001; vs 2]",0.56 [p=0.011; vs 4],,,
+ROC AUC,0.465,0.743,0.749,"0.788 (0.028, 0.050) [p=0.001; vs 3]",0.749 [p=0.001; vs 4],,,
+PR AUC,0.287,0.581,0.582,"0.63 (0.025, 0.068) [p=0.002; vs 3]",0.582 [p=0.003; vs 4],,,
+Cohen’s Kappa,0,0.194,0.177,"0.371 (0.143, 0.211) [p=0.001; vs 2]",0.353 [p=0.354; vs 4],,,
+MCC,0,0.269,0.258,"0.39 (0.085, 0.159) [p=0.001; vs 2]",0.354 [p=0.189; vs 4],,,
+NP wrong side (FN),968,794,813,"563 (-259, -203) [p=0.001; vs 2]",396 [p=0.001; vs 4],,,
+"Saved performance estimates and adjusted p-values are displayed without recomputing statistics. Model 4 is compared separately for each metric with the better of models 2 and 3, selected using unrounded saved estimates; exact ties prefer model 2. Parentheses are confidence intervals for model 4 minus its stated comparator. Model 5 p-values compare model 5 with model 4. Saved test: paired two-sided permutation test. Original correction family: all evaluated metrics within each model pair and subset. Nonpenetrants are the positive class. NA / unavailable identifies a missing or undefined saved result; values are never copied from the paper.",,,,,,,,
+,,,,,,,,
+Table S3. Regression performance under Butina cluster-based nested cross validation (n=767).,,,,,,,,
+Model,1r: Regression baseline,2: Retrained logBB_pred,3: LightGBM (MSE objective),4: This model,,,,
+MAE,0.583,0.411,0.393,"0.439 (0.030, 0.062) [p<0.001; vs 3]",,,,
+MSE,0.548,0.296,0.283,"0.341 (0.031, 0.087) [p<0.001; vs 3]",,,,
+PCC,-0.054,0.68,0.695,"0.663 (-0.061, -0.004) [p=0.084; vs 3]",,,,
+R²,-0.002,0.458,0.482,"0.377 (-0.159, -0.056) [p<0.001; vs 3]",,,,
+Non-penetrant MAE,1.385,0.774,0.792,"0.627 (-0.202, -0.093) [p<0.001; vs 2]",,,,
+"Saved performance estimates and adjusted p-values are displayed without recomputing statistics. Model 4 is compared separately for each metric with the better of models 2 and 3, selected using unrounded saved estimates; exact ties prefer model 2. Parentheses are confidence intervals for model 4 minus its stated comparator. Model 5 p-values compare model 5 with model 4. Saved test: paired two-sided permutation test. Original correction family: all evaluated metrics within each model pair and subset. Nonpenetrants are the positive class. NA / unavailable identifies a missing or undefined saved result; values are never copied from the paper.",,,,,,,,
+,,,,,,,,
+"Table S4. Classification performance of the druglike B3DB-subset-trained models on the Kp,uu transfer task (n=43).",,,,,,,,
+Metric,Model 4: Custom loss,"Model 3: LightGBM, MSE","Model 5: LightGBM, MSE, tuned threshold",,,,,
+Spearman's R,0.521,"0.335
+[p=0.324]","0.335
+[p=0.324]",,,,,
+Pearson's R,0.527,"0.419
+[p=0.448]","0.419
+[p=0.448]",,,,,
+Kendall Tau,0.367,"0.249
+[p=0.426]","0.249
+[p=0.426]",,,,,
+ROC AUC,0.798,"0.679
+[p=0.335]","0.679
+[p=0.335]",,,,,
+PR AUC,0.896,"0.806
+[p=0.177]","0.806
+[p=0.177]",,,,,
+Balanced accuracy,0.643,"0.536
+[p=0.645]","0.606
+[p=1.000]",,,,,
+"Precision (low Kp,uu)",1.000,"1.000
+[p=1.000]","0.731
+[p=0.729]",,,,,
+"Recall (low Kp,uu)",0.286,"0.071
+[p=0.645]","0.679
+[p=0.102]",,,,,
+"F1 (low Kp,uu)",0.444,"0.133
+[p=0.645]","0.704
+[p=0.477]",,,,,
+"Specificity (high Kp,uu)",1.000,"1.000
+[p=1.000]","0.533
+[p=0.360]",,,,,
+MCC,0.350,"0.162
+[p=0.645]","0.207
+[p=1.000]",,,,,
+Cohen's kappa,0.218,"0.051
+[p=0.645]","0.206
+[p=1.000]",,,,,
+"Saved performance estimates and adjusted p-values are displayed without recomputing statistics. Bracketed p-values compare the column model with model 4. Saved test: paired two-sided output-swap permutation test (score and binary call swapped together). Original correction family: all saved Kp,uu model-pair/metric comparisons within classification; all saved Kp,uu model-pair/metric comparisons within correlation. Low-Kp,uu compounds are the positive class. S4 PR AUC is the saved trapezoidal area (pr_auc_trapezoidal_low_Kpuu); average precision is a distinct saved metric and is retained in the statistics export. NA / unavailable identifies a missing or undefined saved result; values are never copied from the paper.",,,,,,,,
+,,,,,,,,
+Table S5. Classification performance of the custom loss on an alternative ADMET task involving hERG (n=282155).,,,,,,,,
+Metric,"Model 3: LightGBM, MSE","Model 4: LightGBM, MTL",Adjusted p-value,,,,,
+Accuracy,0.506,0.896,p=0.024,,,,,
+Balanced accuracy,0.662,0.858,p=0.024,,,,,
+Blocker precision,0.036,0.153,p=0.024,,,,,
+Blocker recall (sensitivity),0.825,0.819,p=1.000,,,,,
+Blocker F1,0.069,0.258,p=0.024,,,,,
+Nonblocker recall (specificity),0.499,0.898,p=0.024,,,,,
+Nonblocker precision (NPV),0.992,0.995,p=0.024,,,,,
+Nonblocker F1,0.664,0.944,p=0.024,,,,,
+ROC AUC,0.755,0.924,p=0.024,,,,,
+Average precision,0.111,0.459,p=0.024,,,,,
+PR AUC (trapezoidal),0.111,0.459,p=0.024,,,,,
+Matthews correlation coefficient,0.095,0.326,p=0.024,,,,,
+Cohen's kappa,0.027,0.230,p=0.024,,,,,
+Misclassification rate,0.494,0.104,p=0.024,,,,,
+Mean boundary distance among misclassified compounds (pIC50),0.322,0.105,p=0.024,,,,,
+Saved performance estimates and adjusted p-values are displayed without recomputing statistics. The separate p-value column compares model 4 with model 3. Saved test: paired two-sided prediction-swap permutation test. Original correction family: all saved hERG classification metric/subset comparisons in this analysis. Blockers are the positive class. Distance values retain the upstream evaluator's saved population and boundary definition. S5 uses classification on all compounds; S6 uses regression on measured IC50 compounds. N is the saved subset size; class-specific n_metric and the other subsets remain in the statistics export. NA / unavailable identifies a missing or undefined saved result; values are never copied from the paper.,,,,,,,,
+,,,,,,,,
+Table S6. Regression performance of the custom loss on an alternative ADMET task involving hERG (n=2815).,,,,,,,,
+Metric,"Model 3: LightGBM, MSE","Model 4: LightGBM, MTL",Adjusted p-value,,,,,
+MAE,0.361,0.358,p=1.000,,,,,
+MSE,0.244,0.249,p=1.000,,,,,
+MDE,0.276,0.262,p=0.165,,,,,
+R²,0.556,0.546,p=1.000,,,,,
+Pearson's R,0.747,0.743,p=1.000,,,,,
+Saved performance estimates and adjusted p-values are displayed without recomputing statistics. The separate p-value column compares model 4 with model 3. Saved test: paired two-sided prediction-swap permutation test. Original correction family: all saved hERG regression metric/subset comparisons in this analysis. Blockers are the positive class. S5 uses classification on all compounds; S6 uses regression on measured IC50 compounds. N is the saved subset size; class-specific n_metric and the other subsets remain in the statistics export. NA / unavailable identifies a missing or undefined saved result; values are never copied from the paper.,,,,,,,,
+,,,,,,,,
+Table S7. Number of available descriptors before and after filtering.,,,,,,,,
+Descriptors,Mordred,ECFP,MACCS,Total,,,,
+Available descriptors,1826,2048,167,4041,,,,
+Descriptors that were available for all molecules in the dataset,1022,2048,153,3223,,,,
+"Counts use the configured original and retained feature matrices/lists. Derived availability counts, when explicitly enabled, use finite values for every saved row; no compound rows are removed.",,,,,,,,
+,,,,,,,,
+Table S8. Hyperparameters tuned and the corresponding search spaces.,,,,,,,,
+Hyperparameter Name,Description,Search Space,,,,,,
+colsample_bytree,Fraction of features sampled for each tree,0.5-1,,,,,,
+learning_rate,Learning rate,0.01-0.3,,,,,,
+Custom loss function hyperparameter: margin_buffer,Custom-loss margin buffer,0.15-0.35; step=0.02,,,,,,
+Custom loss function hyperparameter: beta,Classification-loss weight,0.5-5; step=0.25,,,,,,
+max_depth,Maximum tree depth,3-12,,,,,,
+num_leaves,Maximum number of leaves per tree,20-150,,,,,,
+min_child_samples,Minimum samples in a leaf,5-50,,,,,,
+subsample,Fraction of training samples used for each tree,0.5-1,,,,,,
+"Search spaces extracted from training code without executing it, with any explicitly configured definitions retained. Dynamic or absent ranges remain NA.",,,,,,,,
+,,,,,,,,
+Table S9. Chosen hyperparameters from each of the five outer folds.,,,,,,,,
+Hyperparameter,Fold 1,Fold 2,Fold 3,Fold 4,Fold 5,,,
+Beta,3,5,4,4.75,4.75,,,
+Margin buffer,0.35,0.33,0.35,0.33,0.35,,,
+Learning rate,0.064,0.011,0.010,0.025,0.022,,,
+Number of leaves,78,37,58,30,31,,,
+Maximum depth,6,7,9,7,11,,,
+Minimum child samples,48,11,9,21,44,,,
+Subsample,0.630,0.707,0.563,0.577,0.616,,,
+Column samples by tree,0.720,0.864,0.578,0.625,0.738,,,
+Selected saved hyperparameters by outer fold. No tuning was rerun. Map selected_column when reading trial histories.,,,,,,,,
+,,,,,,,,
+Table S10. Regression performance of each outer-fold model on its respective test dataset.,,,,,,,,
+Fold,MSE,MDE,MAE,PCC,R2,,,
+Fold 1,0.266,0.292,0.382,0.735,0.536,,,
+Fold 2,0.258,0.287,0.380,0.746,0.503,,,
+Fold 3,0.325,0.306,0.424,0.744,0.428,,,
+Fold 4,0.252,0.329,0.393,0.763,0.508,,,
+Fold 5,0.282,0.312,0.402,0.726,0.495,,,
+Average ± SD,0.277 ± 0.03,0.305 ± 0.017,0.396 ± 0.018,0.743 ± 0.014,0.494 ± 0.04,,,
+Model 4 saved per-fold metrics for measured_regression. Fold IDs 0-4 are displayed as folds 1-5. The final row is the unweighted mean ± sample SD (ddof=1); incomplete metrics have no summary.,,,,,,,,
+,,,,,,,,
+Table S11. Classification performance of each outer-fold model on all compounds in its respective test dataset.,,,,,,,,
+Fold,Balanced Accuracy,Precision,Recall,ROC AUC,PR AUC,kappa,MCC,F1
+Fold 1,0.655,0.688,0.387,0.796,0.640,0.354,0.379,0.495
+Fold 2,0.703,0.754,0.474,0.845,0.729,0.454,0.476,0.582
+Fold 3,0.697,0.701,0.485,0.830,0.697,0.432,0.445,0.573
+Fold 4,0.665,0.713,0.399,0.773,0.629,0.376,0.403,0.512
+Fold 5,0.651,0.673,0.383,0.790,0.650,0.344,0.368,0.488
+Average ± SD,0.674 ± 0.024,0.706 ± 0.031,0.426 ± 0.05,0.807 ± 0.03,0.669 ± 0.042,0.392 ± 0.049,0.414 ± 0.046,0.53 ± 0.044
+Model 4 saved per-fold metrics for all_classification. Fold IDs 0-4 are displayed as folds 1-5. The final row is the unweighted mean ± sample SD (ddof=1); incomplete metrics have no summary.,,,,,,,,
+,,,,,,,,
+Table S12. Values of the BBB class threshold chosen by the threshold-tuned LightGBM model.,,,,,,,,
+Fold,Chosen threshold,,,,,,,
+Fold 1,-0.395,,,,,,,
+Fold 2,-0.323,,,,,,,
+Fold 3,-0.512,,,,,,,
+Fold 4,-0.334,,,,,,,
+Fold 5,-0.389,,,,,,,
+Original inner-OOF selected thresholds read from saved model metadata. No cutoff selection or model fitting was rerun.,,,,,,,,
+,,,,,,,,
+Table S13. Classification performance of alternative model architectures on classification-only molecules in their corresponding outer folds (n=2421).,,,,,,,,
+Model,4: This model,"GNN, custom loss","GNN, MSE","ImageMol, custom loss","ImageMol, MSE",,,
+Balanced Accuracy,0.666,"0.523
+[p=0.001]","0.524
+[p=0.001]","0.552
+[p=0.001]","0.561
+[p=0.001]",,,
+Recall,0.422,"0.052
+[p=0.001]","0.062
+[p=0.001]","0.123
+[p=0.001]","0.148
+[p=0.001]",,,
+Precision,0.728,"0.821
+[p=0.014]","0.724
+[p=0.897]","0.788
+[p=0.095]","0.774
+[p=0.207]",,,
+F1,0.534,"0.098
+[p=0.001]","0.115
+[p=0.001]","0.212
+[p=0.001]","0.248
+[p=0.001]",,,
+ROC AUC,0.782,"0.709
+[p=0.001]","0.697
+[p=0.001]","0.710
+[p=0.001]","0.705
+[p=0.001]",,,
+PR AUC,0.687,"0.584
+[p=0.001]","0.565
+[p=0.001]","0.594
+[p=0.001]","0.593
+[p=0.001]",,,
+Cohen’s Kappa,0.365,"0.057
+[p=0.001]","0.061
+[p=0.001]","0.127
+[p=0.001]","0.149
+[p=0.001]",,,
+MCC,0.391,"0.146
+[p=0.001]","0.135
+[p=0.001]","0.216
+[p=0.001]","0.233
+[p=0.001]",,,
+NP wrong side (FN),509,"835
+[p=0.001]","826
+[p=0.001]","773
+[p=0.001]","751
+[p=0.001]",,,
+Mean distance from margin (incorrect),0.421,"0.509
+[p=0.001]","0.621
+[p=0.001]","0.686
+[p=0.001]","0.670
+[p=0.001]",,,
+Saved performance estimates and adjusted p-values are displayed without recomputing statistics. Bracketed p-values compare the column model with model 4. The released ImageMol BBBP classifier has point estimates only. Saved test: paired two-sided permutation test. Original correction family: all evaluated metrics within each model pair and subset. Nonpenetrants are the positive class. Distance values retain the upstream evaluator's saved population and boundary definition. The subset follows this table's caption; the two numeric blocks were swapped in the supplied SI. NA / unavailable identifies a missing or undefined saved result; values are never copied from the paper.,,,,,,,,
+,,,,,,,,
+Table S14. Classification performance of alternative model architectures on all molecules in their corresponding outer folds (n=3188).,,,,,,,,
+Model,4: This model,"GNN, custom loss","GNN, MSE","ImageMol, custom loss","ImageMol, MSE",,,
+Balanced Accuracy,0.674,"0.521
+[p=0.001]","0.525
+[p=0.001]","0.553
+[p=0.001]","0.562
+[p=0.001]",,,
+Recall,0.426,"0.051
+[p=0.001]","0.064
+[p=0.001]","0.125
+[p=0.001]","0.150
+[p=0.001]",,,
+Precision,0.707,"0.721
+[p=0.683]","0.667
+[p=0.215]","0.733
+[p=0.695]","0.714
+[p=0.916]",,,
+F1,0.531,"0.095
+[p=0.001]","0.117
+[p=0.001]","0.214
+[p=0.001]","0.248
+[p=0.001]",,,
+ROC AUC,0.805,"0.727
+[p=0.001]","0.714
+[p=0.001]","0.729
+[p=0.001]","0.726
+[p=0.001]",,,
+PR AUC,0.662,"0.535
+[p=0.001]","0.510
+[p=0.001]","0.553
+[p=0.001]","0.553
+[p=0.001]",,,
+Cohen’s Kappa,0.393,"0.057
+[p=0.001]","0.067
+[p=0.001]","0.137
+[p=0.001]","0.159
+[p=0.001]",,,
+MCC,0.415,"0.134
+[p=0.001]","0.137
+[p=0.001]","0.218
+[p=0.001]","0.233
+[p=0.001]",,,
+NP wrong side (FN),556,"919
+[p=0.001]","906
+[p=0.001]","847
+[p=0.001]","823
+[p=0.001]",,,
+Mean distance from margin (incorrect),0.406,"0.499
+[p=0.001]","0.611
+[p=0.001]","0.660
+[p=0.001]","0.643
+[p=0.001]",,,
+Saved performance estimates and adjusted p-values are displayed without recomputing statistics. Bracketed p-values compare the column model with model 4. The released ImageMol BBBP classifier has point estimates only. Saved test: paired two-sided permutation test. Original correction family: all evaluated metrics within each model pair and subset. Nonpenetrants are the positive class. Distance values retain the upstream evaluator's saved population and boundary definition. The subset follows this table's caption; the two numeric blocks were swapped in the supplied SI. NA / unavailable identifies a missing or undefined saved result; values are never copied from the paper.,,,,,,,,
+,,,,,,,,
+Table S15. Regression performance of alternative model architectures on molecules labelled for their logBB (n=767).,,,,,,,,
+Model,4: This model,"GNN, custom loss","GNN, MSE","ImageMol, custom loss","ImageMol, MSE",,,
+MAE,0.396,"0.486
+[p<0.001]","0.486
+[p<0.001]","0.412
+[p=0.614]","0.417
+[p=0.224]",,,
+MSE,0.277,"0.376
+[p<0.001]","0.387
+[p<0.001]","0.289
+[p=1.000]","0.295
+[p=0.764]",,,
+PCC,0.735,"0.582
+[p<0.001]","0.553
+[p<0.001]","0.688
+[p=0.065]","0.682
+[p=0.024]",,,
+R²,0.494,"0.312
+[p<0.001]","0.292
+[p<0.001]","0.471
+[p=1.000]","0.461
+[p=0.764]",,,
+Non-penetrant MAE,0.530,"0.864
+[p<0.001]","0.949
+[p<0.001]","0.814
+[p<0.001]","0.794
+[p<0.001]",,,
+Mean distance from margin (incorrect),0.286,"0.414
+[p<0.001]","0.522
+[p<0.001]","0.426
+[p<0.001]","0.409
+[p=0.017]",,,
+Saved performance estimates and adjusted p-values are displayed without recomputing statistics. Bracketed p-values compare the column model with model 4. The released ImageMol BBBP classifier has point estimates only. Saved test: paired two-sided permutation test. Original correction family: all evaluated metrics within each model pair and subset. Nonpenetrants are the positive class. Distance values retain the upstream evaluator's saved population and boundary definition. NA / unavailable identifies a missing or undefined saved result; values are never copied from the paper.,,,,,,,,
+,,,,,,,,
+Table S16. Classification performance of alternative model architectures on the external Inxight dataset (n not supplied or model-specific).,,,,,,,,
+Model,4: This model,"GNN, custom loss","GNN, MSE","ImageMol, custom loss","ImageMol, MSE",ImageMol BBBP classifier,,
+Balanced Accuracy,0.590,"0.505
+[p=0.127]","0.505
+[p=0.157]","0.548
+[p=1.000]","0.538
+[p=0.943]",0.557,,
+Recall,0.371,"0.048
+[p=0.001]","0.010
+[p=0.001]","0.143
+[p=0.001]","0.143
+[p=0.001]",0.214,,
+Precision,0.661,"0.556
+[p=0.347]","1.000
+[p=0.027]","0.750
+[p=1.000]","0.682
+[p=1.000]",0.688,,
+F1,0.476,"0.088
+[p=0.001]","0.019
+[p=0.001]","0.240
+[p=0.001]","0.236
+[p=0.001]",0.326,,
+ROC AUC,0.637,"0.545
+[p=0.151]","0.539
+[p=0.157]","0.629
+[p=1.000]","0.629
+[p=1.000]",0.598,,
+PR AUC,0.612,"0.543
+[p=0.347]","0.531
+[p=0.270]","0.623
+[p=1.000]","0.621
+[p=1.000]",0.585,,
+Cohen’s Kappa,0.181,"0.010
+[p=0.127]","0.010
+[p=0.157]","0.095
+[p=1.000]","0.076
+[p=0.943]",0.112,,
+MCC,0.201,"0.024
+[p=0.158]","0.069
+[p=0.270]","0.162
+[p=1.000]","0.124
+[p=1.000]",0.156,,
+NP wrong side (FN),66,"100
+[p=0.001]","104
+[p=0.001]","90
+[p=0.001]","90
+[p=0.001]",81,,
+"Saved performance estimates and adjusted p-values are displayed without recomputing statistics. Bracketed p-values compare the column model with model 4. The released ImageMol BBBP classifier has point estimates only. Saved test: paired two-sided permutation test. Original correction family: all evaluated metrics within each model pair and subset. Nonpenetrants are the positive class. BBBP uses saved point estimates only. Its PR AUC table entry is the saved average_precision_nonpenetrant, matching script 10's definition; its other reported PR AUC value is retained separately in the statistics export. Model-specific saved sample counts: 4: This model: [210]; GNN, custom loss: [210]; GNN, MSE: [210]; ImageMol, custom loss: [210]; ImageMol, MSE: [210]; ImageMol BBBP classifier: [203]. NA / unavailable identifies a missing or undefined saved result; values are never copied from the paper.",,,,,,,,
+,,,,,,,,
+Table S18. Classification performance on molecules only labelled for their binary classification in the expanded subset of the B3DB (n=2972).,,,,,,,,
+Model,1c: Classification baseline,2: Retrained logBB_pred,3: LightGBM (MSE objective),4: This model,5: Threshold-tuned LightGBM (MSE objective),,,
+Balanced Accuracy,0.5,0.597,0.6,"0.674 (0.061, 0.086) [p=0.001; vs 3]",0.675 [p=0.864; vs 4],,,
+Recall,0,0.233,0.23,"0.432 (0.174, 0.225) [p=0.001; vs 2]",0.645 [p=0.001; vs 4],,,
+Precision,0,0.818,0.848,"0.79 (-0.091, -0.026) [p=0.001; vs 3]",0.617 [p=0.001; vs 4],,,
+F1,0,0.362,0.362,"0.558 (0.168, 0.224) [p=0.001; vs 2]",0.631 [p=0.001; vs 4],,,
+ROC AUC,0.5,0.744,0.744,"0.803 (0.048, 0.070) [p=0.001; vs 2]",0.744 [p=0.001; vs 4],,,
+PR AUC,0.424,0.693,0.696,"0.752 (0.043, 0.068) [p=0.001; vs 3]",0.696 [p=0.001; vs 4],,,
+Cohen’s Kappa,0,0.215,0.221,"0.369 (0.121, 0.175) [p=0.001; vs 3]",0.348 [p=0.539; vs 4],,,
+MCC,0,0.295,0.309,"0.406 (0.068, 0.126) [p=0.001; vs 3]",0.348 [p=0.008; vs 4],,,
+NP wrong side (FN),1260,967,970,"716 (-283, -219) [p=0.001; vs 2]",447 [p=0.001; vs 4],,,
+Mean distance from margin (incorrect),NA,0.615,0.629,"0.391 (-0.248, -0.200) [p=0.001; vs 2]",0.691 [p=0.001; vs 4],,,
+"Saved performance estimates and adjusted p-values are displayed without recomputing statistics. Model 4 is compared separately for each metric with the better of models 2 and 3, selected using unrounded saved estimates; exact ties prefer model 2. Parentheses are confidence intervals for model 4 minus its stated comparator. Model 5 p-values compare model 5 with model 4. Saved test: paired two-sided permutation test. Original correction family: all evaluated metrics within each model pair and subset. Nonpenetrants are the positive class. Distance values retain the upstream evaluator's saved population and boundary definition. NA / unavailable identifies a missing or undefined saved result; values are never copied from the paper.",,,,,,,,
+,,,,,,,,
+Table S19. Classification performance on all molecules in the expanded subset of the B3DB (n=3879).,,,,,,,,
+Model,1c: Classification baseline,2: Retrained logBB_pred,3: LightGBM (MSE objective),4: This model,5: Threshold-tuned LightGBM (MSE objective),,,
+Balanced Accuracy,0.5,0.601,0.602,"0.678 (0.064, 0.087) [p=0.001; vs 3]",0.696 [p=0.067; vs 4],,,
+Recall,0,0.237,0.234,"0.432 (0.170, 0.219) [p=0.001; vs 2]",0.658 [p=0.001; vs 4],,,
+Precision,0,0.787,0.809,"0.753 (-0.088, -0.023) [p=0.002; vs 3]",0.574 [p=0.001; vs 4],,,
+F1,0,0.365,0.364,"0.549 (0.158, 0.211) [p=0.001; vs 2]",0.613 [p=0.001; vs 4],,,
+ROC AUC,0.5,0.761,0.762,"0.82 (0.050, 0.068) [p=0.001; vs 3]",0.762 [p=0.001; vs 4],,,
+PR AUC,0.353,0.652,0.658,"0.717 (0.046, 0.071) [p=0.001; vs 3]",0.658 [p=0.001; vs 4],,,
+Cohen’s Kappa,0,0.241,0.243,"0.393 (0.124, 0.175) [p=0.001; vs 3]",0.379 [p=0.385; vs 4],,,
+MCC,0,0.313,0.322,"0.422 (0.073, 0.127) [p=0.001; vs 3]",0.381 [p=0.050; vs 4],,,
+NP wrong side (FN),1369,1044,1048,"777 (-300, -233) [p=0.001; vs 2]",468 [p=0.001; vs 4],,,
+Mean distance from margin (incorrect),NA,0.6,0.607,"0.38 (-0.242, -0.198) [p=0.001; vs 2]",0.642 [p=0.001; vs 4],,,
+"Saved performance estimates and adjusted p-values are displayed without recomputing statistics. Model 4 is compared separately for each metric with the better of models 2 and 3, selected using unrounded saved estimates; exact ties prefer model 2. Parentheses are confidence intervals for model 4 minus its stated comparator. Model 5 p-values compare model 5 with model 4. Saved test: paired two-sided permutation test. Original correction family: all evaluated metrics within each model pair and subset. Nonpenetrants are the positive class. Distance values retain the upstream evaluator's saved population and boundary definition. NA / unavailable identifies a missing or undefined saved result; values are never copied from the paper.",,,,,,,,
+,,,,,,,,
+Table S20. Regression performance on molecules with experimental logBB labels in the beyond-rule-of-five subset of the B3DB (n=907).,,,,,,,,
+Model,1r: Regression baseline,2: Retrained logBB_pred,3: LightGBM (MSE objective),4: This model,,,,
+MAE,0.595,0.381,0.365,"0.399 (0.021, 0.047) [p<0.001; vs 3]",,,,
+MSE,0.572,0.274,0.25,"0.282 (0.014, 0.050) [p=0.006; vs 3]",,,,
+PCC,-0.009,0.723,0.75,"0.74 (-0.027, 0.005) [p=0.449; vs 3]",,,,
+R²,0,0.52,0.562,"0.507 (-0.087, -0.025) [p=0.006; vs 3]",,,,
+Non-penetrant MAE,1.384,0.736,0.707,"0.571 (-0.176, -0.098) [p<0.001; vs 3]",,,,
+"Saved performance estimates and adjusted p-values are displayed without recomputing statistics. Model 4 is compared separately for each metric with the better of models 2 and 3, selected using unrounded saved estimates; exact ties prefer model 2. Parentheses are confidence intervals for model 4 minus its stated comparator. Model 5 p-values compare model 5 with model 4. Saved test: paired two-sided permutation test. Original correction family: all evaluated metrics within each model pair and subset. Nonpenetrants are the positive class. NA / unavailable identifies a missing or undefined saved result; values are never copied from the paper.",,,,,,,,
+,,,,,,,,
+Table S21. Classification performance on an external Inxight test dataset for models trained on the expanded subset of the B3DB (n=210).,,,,,,,,
+Model,1c: Classification baseline,2: Retrained logBB_pred,3: LightGBM (MSE objective),4: This model,5: Threshold-tuned LightGBM (MSE objective),,,
+Balanced Accuracy,0.5,0.533,0.533,"0.571 (-0.014, 0.090) [p=1.000; vs 2]",0.571 [p=1.000; vs 4],,,
+Recall,0,0.152,0.171,"0.324 (0.086, 0.229) [p=0.003; vs 3]",0.676 [p=0.001; vs 4],,,
+Precision,0,0.64,0.621,"0.642 (-0.155, 0.156) [p=1.000; vs 2]",0.559 [p=0.806; vs 4],,,
+F1,0,0.246,0.269,"0.43 (0.079, 0.250) [p=0.006; vs 3]",0.612 [p=0.004; vs 4],,,
+ROC AUC,0.5,0.607,0.613,"0.642 (-0.010, 0.069) [p=1.000; vs 3]",0.613 [p=1.000; vs 4],,,
+PR AUC,0.5,0.579,0.576,"0.609 (-0.019, 0.075) [p=1.000; vs 2]",0.576 [p=1.000; vs 4],,,
+Cohen’s Kappa,0,0.067,0.067,"0.143 (-0.029, 0.181) [p=1.000; vs 2]",0.143 [p=1.000; vs 4],,,
+MCC,0,0.103,0.097,"0.164 (-0.068, 0.190) [p=1.000; vs 2]",0.146 [p=1.000; vs 4],,,
+NP wrong side (FN),105,89,87,"71 (-24, -9) [p=0.003; vs 3]",34 [p=0.001; vs 4],,,
+"Saved performance estimates and adjusted p-values are displayed without recomputing statistics. Model 4 is compared separately for each metric with the better of models 2 and 3, selected using unrounded saved estimates; exact ties prefer model 2. Parentheses are confidence intervals for model 4 minus its stated comparator. Model 5 p-values compare model 5 with model 4. Saved test: paired two-sided permutation test. Original correction family: all evaluated metrics within each model pair and subset. Nonpenetrants are the positive class. NA / unavailable identifies a missing or undefined saved result; values are never copied from the paper.",,,,,,,,
+,,,,,,,,

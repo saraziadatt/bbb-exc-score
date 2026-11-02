@@ -1,0 +1,5 @@
+threshold,mi,outer_fold,step,feature,selected_threshold,n_training
+0.0,0.05480630803472415,2,3,nAcid,0.0,182
+1.0,0.005549351635687401,2,3,nAcid,0.0,182
+2.0,0.004601339109014591,2,3,nAcid,0.0,182
+3.0,0.0022864513190493656,2,3,nAcid,0.0,182

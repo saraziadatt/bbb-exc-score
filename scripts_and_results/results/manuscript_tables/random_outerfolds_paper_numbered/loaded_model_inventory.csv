@@ -1,0 +1,213 @@
+dataset,subset,model,metric_rows
+Outer-fold test sets,measured_regression,dummy_mean_regression,8
+Outer-fold test sets,measured_classification,dummy_mean_regression,13
+Outer-fold test sets,all_classification,dummy_mean_regression,13
+Outer-fold test sets,classification_only,dummy_mean_regression,13
+Outer-fold test sets,measured_regression,dummy_prior_classification,8
+Outer-fold test sets,measured_classification,dummy_prior_classification,13
+Outer-fold test sets,all_classification,dummy_prior_classification,13
+Outer-fold test sets,classification_only,dummy_prior_classification,13
+Outer-fold test sets,measured_regression,lightgbm_mse_regression,8
+Outer-fold test sets,measured_classification,lightgbm_mse_regression,13
+Outer-fold test sets,all_classification,lightgbm_mse_regression,13
+Outer-fold test sets,classification_only,lightgbm_mse_regression,13
+Outer-fold test sets,measured_regression,lightgbm_mse_regression_threshold,8
+Outer-fold test sets,measured_classification,lightgbm_mse_regression_threshold,13
+Outer-fold test sets,all_classification,lightgbm_mse_regression_threshold,13
+Outer-fold test sets,classification_only,lightgbm_mse_regression_threshold,13
+Outer-fold test sets,measured_regression,custom_mtl_original,8
+Outer-fold test sets,measured_classification,custom_mtl_original,13
+Outer-fold test sets,all_classification,custom_mtl_original,13
+Outer-fold test sets,classification_only,custom_mtl_original,13
+Outer-fold test sets,measured_regression,logbb_pred_shaker_retrained,8
+Outer-fold test sets,measured_classification,logbb_pred_shaker_retrained,13
+Outer-fold test sets,all_classification,logbb_pred_shaker_retrained,13
+Outer-fold test sets,classification_only,logbb_pred_shaker_retrained,13
+Outer-fold test sets,measured_regression,gnn_custom_mtl,8
+Outer-fold test sets,measured_classification,gnn_custom_mtl,13
+Outer-fold test sets,all_classification,gnn_custom_mtl,13
+Outer-fold test sets,classification_only,gnn_custom_mtl,13
+Outer-fold test sets,measured_regression,gnn_mse,8
+Outer-fold test sets,measured_classification,gnn_mse,13
+Outer-fold test sets,all_classification,gnn_mse,13
+Outer-fold test sets,classification_only,gnn_mse,13
+Outer-fold test sets,measured_regression,imagemol_resnet18_frozen_custom_mtl,8
+Outer-fold test sets,measured_classification,imagemol_resnet18_frozen_custom_mtl,13
+Outer-fold test sets,all_classification,imagemol_resnet18_frozen_custom_mtl,13
+Outer-fold test sets,classification_only,imagemol_resnet18_frozen_custom_mtl,13
+Outer-fold test sets,measured_regression,imagemol_resnet18_frozen_custom_mtl_native_threshold,8
+Outer-fold test sets,measured_classification,imagemol_resnet18_frozen_custom_mtl_native_threshold,13
+Outer-fold test sets,all_classification,imagemol_resnet18_frozen_custom_mtl_native_threshold,13
+Outer-fold test sets,classification_only,imagemol_resnet18_frozen_custom_mtl_native_threshold,13
+Outer-fold test sets,measured_regression,imagemol_resnet18_frozen_custom_mtl_altered_threshold,8
+Outer-fold test sets,measured_classification,imagemol_resnet18_frozen_custom_mtl_altered_threshold,13
+Outer-fold test sets,all_classification,imagemol_resnet18_frozen_custom_mtl_altered_threshold,13
+Outer-fold test sets,classification_only,imagemol_resnet18_frozen_custom_mtl_altered_threshold,13
+Outer-fold test sets,measured_regression,imagemol_resnet18_frozen_custom_mtl_threshold,8
+Outer-fold test sets,measured_classification,imagemol_resnet18_frozen_custom_mtl_threshold,13
+Outer-fold test sets,all_classification,imagemol_resnet18_frozen_custom_mtl_threshold,13
+Outer-fold test sets,classification_only,imagemol_resnet18_frozen_custom_mtl_threshold,13
+Outer-fold test sets,measured_regression,imagemol_resnet18_frozen_regression,8
+Outer-fold test sets,measured_classification,imagemol_resnet18_frozen_regression,13
+Outer-fold test sets,all_classification,imagemol_resnet18_frozen_regression,13
+Outer-fold test sets,classification_only,imagemol_resnet18_frozen_regression,13
+Outer-fold test sets,measured_regression,imagemol_resnet18_frozen_regression_native_threshold,8
+Outer-fold test sets,measured_classification,imagemol_resnet18_frozen_regression_native_threshold,13
+Outer-fold test sets,all_classification,imagemol_resnet18_frozen_regression_native_threshold,13
+Outer-fold test sets,classification_only,imagemol_resnet18_frozen_regression_native_threshold,13
+Outer-fold test sets,measured_regression,imagemol_resnet18_frozen_regression_altered_threshold,8
+Outer-fold test sets,measured_classification,imagemol_resnet18_frozen_regression_altered_threshold,13
+Outer-fold test sets,all_classification,imagemol_resnet18_frozen_regression_altered_threshold,13
+Outer-fold test sets,classification_only,imagemol_resnet18_frozen_regression_altered_threshold,13
+Outer-fold test sets,measured_regression,imagemol_resnet18_frozen_regression_threshold,8
+Outer-fold test sets,measured_classification,imagemol_resnet18_frozen_regression_threshold,13
+Outer-fold test sets,all_classification,imagemol_resnet18_frozen_regression_threshold,13
+Outer-fold test sets,classification_only,imagemol_resnet18_frozen_regression_threshold,13
+Inxight,all_classification,dummy_mean_regression,13
+Inxight,all_classification,dummy_prior_classification,13
+Inxight,all_classification,lightgbm_mse_regression,13
+Inxight,all_classification,lightgbm_mse_regression_threshold,13
+Inxight,all_classification,custom_mtl_original,13
+Inxight,all_classification,logbb_pred_shaker_retrained,13
+Inxight,all_classification,gnn_custom_mtl,13
+Inxight,all_classification,gnn_mse,13
+Inxight,all_classification,imagemol_frozen__imagemol_resnet18_frozen_custom_mtl__outer,13
+Inxight,all_classification,imagemol_frozen__imagemol_resnet18_frozen_regression__outer,13
+Butina outer-fold test sets,measured_regression,dummy_mean_regression,8
+Butina outer-fold test sets,measured_classification,dummy_mean_regression,13
+Butina outer-fold test sets,all_classification,dummy_mean_regression,13
+Butina outer-fold test sets,classification_only,dummy_mean_regression,13
+Butina outer-fold test sets,measured_regression,dummy_prior_classification,8
+Butina outer-fold test sets,measured_classification,dummy_prior_classification,13
+Butina outer-fold test sets,all_classification,dummy_prior_classification,13
+Butina outer-fold test sets,classification_only,dummy_prior_classification,13
+Butina outer-fold test sets,measured_regression,lightgbm_mse_regression,8
+Butina outer-fold test sets,measured_classification,lightgbm_mse_regression,13
+Butina outer-fold test sets,all_classification,lightgbm_mse_regression,13
+Butina outer-fold test sets,classification_only,lightgbm_mse_regression,13
+Butina outer-fold test sets,measured_regression,lightgbm_mse_regression_threshold,8
+Butina outer-fold test sets,measured_classification,lightgbm_mse_regression_threshold,13
+Butina outer-fold test sets,all_classification,lightgbm_mse_regression_threshold,13
+Butina outer-fold test sets,classification_only,lightgbm_mse_regression_threshold,13
+Butina outer-fold test sets,measured_regression,custom_mtl_original,8
+Butina outer-fold test sets,measured_classification,custom_mtl_original,13
+Butina outer-fold test sets,all_classification,custom_mtl_original,13
+Butina outer-fold test sets,classification_only,custom_mtl_original,13
+Butina outer-fold test sets,measured_regression,logbb_pred_shaker_retrained,8
+Butina outer-fold test sets,measured_classification,logbb_pred_shaker_retrained,13
+Butina outer-fold test sets,all_classification,logbb_pred_shaker_retrained,13
+Butina outer-fold test sets,classification_only,logbb_pred_shaker_retrained,13
+Butina outer-fold test sets,measured_regression,imagemol_resnet18_frozen_custom_mtl,8
+Butina outer-fold test sets,measured_classification,imagemol_resnet18_frozen_custom_mtl,13
+Butina outer-fold test sets,all_classification,imagemol_resnet18_frozen_custom_mtl,13
+Butina outer-fold test sets,classification_only,imagemol_resnet18_frozen_custom_mtl,13
+Butina outer-fold test sets,measured_regression,imagemol_resnet18_frozen_custom_mtl_native_threshold,8
+Butina outer-fold test sets,measured_classification,imagemol_resnet18_frozen_custom_mtl_native_threshold,13
+Butina outer-fold test sets,all_classification,imagemol_resnet18_frozen_custom_mtl_native_threshold,13
+Butina outer-fold test sets,classification_only,imagemol_resnet18_frozen_custom_mtl_native_threshold,13
+Butina outer-fold test sets,measured_regression,imagemol_resnet18_frozen_custom_mtl_altered_threshold,8
+Butina outer-fold test sets,measured_classification,imagemol_resnet18_frozen_custom_mtl_altered_threshold,13
+Butina outer-fold test sets,all_classification,imagemol_resnet18_frozen_custom_mtl_altered_threshold,13
+Butina outer-fold test sets,classification_only,imagemol_resnet18_frozen_custom_mtl_altered_threshold,13
+Butina outer-fold test sets,measured_regression,imagemol_resnet18_frozen_custom_mtl_threshold,8
+Butina outer-fold test sets,measured_classification,imagemol_resnet18_frozen_custom_mtl_threshold,13
+Butina outer-fold test sets,all_classification,imagemol_resnet18_frozen_custom_mtl_threshold,13
+Butina outer-fold test sets,classification_only,imagemol_resnet18_frozen_custom_mtl_threshold,13
+Butina outer-fold test sets,measured_regression,imagemol_resnet18_frozen_regression,8
+Butina outer-fold test sets,measured_classification,imagemol_resnet18_frozen_regression,13
+Butina outer-fold test sets,all_classification,imagemol_resnet18_frozen_regression,13
+Butina outer-fold test sets,classification_only,imagemol_resnet18_frozen_regression,13
+Butina outer-fold test sets,measured_regression,imagemol_resnet18_frozen_regression_native_threshold,8
+Butina outer-fold test sets,measured_classification,imagemol_resnet18_frozen_regression_native_threshold,13
+Butina outer-fold test sets,all_classification,imagemol_resnet18_frozen_regression_native_threshold,13
+Butina outer-fold test sets,classification_only,imagemol_resnet18_frozen_regression_native_threshold,13
+Butina outer-fold test sets,measured_regression,imagemol_resnet18_frozen_regression_altered_threshold,8
+Butina outer-fold test sets,measured_classification,imagemol_resnet18_frozen_regression_altered_threshold,13
+Butina outer-fold test sets,all_classification,imagemol_resnet18_frozen_regression_altered_threshold,13
+Butina outer-fold test sets,classification_only,imagemol_resnet18_frozen_regression_altered_threshold,13
+Butina outer-fold test sets,measured_regression,imagemol_resnet18_frozen_regression_threshold,8
+Butina outer-fold test sets,measured_classification,imagemol_resnet18_frozen_regression_threshold,13
+Butina outer-fold test sets,all_classification,imagemol_resnet18_frozen_regression_threshold,13
+Butina outer-fold test sets,classification_only,imagemol_resnet18_frozen_regression_threshold,13
+bRo5 outer-fold test sets,measured_regression,dummy_mean_regression,8
+bRo5 outer-fold test sets,measured_classification,dummy_mean_regression,13
+bRo5 outer-fold test sets,all_classification,dummy_mean_regression,13
+bRo5 outer-fold test sets,classification_only,dummy_mean_regression,13
+bRo5 outer-fold test sets,measured_regression,dummy_prior_classification,8
+bRo5 outer-fold test sets,measured_classification,dummy_prior_classification,13
+bRo5 outer-fold test sets,all_classification,dummy_prior_classification,13
+bRo5 outer-fold test sets,classification_only,dummy_prior_classification,13
+bRo5 outer-fold test sets,measured_regression,lightgbm_mse_regression,8
+bRo5 outer-fold test sets,measured_classification,lightgbm_mse_regression,13
+bRo5 outer-fold test sets,all_classification,lightgbm_mse_regression,13
+bRo5 outer-fold test sets,classification_only,lightgbm_mse_regression,13
+bRo5 outer-fold test sets,measured_regression,lightgbm_mse_regression_threshold,8
+bRo5 outer-fold test sets,measured_classification,lightgbm_mse_regression_threshold,13
+bRo5 outer-fold test sets,all_classification,lightgbm_mse_regression_threshold,13
+bRo5 outer-fold test sets,classification_only,lightgbm_mse_regression_threshold,13
+bRo5 outer-fold test sets,measured_regression,custom_mtl_original,8
+bRo5 outer-fold test sets,measured_classification,custom_mtl_original,13
+bRo5 outer-fold test sets,all_classification,custom_mtl_original,13
+bRo5 outer-fold test sets,classification_only,custom_mtl_original,13
+bRo5 outer-fold test sets,measured_regression,logbb_pred_shaker_retrained,8
+bRo5 outer-fold test sets,measured_classification,logbb_pred_shaker_retrained,13
+bRo5 outer-fold test sets,all_classification,logbb_pred_shaker_retrained,13
+bRo5 outer-fold test sets,classification_only,logbb_pred_shaker_retrained,13
+bRo5 outer-fold test sets,measured_regression,gnn_custom_mtl,8
+bRo5 outer-fold test sets,measured_classification,gnn_custom_mtl,13
+bRo5 outer-fold test sets,all_classification,gnn_custom_mtl,13
+bRo5 outer-fold test sets,classification_only,gnn_custom_mtl,13
+bRo5 outer-fold test sets,measured_regression,gnn_mse,8
+bRo5 outer-fold test sets,measured_classification,gnn_mse,13
+bRo5 outer-fold test sets,all_classification,gnn_mse,13
+bRo5 outer-fold test sets,classification_only,gnn_mse,13
+bRo5 outer-fold test sets,measured_regression,imagemol_resnet18_frozen_custom_mtl,8
+bRo5 outer-fold test sets,measured_classification,imagemol_resnet18_frozen_custom_mtl,13
+bRo5 outer-fold test sets,all_classification,imagemol_resnet18_frozen_custom_mtl,13
+bRo5 outer-fold test sets,classification_only,imagemol_resnet18_frozen_custom_mtl,13
+bRo5 outer-fold test sets,measured_regression,imagemol_resnet18_frozen_custom_mtl_native_threshold,8
+bRo5 outer-fold test sets,measured_classification,imagemol_resnet18_frozen_custom_mtl_native_threshold,13
+bRo5 outer-fold test sets,all_classification,imagemol_resnet18_frozen_custom_mtl_native_threshold,13
+bRo5 outer-fold test sets,classification_only,imagemol_resnet18_frozen_custom_mtl_native_threshold,13
+bRo5 outer-fold test sets,measured_regression,imagemol_resnet18_frozen_custom_mtl_altered_threshold,8
+bRo5 outer-fold test sets,measured_classification,imagemol_resnet18_frozen_custom_mtl_altered_threshold,13
+bRo5 outer-fold test sets,all_classification,imagemol_resnet18_frozen_custom_mtl_altered_threshold,13
+bRo5 outer-fold test sets,classification_only,imagemol_resnet18_frozen_custom_mtl_altered_threshold,13
+bRo5 outer-fold test sets,measured_regression,imagemol_resnet18_frozen_custom_mtl_threshold,8
+bRo5 outer-fold test sets,measured_classification,imagemol_resnet18_frozen_custom_mtl_threshold,13
+bRo5 outer-fold test sets,all_classification,imagemol_resnet18_frozen_custom_mtl_threshold,13
+bRo5 outer-fold test sets,classification_only,imagemol_resnet18_frozen_custom_mtl_threshold,13
+bRo5 outer-fold test sets,measured_regression,imagemol_resnet18_frozen_regression,8
+bRo5 outer-fold test sets,measured_classification,imagemol_resnet18_frozen_regression,13
+bRo5 outer-fold test sets,all_classification,imagemol_resnet18_frozen_regression,13
+bRo5 outer-fold test sets,classification_only,imagemol_resnet18_frozen_regression,13
+bRo5 outer-fold test sets,measured_regression,imagemol_resnet18_frozen_regression_native_threshold,8
+bRo5 outer-fold test sets,measured_classification,imagemol_resnet18_frozen_regression_native_threshold,13
+bRo5 outer-fold test sets,all_classification,imagemol_resnet18_frozen_regression_native_threshold,13
+bRo5 outer-fold test sets,classification_only,imagemol_resnet18_frozen_regression_native_threshold,13
+bRo5 outer-fold test sets,measured_regression,imagemol_resnet18_frozen_regression_altered_threshold,8
+bRo5 outer-fold test sets,measured_classification,imagemol_resnet18_frozen_regression_altered_threshold,13
+bRo5 outer-fold test sets,all_classification,imagemol_resnet18_frozen_regression_altered_threshold,13
+bRo5 outer-fold test sets,classification_only,imagemol_resnet18_frozen_regression_altered_threshold,13
+bRo5 outer-fold test sets,measured_regression,imagemol_resnet18_frozen_regression_threshold,8
+bRo5 outer-fold test sets,measured_classification,imagemol_resnet18_frozen_regression_threshold,13
+bRo5 outer-fold test sets,all_classification,imagemol_resnet18_frozen_regression_threshold,13
+bRo5 outer-fold test sets,classification_only,imagemol_resnet18_frozen_regression_threshold,13
+bRo5 Inxight,all_classification,dummy_mean_regression,13
+bRo5 Inxight,all_classification,dummy_prior_classification,13
+bRo5 Inxight,all_classification,lightgbm_mse_regression,13
+bRo5 Inxight,all_classification,lightgbm_mse_regression_threshold,13
+bRo5 Inxight,all_classification,custom_mtl_original,13
+bRo5 Inxight,all_classification,logbb_pred_shaker_retrained,13
+"Kp,uu",all_classification,lightgbm_mse_regression,14
+"Kp,uu",all_classification,lightgbm_mse_regression_threshold,14
+"Kp,uu",all_classification,custom_mtl_bab,14
+hERG,all_classification,mse,16
+hERG,all_classification,mtl,16
+hERG,measured_classification,mse,16
+hERG,measured_classification,mtl,16
+hERG,classification_only,mse,16
+hERG,classification_only,mtl,16
+hERG,measured_regression,mse,11
+hERG,measured_regression,mtl,11
+Inxight,all_classification,imagemol_bbbp_released,11

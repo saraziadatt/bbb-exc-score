@@ -1,0 +1,11 @@
+model,source_path,n_rows,n_measured,n_classification_only,regression_available,wrong_side_distance_available,regression_metrics_represented_by,score_metrics_represented_by,status
+dummy_mean_regression,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/results/inxight_results/random_outerfolds/all_selected_models.csv,210,0,210,False,True,,,loaded_and_validated_external_decisions
+dummy_prior_classification,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/results/inxight_results/random_outerfolds/all_selected_models.csv,210,0,210,False,False,,,loaded_and_validated_external_decisions
+lightgbm_mse_regression,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/results/inxight_results/random_outerfolds/all_selected_models.csv,210,0,210,False,True,,,loaded_and_validated_external_decisions
+lightgbm_mse_regression_threshold,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/results/inxight_results/random_outerfolds/all_selected_models.csv,210,0,210,False,True,,,loaded_and_validated_external_decisions
+custom_mtl_original,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/results/inxight_results/random_outerfolds/all_selected_models.csv,210,0,210,False,True,,,loaded_and_validated_external_decisions
+logbb_pred_shaker_retrained,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/results/inxight_results/random_outerfolds/all_selected_models.csv,210,0,210,False,True,,,loaded_and_validated_external_decisions
+gnn_custom_mtl,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/results/inxight_results/random_outerfolds/all_selected_models.csv,210,0,210,False,True,,,loaded_and_validated_external_decisions
+gnn_mse,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/results/inxight_results/random_outerfolds/all_selected_models.csv,210,0,210,False,True,,,loaded_and_validated_external_decisions
+imagemol_frozen__imagemol_resnet18_frozen_custom_mtl__outer,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/results/inxight_results/random_outerfolds/all_selected_models.csv,210,0,210,False,True,,,loaded_and_validated_external_decisions
+imagemol_frozen__imagemol_resnet18_frozen_regression__outer,/Users/sziadat/Documents/bbbx/final_package/bbb-exc-score/results/inxight_results/random_outerfolds/all_selected_models.csv,210,0,210,False,True,,,loaded_and_validated_external_decisions

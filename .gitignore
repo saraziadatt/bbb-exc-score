@@ -1,0 +1,11 @@
+# macOS metadata
+.DS_Store
+._*
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter autosave checkpoints
+.ipynb_checkpoints/

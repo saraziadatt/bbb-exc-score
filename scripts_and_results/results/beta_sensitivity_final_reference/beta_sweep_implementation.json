@@ -1,0 +1,32 @@
+{
+  "implementation": "training_script_v4_saved_final_parameters_native_missing_v1",
+  "run_signature": {
+    "implementation": "training_script_v4_saved_final_parameters_native_missing_v1",
+    "script_sha256": "80f11c309b44e6ef2813b566f6ea714693510aa21865c23898ce237d79fa8220",
+    "input_sha256": "1e6870793c1ac669861ba6c77b853a9db13a1c27e25f25eaafd98904f98b52e8",
+    "mode": "saved_final_parameters",
+    "reference_parameters_sha256": "e907f670d1ce54aace44f39394683238276573501f1a3fe57cd745b1dafd28ba",
+    "reference_manifest_sha256": "7d9fb8d920309c47ac6d623c80e7b47d931828b54235fc97c75370eba7bcdf3c",
+    "seed": 15,
+    "logbb_threshold": -1.0,
+    "mtl_boost_rounds": 1000,
+    "mtl_trials": null,
+    "inner_folds": null,
+    "columns": {
+      "target_col": "logBB",
+      "class_col": "bbb_class",
+      "fold_col": "outer_fold",
+      "smiles_col": "smiles",
+      "id_col": "sample_id"
+    },
+    "save_sensitivity_models": false,
+    "skip_model_saving": false,
+    "versions": {
+      "lightgbm": "4.6.0",
+      "numpy": "1.26.4",
+      "pandas": "2.3.3",
+      "sklearn": "1.7.2",
+      "optuna": null
+    }
+  }
+}

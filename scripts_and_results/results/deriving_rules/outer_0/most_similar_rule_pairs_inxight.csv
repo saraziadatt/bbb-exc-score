@@ -1,0 +1,5 @@
+comparison,source,member,row_position,compound_id,bbb_class,rule_group,SMILES,canonical_SMILES,tanimoto,tied_best_pairs,same_canonical_SMILES,rule_1,rule_1_value,rule_2,rule_2_value
+Neither penetrant vs Both nonpenetrant,Inxight,A,39,39,0,Neither,NC(=O)C1=C(O)C=CC=C1,NC(=O)c1ccccc1O,0.3125,1,False,DPSA4 > 38.62656570208128,23.195042719765112,nAcid > 0.0,0.0
+Neither penetrant vs Both nonpenetrant,Inxight,B,506,506,1,Both,OC(=O)C1=CC(=CC=C1O)\N=N\C2=CC(C(O)=O)=C(O)C=C2,O=C(O)c1cc(/N=N/c2ccc(O)c(C(=O)O)c2)ccc1O,0.3125,1,False,DPSA4 > 38.62656570208128,45.45512755575194,nAcid > 0.0,2.0
+Both penetrant vs Both nonpenetrant,Inxight,A,40,40,0,Both,OC(=O)C1=C(O)C=CC(=C1)\N=N\C2=CC=C(C=C2)S(=O)(=O)NC3=NC=CC=C3,O=C(O)c1cc(/N=N/c2ccc(S(=O)(=O)Nc3ccccn3)cc2)ccc1O,0.5111111111111111,1,False,DPSA4 > 38.62656570208128,40.692134827778006,nAcid > 0.0,1.0
+Both penetrant vs Both nonpenetrant,Inxight,B,506,506,1,Both,OC(=O)C1=CC(=CC=C1O)\N=N\C2=CC(C(O)=O)=C(O)C=C2,O=C(O)c1cc(/N=N/c2ccc(O)c(C(=O)O)c2)ccc1O,0.5111111111111111,1,False,DPSA4 > 38.62656570208128,45.45512755575194,nAcid > 0.0,2.0

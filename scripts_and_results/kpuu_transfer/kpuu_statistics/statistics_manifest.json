@@ -1,0 +1,44 @@
+{
+  "settings": {
+    "predictions_csv": "kpuu_transfer/transfer_predictions.csv",
+    "output_dir": "kpuu_transfer/kpuu_statistics",
+    "kpuu_cutoff": 0.3,
+    "bootstrap": 2000,
+    "permutations": 10000,
+    "seed": 42,
+    "batch_size": 256
+  },
+  "actual_output_dir": "/Users/sziadat/Documents/bbbx/bbb-exc-score/all_revisions_clean/kpuu_transfer/kpuu_statistics",
+  "models": [
+    "lightgbm_mse_regression",
+    "lightgbm_mse_regression_threshold",
+    "custom_mtl_bab"
+  ],
+  "n_compounds": 43,
+  "input_sha256": "3cd0ac3a9b3062b95dec0fbe2a5f4a23dfed4e9ccde9f8cd65431edc64ebdaf6",
+  "decision_thresholds": {
+    "lightgbm_mse_regression": -1.0,
+    "lightgbm_mse_regression_threshold": -0.3904657710210222,
+    "custom_mtl_bab": -1.0
+  },
+  "completeness_checks": [
+    "kpuu_transfer/run_manifest.json",
+    "kpuu_transfer/kpuu_eligible.csv"
+  ],
+  "model_refitting": false,
+  "new_inference": false,
+  "threshold_fitting": false,
+  "bootstrap": "ordinary paired compound percentile",
+  "permutation": "paired output swap, two-sided absolute delta, plus-one correction",
+  "p_holm_family_sizes": {
+    "classification": 33,
+    "correlation": 9
+  },
+  "p_holm_tests": 42,
+  "versions": {
+    "python": "3.10.20",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.15.2"
+  }
+}

@@ -1,0 +1,3 @@
+feature,direction,folds_selected,threshold,threshold_min,threshold_max
+DPSA4,>,4,38.62656570208128,33.966299404426955,41.56544031603488
+nAcid,>,4,0.0,0.0,0.0
